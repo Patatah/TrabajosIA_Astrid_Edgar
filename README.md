@@ -12,7 +12,7 @@
 
   <h3><i>Cada tarea está en una carpeta con su nombre</i><h3>
 
-  <div style="display: inline">
+  <div style="display: inline-block">
   <img src="https://media.tenor.com/5BYK-WS0__gAAAAM/cool-fun.gif"> 
   <img style="width: 50%; height: 50%;" src="https://i.pinimg.com/originals/25/8e/4e/258e4e35c1af204de8a1fbdf39539cd8.gif">
   <img src="https://media.tenor.com/5BYK-WS0__gAAAAM/cool-fun.gif">
