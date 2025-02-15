@@ -14,7 +14,7 @@
 
   <div style="display: inline">
   <img src="https://media.tenor.com/5BYK-WS0__gAAAAM/cool-fun.gif"> 
-  <img style="max-width: 50px" src="https://i.pinimg.com/originals/25/8e/4e/258e4e35c1af204de8a1fbdf39539cd8.gif">
+  <img style="max-width: 50 px; " src="https://i.pinimg.com/originals/25/8e/4e/258e4e35c1af204de8a1fbdf39539cd8.gif">
   <img src="https://media.tenor.com/5BYK-WS0__gAAAAM/cool-fun.gif">
   </div>
 </HTML>
