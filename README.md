@@ -11,6 +11,10 @@
   </ul>
 
   <h3><i>Cada tarea está en una carpeta con su nombre</i><h3>
-  
+
+  <div style="display: inline">
+  <img src="https://media.tenor.com/5BYK-WS0__gAAAAM/cool-fun.gif"> 
   <img src="https://media.tenor.com/5BYK-WS0__gAAAAM/cool-fun.gif">
+  <img src="https://media.tenor.com/5BYK-WS0__gAAAAM/cool-fun.gif">
+  </div>
 </HTML>
