@@ -1,4 +1,5 @@
 <HTML>
+  <head>
   <style>
     body {
       font-family: 'Arial', sans-serif;
@@ -52,6 +53,7 @@
       height: auto;
     }
   </style>
+  </head>
   <h1><b>Trabajos de la materia IA</b></h1>
   
   <ul>
