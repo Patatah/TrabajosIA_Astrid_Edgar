@@ -8,9 +8,18 @@ class Logica:
         self.objetivo = objetivo
         self.listaAbierta = []
         self.listaCerrada = []
-        self.mejorSolucion = math.inf
+        self.pesoMejorSolucion = math.inf
+        self.pasosMejorSolucion = math.inf
+        self.mejorSolucion = None
 
     def buscarSolucion(self, inicial):
+        #Limpiar variables
+        self.listaAbierta = []
+        self.listaCerrada = []
+        self.pesoMejorSolucion = math.inf
+        self.pasosMejorSolucion = math.inf
+        self.mejorSolucion = None
+
         print("Buscando solucion")
         print("- Objetivo -")
         Logica.imprimirTablero(self.objetivo)
@@ -39,14 +48,16 @@ class Logica:
 
         # Caso base: todo está en su lugar
         if np.array_equal(tableroActual, self.objetivo):
-            if(pasoActual.costo < self.mejorSolucion):
-                self.mejorSolucion = pasoActual.costo
-                print("Mejor solucion encontrada con peso: ", pasoActual.costo)
-                
+            if(pasoActual.costo < self.pesoMejorSolucion):
+                self.pesoMejorSolucion = pasoActual.costo
+                self.pasosMejorSolucion = pasoActual.movimiento
+                print("Solucion encontrada con ", pasoActual.movimiento, " movimientos")
+                print("El algoritmo sigue trabajando...")
+                self.mejorSolucion = pasoActual
             return
         
         # Poda: no tiene caso buscar por aquí porque es un peso mas grande que el mejor encontrado
-        if pasoActual.costo > self.mejorSolucion:
+        if pasoActual.costo > self.pesoMejorSolucion:
             return
 
         sigMovimientos = Logica.movimientosPosibles(tableroActual)
@@ -73,6 +84,24 @@ class Logica:
         iguales = np.sum(comparacion)
         return 9-iguales
     
+    def imprimirMejorSolucion(self):
+        if self.mejorSolucion == None:
+            print("* No se encontró solucion")
+            return
+        print("* Paso por paso de la mejor solucion")
+        self.imprimirPasosRecursivo(self.mejorSolucion, self.pasosMejorSolucion)
+    
+    def imprimirPasosRecursivo(self, pasoActual, movimientosMejorSolucion):
+        if pasoActual.padre == None:
+            print("Iniciando con:")
+            Logica.imprimirTablero(pasoActual.tablero)
+            return
+        
+        self.imprimirPasosRecursivo(pasoActual.padre, movimientosMejorSolucion-1)
+        print("Movimiento #", movimientosMejorSolucion)
+        Logica.imprimirTablero(pasoActual.tablero)
+        
+
     @staticmethod
     def encontrarVacio(tablero):
         for i in range(3):
@@ -117,7 +146,10 @@ class Logica:
         for i in range(3):
             print("|", end="")
             for j in range(3):
-                print(tablero[i,j], end="")
+                if(tablero[i,j] == 0):
+                    print(" ", end="")
+                else:
+                    print(tablero[i,j], end="")
                 if(j < 2):
                     print("  ", end="")
             print("|")
@@ -129,7 +161,10 @@ class Logica:
         for i in range(3):
             print("║", end="")
             for j in range(3):
-                print(tablero[i,j], end="")
+                if(tablero[i,j] == 0):
+                    print(" ", end="")
+                else:
+                    print(tablero[i,j], end="")
                 if(j < 2):
                     print("  ", end="")
             print("║")

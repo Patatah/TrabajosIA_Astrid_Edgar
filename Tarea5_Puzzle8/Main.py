@@ -1,4 +1,5 @@
 import numpy as np
+import time
 from Logica import Logica
 
 objetivo = np.array([
@@ -14,7 +15,14 @@ inicial = np.array([
 ])
 
 logica = Logica(objetivo)
-logica.calcularHeuristica(inicial)
+
+# Aqui es donde se ejecuta el algoritmo y donde tomamos tiempo
+inicio = time.time()
 logica.buscarSolucion(inicial)
+fin = time.time()
+
+print("* Tiempo de ejecucion del algoritmo: ", fin - inicio, " segundos.")
+print("--------------")
+logica.imprimirMejorSolucion()
 
 
