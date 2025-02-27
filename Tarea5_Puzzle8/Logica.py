@@ -51,7 +51,7 @@ class Logica:
             if(pasoActual.costo < self.pesoMejorSolucion):
                 self.pesoMejorSolucion = pasoActual.costo
                 self.pasosMejorSolucion = pasoActual.movimiento
-                print("Solucion encontrada con ", pasoActual.movimiento, " movimientos")
+                print("Solucion encontrada con", pasoActual.movimiento, "movimientos")
                 print("El algoritmo sigue trabajando...")
                 self.mejorSolucion = pasoActual
             return
@@ -93,12 +93,12 @@ class Logica:
     
     def imprimirPasosRecursivo(self, pasoActual, movimientosMejorSolucion):
         if pasoActual.padre == None:
-            print("Iniciando con:")
+            print("Iniciamos con el tablero asi:")
             Logica.imprimirTablero(pasoActual.tablero)
             return
         
         self.imprimirPasosRecursivo(pasoActual.padre, movimientosMejorSolucion-1)
-        print("Movimiento #", movimientosMejorSolucion)
+        print("Movimiento #", movimientosMejorSolucion, ":", Logica.detectarTipoDeMovimiento(pasoActual))
         Logica.imprimirTablero(pasoActual.tablero)
         
 
@@ -170,3 +170,21 @@ class Logica:
             print("║")
         print("╚═══════╝")
     
+    @staticmethod 
+    def detectarTipoDeMovimiento(paso):
+        padre = paso.padre
+        if(padre == None):
+            return "Inicio"
+        else:
+            i, j = Logica.encontrarVacio(paso.tablero)
+            i2, j2 = Logica.encontrarVacio(padre.tablero)
+            if(i == i2):
+                if(j == j2+1):
+                    return "Mover "+ str(paso.tablero[i, j2])+ " hacia la izquierda"
+                else:
+                    return "Mover "+ str(paso.tablero[i, j2])+ " hacia la derecha"
+            else:
+                if(i == i2+1):
+                    return "Mover "+ str(paso.tablero[i2, j])+ " hacia arriba"
+                else:
+                    return "Mover "+ str(paso.tablero[i2, j])+ " hacia abajo"

@@ -6,6 +6,5 @@ class Paso:
         self.heuristica = heuristica
         self.costo = nMovimiento + heuristica
 
-
     
         
