@@ -22,7 +22,7 @@ logica.buscarSolucion(inicial)
 fin = time.time()
 
 print("* Tiempo de ejecucion del algoritmo: ", fin - inicio, " segundos.")
-print("--------------")
+print("-----------------------------------------------------------------")
 logica.imprimirMejorSolucion()
 
 

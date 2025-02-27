@@ -13,6 +13,20 @@ class Logica:
         self.mejorSolucion = None
 
     def buscarSolucion(self, inicial):
+        if(np.array_equal(inicial, self.objetivo)): # Si ya está ordenado, no hay que hacer nada
+            print("El tablero ya esta ordenado.")
+            return
+        
+        # Aplanar los arreglos para ver si tienen lo mismo
+        objetivo_flat = self.objetivo.flatten()
+        inicial_flat = inicial.flatten()
+        objetivo_sorted = np.sort(objetivo_flat)
+        inicial_sorted = np.sort(inicial_flat)
+        # Revisamos si el usuario no está intentando algo imposible
+        if not np.array_equal(objetivo_sorted, inicial_sorted):
+            print("El tablero inicial y el final no tienen las mismas fichas\nNo puedo crear fichas de la nada tilin." )
+            return
+
         #Limpiar variables
         self.listaAbierta = []
         self.listaCerrada = []
@@ -21,11 +35,11 @@ class Logica:
         self.mejorSolucion = None
 
         print("Buscando solucion")
-        print("- Objetivo -")
+        print("-Objetivo-")
         Logica.imprimirTablero(self.objetivo)
 
         self.inicial = inicial
-        print("- Inicial -")
+        print("-Inicial-")
         Logica.imprimirTablero(self.inicial)
         self.solucionRecursiva(inicial, None, 0)
 
@@ -86,7 +100,7 @@ class Logica:
     
     def imprimirMejorSolucion(self):
         if self.mejorSolucion == None:
-            print("* No se encontró solucion")
+            print("* No se encontro solucion")
             return
         print("* Paso por paso de la mejor solucion")
         self.imprimirPasosRecursivo(self.mejorSolucion, self.pasosMejorSolucion)
