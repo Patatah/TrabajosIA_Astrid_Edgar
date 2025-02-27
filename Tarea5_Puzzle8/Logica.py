@@ -57,6 +57,9 @@ class Logica:
             if(indiceEncontrado != -1): # Si tenemos un mejor camino, lo remplazamos en la lista abierta
                 if pasoActual.costo < self.listaAbierta[indiceEncontrado].costo:
                     self.listaAbierta[indiceEncontrado] = pasoActual
+                else:
+                
+                    return #No tiene caso seguir trabajando sobre una rama que ya está optimizada
             else: # Si es la primera vez que vemos este tablero, lo agregamos
                 self.listaAbierta.append(pasoActual)
 
