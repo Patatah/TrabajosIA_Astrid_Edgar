@@ -96,10 +96,14 @@ class Logica:
         self.listaCerrada.append(pasoActual)
 
     def calcularHeuristica(self, arreglo): 
-        # Este metodo te dices cuantos numeros hay diferentes al objetivo
-        comparacion = self.objetivo == arreglo
-        iguales = np.sum(comparacion)
-        return 9-iguales
+        distancia = 0
+        for i in range(3):
+            for j in range(3):
+                if arreglo[i, j] != 0:  # Ignorar el espacio vacío
+                    valor = arreglo[i, j]
+                    i_obj, j_obj = np.where(self.objetivo == valor)  # Buscar la posición en el objetivo
+                    distancia += abs(i - i_obj[0]) + abs(j - j_obj[0])
+        return distancia
     
     def imprimirMejorSolucion(self):
         if self.mejorSolucion == None:
