@@ -16,13 +16,14 @@ inicial = np.array([
 
 logica = Logica(objetivo)
 
-# Aqui es donde se ejecuta el algoritmo y donde tomamos tiempo
+# Aqui es donde se ejecuta el algoritmo y donde tomamos tiempo de inicio y fin
 inicio = time.time()
 logica.buscarSolucion(inicial)
 fin = time.time()
 
+print("--------------------------------------------------------------------")
 print("* Tiempo de ejecucion del algoritmo: ", fin - inicio, " segundos.")
-print("-----------------------------------------------------------------")
+print("--------------------------------------------------------------------")
 logica.imprimirMejorSolucion()
 
 

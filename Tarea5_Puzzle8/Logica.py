@@ -68,7 +68,7 @@ class Logica:
             if(pasoActual.costo < self.pesoMejorSolucion):
                 self.pesoMejorSolucion = pasoActual.costo
                 self.pasosMejorSolucion = pasoActual.movimiento
-                print("Solucion encontrada con", pasoActual.movimiento, "movimientos")
+                print("Solucion encontrada con", pasoActual.movimiento, "movimientos\n")
                 print("El algoritmo sigue trabajando...")
                 self.mejorSolucion = pasoActual
             return
