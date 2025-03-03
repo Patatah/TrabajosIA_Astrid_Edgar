@@ -107,9 +107,9 @@ class Logica:
     
     def imprimirMejorSolucion(self):
         if self.mejorSolucion == None:
-            print("* No se encontro solucion")
+            print("* No se encontró solucion")
             return
-        print("* Paso por paso de la mejor solucion")
+        print("* Paso por paso de la mejor solucion\n")
         self.imprimirPasosRecursivo(self.mejorSolucion, self.pasosMejorSolucion)
     
     def imprimirPasosRecursivo(self, pasoActual, movimientosMejorSolucion):
