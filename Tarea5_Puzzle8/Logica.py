@@ -118,8 +118,8 @@ class Logica:
             Logica.imprimirTablero(pasoActual.tablero)
             return
         
-        self.imprimirPasosRecursivo(pasoActual.padre, movimientosMejorSolucion)
-        movimientosMejorSolucion -= 1
+        self.imprimirPasosRecursivo(pasoActual.padre, movimientosMejorSolucion-1)
+
         print("Movimiento #", movimientosMejorSolucion, ":", Logica.detectarTipoDeMovimiento(pasoActual))
         Logica.imprimirTablero(pasoActual.tablero)
         
