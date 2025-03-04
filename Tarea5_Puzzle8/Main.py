@@ -9,21 +9,20 @@ objetivo = np.array([
 ])
 
 inicial = np.array([
-    [0, 8, 7],
-    [6, 5, 4],
-    [3, 2, 1]
+    [1, 0, 3],
+    [4, 8, 7],
+    [2, 6, 5]
 ])
 
 logica = Logica(objetivo)
 
-# Aqui es donde se ejecuta el algoritmo y donde tomamos tiempo de inicio y fin
+# Aqui es donde se ejecuta el algoritmo y donde tomamos tiempo
 inicio = time.time()
 logica.buscarSolucion(inicial)
 fin = time.time()
 
-print("--------------------------------------------------------------------")
 print("* Tiempo de ejecucion del algoritmo: ", fin - inicio, " segundos.")
-print("--------------------------------------------------------------------")
+print("-----------------------------------------------------------------")
 logica.imprimirMejorSolucion()
 
 
