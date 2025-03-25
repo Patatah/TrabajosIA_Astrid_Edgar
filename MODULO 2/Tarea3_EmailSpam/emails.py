@@ -28,10 +28,11 @@ textos = data['text'].apply(limpieza_texto)  # Asi se llama la columna en el csv
 labels = data['label']  # "Ham" o "Spam" en el csv. 
 
 # Convertimos los textos a numeros que entiende el modelo 
-vectorizer = CountVectorizer()
-X = vectorizer.fit_transform(textos)
+vectorizer = CountVectorizer() 
+X = vectorizer.fit_transform(textos) # Este tipo de objeto convierte texto a vectores que cuentan ocurrencias de palabras
 
 # Dividiendo en entrenamiento y prueba
+# Train test split es una funcion de scikit que divide el dataset de manera aleatoria, le pasamos los textos
 X_train, X_test, y_train, y_test = train_test_split(X, labels, test_size=0.2) # 80% entrenamiento, 20% prueba
 
 
