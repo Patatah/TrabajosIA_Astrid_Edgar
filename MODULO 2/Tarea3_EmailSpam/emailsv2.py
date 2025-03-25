@@ -4,6 +4,12 @@ from sklearn.feature_extraction.text import CountVectorizer # sklearn
 from sklearn.naive_bayes import MultinomialNB
 from sklearn.model_selection import train_test_split
 from sklearn.metrics import accuracy_score
+import os
+import joblib # guardar el modelo
+
+
+def existe_modelo():
+    return os.path.exists('MODULO 2/Tarea3_EmailSpam/modelo.pkl')
 
 def limpieza_texto(texto):
     texto = texto.lower() # Minúsculas
@@ -28,6 +34,13 @@ X = vectorizer.fit_transform(textos) # Este tipo de objeto convierte texto a vec
 # Train test split es una funcion de scikit que divide el dataset de manera aleatoria, le pasamos los textos ya vectorizados
 X_train, X_test, y_train, y_test = train_test_split(X, labels, test_size=0.2) # 80% entrenamiento, 20% prueba
 
-# Naive bayes
-model = MultinomialNB()
-model.fit(X_train, y_train)
+if not existe_modelo():
+    print("No se encontró el modelo, entrenando uno nuevo")
+    
+    # Modelo naive bayes
+    model = MultinomialNB()
+    model.fit(X_train, y_train)
+    joblib.dump(model, 'MODULO 2/Tarea3_EmailSpam/modelo.pkl') # Guardar el modelo recién entrenado
+else: 
+    print("Modelo encontrado en los archivos, cargando.")
+    model = joblib.load('MODULO 2/Tarea3_EmailSpam/modelo.pkl') # Cargar el modelo ya entrenado
