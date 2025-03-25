@@ -44,6 +44,12 @@ if not existe_modelo():
 else: 
     print("Modelo encontrado en los archivos, cargando.")
     model = joblib.load('MODULO 2/Tarea3_EmailSpam/modelo.pkl') # Cargar el modelo ya entrenado
+    
+print("------------------------------------------------------")
+# Esto comprueba que tantas del test salieron bien y nos da un porcentaje de predicción
+prediccion = model.predict(X_test)
+print(f"Precisión: {accuracy_score(y_test, prediccion)*100:.2f}%")
+print  ("------------------------------------------------------")
 
 # Probando con un email
 email = ["Subject: Win a lot of money fast exclusive offer just for you"]
