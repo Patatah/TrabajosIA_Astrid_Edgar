@@ -44,3 +44,18 @@ if not existe_modelo():
 else: 
     print("Modelo encontrado en los archivos, cargando.")
     model = joblib.load('MODULO 2/Tarea3_EmailSpam/modelo.pkl') # Cargar el modelo ya entrenado
+
+# Probando con un email
+email = ["Subject: Win a lot of money fast exclusive offer just for you"]
+print(email)
+email = [limpieza_texto(email) for email in email]
+email_vec = vectorizer.transform(email)
+print(f"¿Es spam? {model.predict(email_vec)[0]}")
+print  ("------------------------------------------------------")
+
+# Probando con otro email
+email2 = ["Subject: Hey this is Astrid from work, I need your help with something"]
+print(email2)
+email2 = [limpieza_texto(email) for email in email2]
+email2_vec = vectorizer.transform(email2)
+print(f"¿Es spam? {model.predict(email2_vec)[0]}")
