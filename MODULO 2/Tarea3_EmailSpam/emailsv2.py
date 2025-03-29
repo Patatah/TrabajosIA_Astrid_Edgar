@@ -6,6 +6,9 @@ from sklearn.model_selection import train_test_split
 from sklearn.metrics import accuracy_score
 import os
 import joblib # guardar el modelo
+import tkinter as tk
+from tkinter import messagebox
+
 
 
 def existe_modelo():
@@ -65,3 +68,22 @@ print(email2)
 email2 = [limpieza_texto(email) for email in email2]
 email2_vec = vectorizer.transform(email2)
 print(f"¿Es spam? {model.predict(email2_vec)[0]}")
+
+ventana = tk.Tk()
+ventana.title("Analizador de Spam o Ham")
+ventana.geometry("400x300")
+
+#Apartado grafico
+
+tk.Label(ventana, text="Ingresa tu email:").pack(pady=5)
+campo_texto = tk.Text(ventana, height=10, width=40)
+campo_texto.pack(pady=5)
+
+def subir_texto(): # Procesar si el email es spam
+    print("Hola mundo")
+
+boton_subir = tk.Button(ventana, text="Subir Texto", command=subir_texto)
+boton_subir.pack(pady=10)
+
+# Iniciar la ventana
+ventana.mainloop()
