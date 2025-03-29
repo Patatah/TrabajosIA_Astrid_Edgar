@@ -23,6 +23,22 @@ def limpieza_texto(texto):
     texto = re.sub(r'[^\w\s]', '', texto)
     return texto
 
+
+def subir_texto(): # Procesar si el email es spam
+    print("Hola mundo")
+    texto = campo_texto.get("1.0", tk.END)
+    if texto.strip() == "":
+        messagebox.showwarning("Advertencia", "Por favor ingresa un texto.")
+        return
+    else:
+        texto = limpieza_texto(texto)
+        texto_vec = vectorizer.transform([texto])
+        prediccion = model.predict(texto_vec)[0]
+        if prediccion == "spam":
+            messagebox.showinfo("Resultado", "El email es Spam.")
+        else:
+            messagebox.showinfo("Resultado", "El email es Ham.")
+
 # Con pandas podemos leer los datos y luego los guardamos en variables
 # spam_ham_dataset.csv
 data = pd.read_csv('MODULO 2/Tarea3_EmailSpam/spam_ham_dataset.csv')
@@ -78,9 +94,6 @@ ventana.geometry("400x300")
 tk.Label(ventana, text="Ingresa tu email:").pack(pady=5)
 campo_texto = tk.Text(ventana, height=10, width=40)
 campo_texto.pack(pady=5)
-
-def subir_texto(): # Procesar si el email es spam
-    print("Hola mundo")
 
 boton_subir = tk.Button(ventana, text="Subir Texto", command=subir_texto)
 boton_subir.pack(pady=10)
