@@ -81,4 +81,5 @@ while True:
 
     
     if receta == '': break #salir si ya leiste todos
+    if i == 100: break 
     i+=1
