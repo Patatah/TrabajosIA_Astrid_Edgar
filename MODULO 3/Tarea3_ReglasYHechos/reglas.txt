@@ -1,0 +1,6 @@
+T(Calabaza_confitera) ∧ T('sazonador_mexicano') ∧ T(Mezcla_de_Especias) ∧ T(Miel) ∧ T(Mantequilla) ∧ T(Aceite_de_oliva) ∧ T(Sal) → PuedeHacer(arriba_baked_winter_squash_mexican_style)
+T('masa_de_pizza_preparada') ∧ T('empanada_de_salchicha') ∧ T(huevos) ∧ T(Leche_) ∧ T(sal_y_pimienta) ∧ T(queso) → PuedeHacer(a_bit_different_breakfast_pizza)
+T(Carne_molida) ∧ T('cebollas_amarillas') ∧ T(Tomates_cortados_en_cubitos) ∧ T(Pasta_de_Tomate) ∧ T(Sopa_de_tomate) ∧ T('tomates_rotel') ∧ T(Judías_rojas) ∧ T(Agua) ∧ T(chile_en_polvo) ∧ T(Comino_molido) ∧ T(Sal) ∧ T(Lechugas) ∧ T(Queso_cheddar) → PuedeHacer(all_in_the_kitchen_chili)
+T('queso_untable_con_ajo_y_hierbas') ∧ T(Berenjenas) ∧ T(Chalote) ∧ T(Perejil) ∧ T(Estragón) ∧ T(Aceite_de_oliva) ∧ T(Vinagre_de_vino_tinto) ∧ T(Sal) ∧ T(Pimienta) ∧ T(Pimiento_morrón) ∧ T(Pimiento_amarillo) → PuedeHacer(alouette_potatoes)
+T(Jugo_de_tomate) ∧ T(Vinagre_de_sidra_de_manzana) ∧ T(Azúcar_) ∧ T(Sal) ∧ T(Pimienta) ∧ T(Aceite_de_clavo) ∧ T(aceite_de_canela) ∧ T('mostaza_seca') → PuedeHacer(amish_tomato_ketchup_for_canning)
+T(Leche_) ∧ T(de_helado_de_vainilla) ∧ T('concentrado_DE_zumo_DE_manzana_congelado') ∧ T(Apple) → PuedeHacer(apple_a_day_milk_shake)
