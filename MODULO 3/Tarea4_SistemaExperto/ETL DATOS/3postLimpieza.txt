@@ -1,59 +1,59 @@
-salt : 85801
+salt : 95150
 sugar : 69137
+garlic : 55994
 butter : 54994
 eggs : 53284
-onion : 39065
-water : 34914
+flour : 44749
+onion : 39109
+water : 34927
 olive oil : 32821
 milk : 26641
-flour : 26266
-garlic cloves : 25748
 brown sugar : 24045
-pepper : 22319
+pepper : 22380
 lemon juice : 19657
-garlic : 18087
-all-purpose flour : 17659
-baking powder : 17504
+baking powder : 17640
 salt and pepper : 15415
-parmesan cheese : 14849
+parmesan cheese : 15262
+parsley : 14657
+vegetable oil : 14450
 baking soda : 14099
-vegetable oil : 13912
 beef broth : 13380
 vanilla : 13315
-black pepper : 13097
+black pepper : 13268
 cinnamon : 12560
 sour cream : 12509
-tomatoes : 11950
+tomatoes : 12355
+ground black pepper : 11096
 garlic powder : 10887
 vanilla extract : 10271
 cream cheese : 10212
 oil : 9927
 honey : 9897
-onions : 9872
-garlic clove : 9778
+onions : 9891
 celery : 9541
 cheddar cheese : 9105
 mayonnaise : 9026
 unsalted butter : 8936
 soy sauce : 8856
+cilantro : 8102
 paprika : 7982
+ginger : 7855
 worcestershire sauce : 7832
 extra virgin olive oil : 7704
-fresh parsley : 7656
 cornstarch : 7486
-fresh ground black pepper : 7160
-carrots : 7023
-parsley : 7001
+carrots : 7069
 chili powder : 6984
 bacon : 6949
 ground cinnamon : 6864
-carrot : 6707
-lemon : 6692
+lemon : 6795
+carrot : 6754
 potatoes : 6507
-nutmeg : 6299
-cayenne pepper : 6285
+nutmeg : 6386
+basil : 6363
+cayenne pepper : 6290
 orange juice : 6279
 ground cumin : 6169
+lime juice : 6102
 ground beef : 5824
 green onions : 5814
 red onion : 5777
@@ -61,51 +61,46 @@ walnuts : 5765
 pecans : 5752
 dijon mustard : 5599
 green onion : 5585
-kosher salt : 5583
+mozzarella cheese : 5358
 heavy cream : 5201
+thyme : 5164
+oregano : 5145
 margarine : 5114
-mozzarella cheese : 5061
 dried oregano : 4882
-zucchini : 4591
+mushrooms : 4797
+zucchini : 4631
 raisins : 4487
 red bell pepper : 4450
 tomato sauce : 4402
-fresh cilantro : 4360
 chicken stock : 4352
 tomato paste : 4335
 canola oil : 4315
 green pepper : 4301
-fresh ginger : 4255
+ground pepper : 4298
 cumin : 4233
-oregano : 4185
 juice of : 3995
 boneless skinless chicken breasts : 3994
-ground black pepper : 3936
 buttermilk : 3928
 ketchup : 3901
 balsamic vinegar : 3850
-lime juice : 3749
-cilantro : 3742
 ground ginger : 3655
-fresh basil : 3636
-ginger : 3600
 onion powder : 3598
 dried thyme : 3532
 diced tomatoes : 3462
 vinegar : 3395
 green bell pepper : 3287
+bay leaf : 3283
 egg whites : 3258
-bay leaf : 3253
 dried basil : 3252
+rosemary : 3240
 red wine vinegar : 3223
-fresh ground pepper : 3220
+chives : 3167
 whipping cream : 3158
-sea salt : 3138
 dry white wine : 3130
-salt & freshly ground black pepper : 3123
+salt & ly ground black pepper : 3123
 whole wheat flour : 3053
+breadcrumbs : 3031
 sesame oil : 2988
-thyme : 2980
 curry powder : 2959
 crushed red pepper flakes : 2936
 ground nutmeg : 2925
@@ -113,31 +108,30 @@ white wine : 2890
 dry mustard : 2839
 white pepper : 2837
 chicken breasts : 2793
-breadcrumbs : 2773
 bananas : 2747
 shortening : 2744
 cheese : 2738
 boiling water : 2733
-basil : 2727
-mushrooms : 2718
 salsa : 2704
 garlic salt : 2635
 egg yolks : 2623
 semi-sweet chocolate chips : 2606
 red pepper flakes : 2602
+bay leaves : 2590
+plain yogurt : 2585
 lean ground beef : 2560
 cider vinegar : 2540
-bay leaves : 2537
+spinach : 2535
 feta cheese : 2532
 sharp cheddar cheese : 2490
 black beans : 2468
 half-and-half : 2460
-scallions : 2425
+scallions : 2437
 nuts : 2421
 monterey jack cheese : 2414
 lime : 2393
+strawberries : 2382
 peanut butter : 2364
-fresh lime juice : 2353
 banana : 2327
 evaporated milk : 2325
 ground cloves : 2321
@@ -145,31 +139,33 @@ yellow onion : 2297
 seasoning salt : 2261
 red pepper : 2252
 chocolate chips : 2232
+dill : 2201
 shallots : 2197
 apples : 2193
 tabasco sauce : 2188
-fresh thyme : 2184
 white vinegar : 2184
 cucumber : 2176
+cream : 2168
 cream of mushroom soup : 2163
 salt & pepper : 2156
 cold water : 2138
 sesame seeds : 2134
+lemon zest : 2127
 skim milk : 2125
 hot sauce : 2124
 chicken : 2115
 cooking spray : 2112
-cream : 2103
-fresh mushrooms : 2079
+green beans : 2105
+gingerroot : 2071
 shallot : 2066
 warm water : 2054
 swiss cheese : 2050
 almond extract : 2046
 ground coriander : 2041
-plain yogurt : 2031
 mushroom : 2020
-lemon zest : 1993
+shrimp : 2013
 italian seasoning : 1990
+blueberries : 1986
 black olives : 1981
 maple syrup : 1962
 lemons : 1946
@@ -178,26 +174,27 @@ cooked chicken : 1931
 celery ribs : 1919
 bread : 1905
 sweetened condensed milk : 1904
-shrimp : 1903
 sliced mushrooms : 1899
 avocado : 1894
-turmeric : 1858
+turmeric : 1868
 cayenne : 1855
+green chilies : 1849
 cabbage : 1844
-green chilies : 1810
-fresh rosemary : 1807
 hot water : 1795
 cocoa : 1791
+broccoli : 1780
 zest of : 1758
-chives : 1757
 boneless skinless chicken breast halves : 1753
 molasses : 1740
 lettuce : 1733
 flour tortillas : 1728
+corn : 1725
+coriander : 1721
 almonds : 1709
 pineapple juice : 1704
 egg white : 1679
 orange : 1673
+basil leaves : 1668
 pine nuts : 1663
 cherry tomatoes : 1651
 ham : 1646
@@ -212,29 +209,24 @@ active dry yeast : 1582
 frozen peas : 1577
 ice : 1568
 cocoa powder : 1551
+coconut : 1550
 cream of chicken soup : 1550
 red wine : 1548
 barbecue sauce : 1547
 ricotta cheese : 1538
-corn : 1533
-green beans : 1528
 rolled oats : 1526
 scallion : 1525
 cornmeal : 1522
 rice vinegar : 1519
 potato : 1515
 crushed pineapple : 1512
-broccoli : 1508
-coconut : 1506
 bell pepper : 1506
-fresh dill : 1502
-sweet potatoes : 1476
+sweet potatoes : 1486
 rice : 1463
 cool whip : 1457
-rosemary : 1433
+jalapeno pepper : 1436
 white wine vinegar : 1426
-gingerroot : 1416
-fresh chives : 1410
+asparagus : 1417
 pure vanilla extract : 1405
 vegetable broth : 1403
 red potatoes : 1400
@@ -244,29 +236,26 @@ beer : 1373
 whipped cream : 1365
 egg yolk : 1349
 plain flour : 1339
-jalapeno pepper : 1333
 dried cranberries : 1324
-spinach : 1316
+sage : 1314
 white onion : 1311
 mustard : 1306
 apple juice : 1301
-strawberries : 1299
 chickpeas : 1295
 vodka : 1291
+yeast : 1286
 sweet onion : 1286
 ground allspice : 1277
 dried parsley : 1271
-of fresh mint : 1267
+of  mint : 1267
 fish sauce : 1267
-blueberries : 1264
 slivered almonds : 1259
 vegetable stock : 1256
 bread flour : 1253
-yeast : 1249
 flat leaf parsley : 1243
 boneless skinless chicken breast : 1236
 hot pepper sauce : 1228
-fresh spinach : 1219
+jalapeno : 1221
 blue cheese : 1196
 sliced almonds : 1192
 applesauce : 1185
@@ -278,24 +267,23 @@ frozen chopped spinach : 1166
 light corn syrup : 1164
 dried rosemary : 1155
 clove : 1150
+cranberries : 1150
+peaches : 1147
 crushed tomatoes : 1146
-jalapeno : 1126
+pineapple : 1139
 unsweetened cocoa powder : 1120
 red onions : 1096
 coarse salt : 1095
 white bread : 1094
 spaghetti : 1086
-fresh strawberries : 1083
-ground pepper : 1078
 cream of tartar : 1076
-coriander : 1064
-pasta : 1061
+pasta : 1073
+lemon rind : 1061
 cauliflower : 1058
 heavy whipping cream : 1057
 cottage cheese : 1056
 pork tenderloin : 1044
 strawberry : 1041
-asparagus : 1040
 french bread : 1037
 cinnamon stick : 1037
 limes : 1033
@@ -305,29 +293,29 @@ pork chops : 1024
 red bell peppers : 1015
 elbow macaroni : 1007
 spaghetti sauce : 1006
+pumpkin : 997
 celery seed : 994
 romaine lettuce : 993
 beef stock : 991
 dry breadcrumbs : 990
 avocados : 985
 dry red wine : 985
-basil leaves : 981
+broccoli florets : 985
 corn tortillas : 971
 ground turkey : 971
-fresh oregano : 960
+jalapeno peppers : 960
 brandy : 955
-fresh garlic : 951
 baby spinach : 949
 ground red pepper : 946
 leeks : 945
-pumpkin : 944
 chili sauce : 943
 peanuts : 941
 baby carrots : 932
-peaches : 928
 oatmeal : 921
 graham cracker crumbs : 913
 cucumbers : 912
+tarragon : 910
+mint leaves : 909
 green peppers : 899
 salt and black pepper : 898
 yellow cake mix : 898
@@ -335,6 +323,7 @@ creamy peanut butter : 896
 ground pork : 895
 frozen corn : 888
 ice cubes : 884
+jalapenos : 879
 semisweet chocolate : 877
 oranges : 876
 velveeta cheese : 869
@@ -347,16 +336,19 @@ orange rind : 860
 hoisin sauce : 859
 tortilla chips : 855
 low sodium soy sauce : 852
-jalapeno peppers : 848
+dill weed : 848
 flaked coconut : 848
 russet potatoes : 846
+cumin seed : 845
 rum : 844
-cumin seed : 843
 ground cardamom : 839
 cake flour : 838
+raspberries : 832
+goat cheese : 831
 roma tomatoes : 828
 butternut squash : 825
 celery salt : 820
+italian parsley : 819
 cooked ham : 819
 oats : 818
 cinnamon sticks : 817
@@ -365,99 +357,89 @@ dates : 813
 cloves : 813
 cracked black pepper : 810
 chopped tomatoes : 810
-broccoli florets : 808
 frozen spinach : 797
 garam masala : 790
-fresh coarse ground black pepper : 790
+coarse ground black pepper : 790
 lemon peel : 788
 leek : 783
+mango : 783
 boneless chicken breasts : 782
-jalapenos : 779
 yellow cornmeal : 776
-fresh basil leaf : 766
-dill weed : 764
+crabmeat : 769
+basil leaf : 766
 baking potatoes : 761
-pineapple : 757
 provolone cheese : 755
-sage : 753
-goat cheese : 751
 black peppercorns : 749
 ground turmeric : 745
 poultry seasoning : 745
 whole kernel corn : 738
 rice wine vinegar : 736
 whole cloves : 736
+unsweetened applesauce : 735
 american cheese : 735
-unsweetened applesauce : 734
+peas : 730
 prepared horseradish : 728
 quick-cooking oats : 728
 light soy sauce : 724
-fresh blueberries : 722
 yellow onions : 719
 sunflower seeds : 719
 large shrimp : 718
+egg noodles : 716
 golden raisin : 715
-unbleached all-purpose flour : 715
 tomato juice : 712
-egg noodles : 709
 tomato puree : 709
 liquid smoke : 709
 hamburger buns : 708
 refried beans : 705
 granny smith apples : 704
+marjoram : 703
 pinto beans : 702
 pumpkin pie spice : 701
-mango : 700
-dill : 699
 cajun seasoning : 699
-crabmeat : 698
 mustard seeds : 698
 penne pasta : 695
 nonstick cooking spray : 693
 artichoke hearts : 688
-fresh basil leaves : 687
 yellow bell pepper : 687
 bittersweet chocolate : 682
 celery rib : 682
 corn syrup : 681
 cornflour : 679
 pepperoni : 677
+linguine : 676
 prosciutto : 675
-lemon rind : 672
 apple cider : 672
 light cream : 671
 rind of : 669
+sauerkraut : 669
 bell peppers : 668
 sweet red pepper : 668
 parmigiano-reggiano cheese : 665
+lime zest : 665
 ice cube : 664
 pecan halves : 664
 couscous : 664
-sauerkraut : 663
-lime zest : 662
+tuna : 662
 tequila : 661
 soymilk : 660
 dried onion flakes : 660
 brown rice : 659
-fresh coriander : 657
 splenda granular : 656
-fresh gingerroot : 655
-tuna : 654
+cilantro leaves : 655
 white chocolate chips : 654
 shredded cheddar cheese : 653
 taco seasoning mix : 651
-linguine : 649
+pumpkin puree : 651
 catsup : 649
 long grain rice : 645
 panko breadcrumbs : 644
-fresh mint leaves : 642
 dark rum : 641
 chicken thighs : 640
+button mushrooms : 638
 whipped topping : 637
 romano cheese : 637
 medium shrimp : 637
 dried apricot : 636
-pumpkin puree : 635
 spring onions : 632
 chicken breast : 632
 pesto sauce : 632
@@ -468,34 +450,33 @@ low-fat milk : 630
 caraway seed : 628
 green olives : 628
 onion soup mix : 626
+bean sprouts : 624
 chocolate syrup : 624
-peas : 624
 juice and zest of : 623
 dry yeast : 621
 chicken wings : 619
-minced garlic cloves : 619
 mustard powder : 618
 oyster sauce : 616
 lemon pepper : 615
 garbanzo beans : 615
-button mushrooms : 612
 mashed potatoes : 611
 parsley flakes : 608
 old bay seasoning : 608
-fresh parsley leaves : 607
+parsley leaves : 607
 beef : 606
 yellow squash : 606
 cranberry juice : 606
 green cabbage : 604
+horseradish : 602
+spinach leaves : 599
 white rice : 598
+coriander leaves : 596
 diced green chilies : 594
 orange marmalade : 592
 corn flakes : 592
 cannellini beans : 591
 hamburger : 589
 cashews : 587
-cranberries : 587
-raspberries : 585
 italian sausage : 584
 fennel seed : 584
 mandarin oranges : 581
@@ -505,26 +486,21 @@ vegetable shortening : 580
 sweet potato : 579
 red kidney beans : 579
 grape tomatoes : 579
-fresh green beans : 577
+pears : 576
 white flour : 575
-bean sprouts : 574
 basmati rice : 572
 old fashioned oats : 572
 yellow mustard : 568
 kahlua : 565
 light sour cream : 564
-horseradish : 563
-fresh cranberries : 563
-fresh sage : 561
-marjoram : 560
 table salt : 558
 wheat germ : 556
-plain  yogurt : 554
 shredded coconut : 554
-pears : 551
 dark chocolate : 551
 gruyere cheese : 549
+pineapple chunks : 547
 canned pumpkin : 546
+snow peas : 544
 sun-dried tomato : 543
 pizza sauce : 543
 tomato soup : 543
@@ -533,12 +509,15 @@ light mayonnaise : 542
 orzo pasta : 541
 powdered milk : 541
 baby spinach leaves : 539
+lasagna noodles : 538
 unsweetened chocolate : 537
+thyme leaves : 536
 mint : 535
 greek yogurt : 534
 monterey jack pepper cheese : 533
 tahini : 530
-lasagna noodles : 529
+rhubarb : 528
+lemongrass : 526
 red peppers : 526
 iceberg lettuce : 526
 ranch dressing : 525
@@ -547,7 +526,6 @@ lemon wedge : 524
 unsweetened cocoa : 522
 italian dressing : 521
 dried marjoram : 521
-fresh cilantro leaves : 521
 marshmallows : 515
 unflavored gelatin : 514
 sweet paprika : 514
@@ -557,9 +535,7 @@ milk chocolate chips : 511
 roasted red peppers : 511
 macaroni : 510
 bourbon : 509
-pineapple chunks : 509
 salad oil : 508
-snow peas : 506
 red food coloring : 502
 dried sage : 500
 whole wheat bread : 500
@@ -572,13 +548,13 @@ whole tomatoes : 493
 dried parsley flakes : 488
 dried tarragon : 488
 quick oats : 487
-fresh flat-leaf parsley : 487
+flat-leaf parsley : 487
 mangoes : 481
+coffee : 479
 chicken bouillon cubes : 479
 unbleached flour : 478
 teriyaki sauce : 478
 maraschino cherry : 478
-coffee : 476
 lentils : 475
 vanilla yogurt : 474
 chopped tomato : 473
@@ -586,9 +562,9 @@ dry onion soup mix : 473
 1% low-fat milk : 472
 butterscotch chips : 472
 marinara sauce : 472
-fresh tarragon : 471
 vanilla essence : 468
 asiago cheese : 466
+fruit : 465
 cherry pie filling : 464
 smoked paprika : 464
 cream of celery soup : 463
@@ -603,24 +579,22 @@ angel hair pasta : 457
 pasta sauce : 456
 toasted sesame seeds : 455
 self raising flour : 454
+corn kernels : 453
 instant vanilla pudding : 453
 chocolate : 453
 cilantro leaf : 453
 diced onion : 453
-salt & fresh ground pepper : 452
+salt &  ground pepper : 452
 quinoa : 450
 orange peel : 449
-lemongrass : 448
 chicken pieces : 447
-vegetable oil cooking spray : 444
 bisquick : 444
 onion salt : 442
+salmon : 442
 part-skim mozzarella cheese : 439
-tarragon : 439
 instant coffee : 438
 hazelnuts : 438
 turmeric powder : 438
-rhubarb : 436
 lettuce leaves : 436
 cooked chicken breasts : 435
 corn oil : 434
@@ -629,6 +603,7 @@ ground mustard : 433
 sausage : 432
 red chili powder : 432
 cooked brown rice : 431
+portabella mushrooms : 430
 dried dill : 428
 yukon gold potatoes : 426
 low-fat sour cream : 425
@@ -641,20 +616,15 @@ chili : 417
 arborio rice : 416
 ground cayenne pepper : 415
 noodles : 414
-fresh parmesan cheese : 413
 italian salad dressing : 413
 creme fraiche : 413
 triple sec : 412
-portabella mushrooms : 412
-salmon : 412
 ice water : 411
 chicken breast halves : 411
 condensed cream of mushroom soup : 411
 creamed corn : 411
-italian parsley : 410
 chorizo sausage : 410
-fresh breadcrumb : 410
-fresh italian parsley : 409
+breadcrumb : 410
 plain breadcrumbs : 408
 reduced sodium soy sauce : 408
 cumin powder : 407
@@ -662,7 +632,6 @@ dark sesame oil : 407
 self-raising flour : 407
 grenadine : 407
 italian bread : 405
-fresh tomatoes : 405
 toasted sesame oil : 405
 club soda : 404
 tortillas : 404
@@ -676,17 +645,17 @@ brewed coffee : 398
 cardamom : 398
 frozen strawberries : 397
 ground chicken : 396
+kale : 393
 smoked salmon : 391
 miniature marshmallows : 391
 bacon bits : 391
-fresh lemon rind : 389
 creole seasoning : 389
+frozen whipped topping : 388
 amaretto : 388
 low-fat cheddar cheese : 387
 mini marshmallows : 386
 grand marnier : 385
 dried thyme leaves : 382
-fresh pineapple : 382
 kalamata olives : 382
 light cream cheese : 381
 cooked turkey : 381
@@ -695,21 +664,19 @@ salted butter : 380
 diced tomato : 378
 pie crusts : 377
 mexican blend cheese : 377
-fresh asparagus : 377
-coriander leaves : 377
 rice krispies : 376
 cream-style corn : 376
 granny smith apple : 376
+fettuccine : 375
 mint leaf : 375
 poppy seeds : 373
 beef bouillon cubes : 372
 vanilla instant pudding mix : 371
 broccoli floret : 370
 gorgonzola : 370
-frozen whipped topping : 369
 seasoned bread crumbs : 368
-spinach leaves : 367
 peppercorns : 366
+cherries : 366
 yellow pepper : 366
 red chilies : 365
 boneless pork chops : 365
@@ -721,11 +688,9 @@ olive : 364
 sweet onions : 363
 pizza dough : 363
 arugula : 361
-fresh garlic cloves : 360
 lettuce leaf : 360
 chipotle chile in adobo : 360
 beets : 359
-kale : 359
 sunflower oil : 359
 coriander powder : 358
 pancetta : 358
@@ -752,9 +717,9 @@ coriander seed : 342
 feta : 342
 white onions : 341
 condensed cream of chicken soup : 341
-fettuccine : 341
 pearl barley : 341
 plain low-fat yogurt : 339
+herbs : 339
 parsnips : 339
 vidalia onion : 339
 bow tie pasta : 334
@@ -775,7 +740,9 @@ turkey : 327
 lard : 327
 cooked white rice : 327
 bisquick baking mix : 326
-fresh thyme leave : 326
+sage leaves : 326
+shiitake mushrooms : 326
+thyme leave : 326
 sliced water chestnuts : 324
 graham crackers : 323
 pita bread : 323
@@ -787,6 +754,7 @@ whole chickens : 317
 low fat cottage cheese : 317
 rice wine : 317
 marinated artichoke hearts : 316
+cracked pepper : 315
 flank steaks : 315
 baking cocoa : 314
 tomatoes and green chilies : 313
@@ -797,7 +765,6 @@ deli ham : 312
 white beans : 310
 sourdough bread : 310
 wonton wrappers : 309
-cherries : 308
 smooth peanut butter : 306
 dijon-style mustard : 306
 red chile : 306
@@ -808,23 +775,24 @@ ground lamb : 305
 guacamole : 304
 saltine crackers : 303
 green food coloring : 302
+lump crabmeat : 301
 english cucumber : 300
 berries : 300
 beef stew meat : 299
-fresh tomato : 299
+chili pepper : 299
+tomato : 299
 golden syrup : 298
 chili flakes : 298
 wine vinegar : 297
 wild rice : 297
 olive oil flavored cooking spray : 297
 great northern beans : 297
-fresh mozzarella cheese : 297
 hot dogs : 296
 ranch dressing mix : 296
-minced garlic clove : 296
 radishes : 295
 cumin seeds : 295
 frozen raspberries : 293
+sea scallops : 293
 whole berry cranberry sauce : 293
 spring onion : 292
 rotini pasta : 292
@@ -838,7 +806,7 @@ canned tomatoes : 288
 chunky salsa : 288
 low-fat buttermilk : 287
 tuna in water : 286
-sea scallops : 286
+peach : 285
 frozen chopped broccoli : 285
 mixed salad greens : 284
 apricot jam : 284
@@ -858,15 +826,15 @@ bok choy : 277
 coleslaw mix : 277
 salted peanuts : 276
 pineapple tidbits : 276
-corn kernels : 276
-thyme leaves : 276
+blackberries : 276
 xanthan gum : 276
+brussels sprouts : 275
 dark soy sauce : 275
 artificial sweetener : 275
 spicy brown mustard : 274
 chicken bouillon : 273
 olives : 272
-fresh broccoli : 272
+pear : 272
 chuck roast : 272
 lemon slice : 272
 desiccated coconut : 272
@@ -876,17 +844,15 @@ pumpkin seeds : 271
 frozen puff pastry : 270
 cognac : 268
 roasting chickens : 268
-lump crabmeat : 268
 coconut oil : 268
 frozen blueberries : 268
 picante sauce : 267
 food coloring : 267
 crunchy peanut butter : 267
-mint leaves : 267
 mixed vegetables : 267
 sliced ripe olives : 266
 bicarbonate of soda : 266
-fresh raspberry : 265
+raspberry : 265
 anchovy fillets : 265
 summer squash : 265
 extra firm tofu : 264
@@ -896,30 +862,29 @@ reduced-fat cream cheese : 264
 dried breadcrumbs : 263
 rigatoni pasta : 262
 barley : 262
-pear : 262
 skinless chicken breasts : 261
 watermelon : 261
 phyllo dough : 260
 roma tomato : 260
-fresh thyme leaves : 260
 beef brisket : 260
 fettuccine pasta : 260
 pitted dates : 259
-fresh breadcrumbs : 258
 dried basil leaves : 258
+scallops : 258
 chinese five spice powder : 258
 mini chocolate chip : 257
 stewing beef : 257
-fruit : 256
 long-grain white rice : 256
 pork and beans : 256
 five-spice powder : 255
 chili paste : 255
 reduced-fat sour cream : 255
 rotel tomatoes : 254
+okra : 254
 red chili pepper : 254
 french-fried onions : 254
 cauliflower florets : 253
+mussels : 253
 sun-dried tomato packed in oil : 253
 tofu : 252
 cooked shrimp : 252
@@ -928,20 +893,19 @@ baked beans : 252
 fontina cheese : 252
 herbes de provence : 252
 light olive oil : 251
+white mushrooms : 250
 light rum : 250
 peppermint extract : 250
 lean ground turkey : 250
 raspberry jam : 249
 frozen broccoli : 249
 crisco : 249
-peach : 249
 agave nectar : 248
 round steaks : 247
 low-fat cream cheese : 247
 chicken drumsticks : 247
 star anise : 247
 devil's food cake mix : 247
-fresh raspberries : 247
 english muffins : 246
 button mushroom : 246
 mild cheddar cheese : 244
@@ -956,15 +920,12 @@ low-fat plain yogurt : 241
 dried onion : 240
 pitted black olives : 240
 ground sage : 240
-shiitake mushrooms : 239
 acorn squash : 238
 fine dry breadcrumb : 238
 light coconut milk : 238
-brussels sprouts : 237
 unsweetened coconut milk : 237
 strong coffee : 237
 pimientos : 236
-scallops : 236
 nutritional yeast : 236
 chunky peanut butter : 235
 chili-garlic sauce : 235
@@ -974,7 +935,6 @@ corn kernel : 234
 chilies : 234
 carbonated lemon-lime beverage : 233
 crescent rolls : 233
-chili pepper : 233
 adobo sauce : 233
 napa cabbage : 233
 mint sprig : 233
@@ -982,7 +942,6 @@ vanilla wafers : 233
 prepared yellow mustard : 233
 chocolate cake mix : 233
 ginger powder : 232
-fresh spinach leaves : 232
 marshmallow creme : 232
 chili beans : 232
 corned beef : 232
@@ -1013,11 +972,9 @@ miniature marshmallow : 226
 champagne : 226
 beans : 226
 coconut extract : 226
-white mushrooms : 225
 hot italian sausage : 225
 blanched almond : 225
 ramen noodles : 224
-herbs : 223
 sun-dried tomatoes packed in oil : 223
 kiwi fruits : 223
 flax seed : 223
@@ -1034,8 +991,6 @@ mango chutney : 220
 beef bouillon cube : 220
 caraway seeds : 220
 ground sirloin : 220
-fresh peaches : 219
-fresh coriander leaves : 219
 curry leaves : 219
 cracker : 218
 distilled white vinegar : 218
@@ -1059,7 +1014,6 @@ beef bouillon granules : 213
 ground thyme : 213
 clams : 212
 taco sauce : 212
-mussels : 212
 wheat bran : 212
 coarse grain mustard : 212
 dried mint : 211
@@ -1077,14 +1031,15 @@ philadelphia cream cheese : 209
 strawberry jam : 209
 water chestnut : 208
 low-fat vanilla yogurt : 208
+pineapple chunk : 208
 chicken tenders : 208
-cracked pepper : 207
 steak : 207
 celery seeds : 207
 dried chipotle powder : 207
 smoked bacon : 206
 rye flour : 206
 beef bouillon : 206
+swiss chard : 206
 red curry paste : 206
 tomatillos : 205
 vidalia onions : 205
@@ -1110,7 +1065,6 @@ hot pepper flakes : 201
 boneless chicken breast : 201
 broth : 201
 onion flakes : 201
-swiss chard : 201
 orange extract : 200
 rubbed sage : 200
 coarse black pepper : 200
@@ -1125,14 +1079,12 @@ popped popcorn : 199
 chicken breast fillets : 199
 accent seasoning : 198
 pork loin chops : 198
-fresh fruit : 198
 green chili pepper : 198
 marsala wine : 197
 canned black beans : 197
 frozen lemonade concentrate : 197
 meat : 197
 yellow food coloring : 197
-fresh sage leaves : 197
 semi-sweet chocolate baking squares : 197
 dried ancho chile powder : 197
 angel food cake : 196
@@ -1157,12 +1109,11 @@ turnips : 194
 granola cereal : 194
 italian salad dressing mix : 193
 purple onion : 193
-okra : 193
 cointreau liqueur : 193
 pam cooking spray : 193
-fresh corn : 192
 neufchatel cheese : 192
 evaporated skim milk : 191
+pork shoulder : 191
 small curd cottage cheese : 191
 frozen green pea : 190
 yams : 190
@@ -1175,12 +1126,10 @@ wine : 189
 crushed pineapple in juice : 189
 gouda cheese : 189
 dark red kidney beans : 189
-coarse sea salt : 189
 minute rice : 188
 beef roast : 188
 dried sweetened cranberries : 188
 white bread flour : 187
-pork shoulder : 187
 fast rising yeast : 187
 seasoned stuffing mix : 187
 lamb : 186
@@ -1191,8 +1140,8 @@ dried fruit : 185
 grainy mustard : 185
 garlic granules : 185
 dry vermouth : 184
+chili peppers : 184
 anise seed : 184
-pineapple chunk : 184
 meatballs : 184
 uncooked rice : 184
 reduced-fat cheddar cheese : 184
@@ -1211,23 +1160,22 @@ cheese tortellini : 181
 dark molasses : 180
 turnip : 180
 mushroom stems and pieces : 180
-fine sea salt : 180
 ground round : 179
 unsweetened coconut : 178
 toffee pieces : 178
-fresh corn kernels : 177
+parsley sprig : 177
 pimento stuffed olive : 177
 artichokes : 177
 corn flake crumbs : 177
 kaiser rolls : 177
 chopped pimiento : 177
-fresh broccoli florets : 177
 vanilla vodka : 177
 strawberry jell-o gelatin dessert : 176
 tomatoes with juice : 176
 grapes : 175
 sweet butter : 175
-fresh herb : 175
+herb : 175
+brussels sprout : 175
 dry milk : 174
 frozen green beans : 174
 pomegranate juice : 174
@@ -1243,7 +1191,7 @@ cooking apples : 172
 orange bell pepper : 172
 nutella : 172
 toasted almond : 171
-fresh black pepper : 171
+figs : 171
 ground mace : 171
 season salt : 170
 dutch-processed cocoa powder : 170
@@ -1251,7 +1199,6 @@ frozen whole kernel corn : 170
 crusty bread : 170
 blue curacao : 170
 rotel : 170
-kosher salt & freshly ground black pepper : 170
 flank steak : 169
 fine breadcrumbs : 169
 cream of coconut : 169
@@ -1340,6 +1287,7 @@ sultana : 152
 stew meat : 152
 spaghetti squash : 152
 pretzels : 152
+shiitake mushroom : 151
 sprite : 151
 crackers : 151
 sambal oelek : 151
@@ -1349,7 +1297,6 @@ plums : 150
 raspberry preserves : 150
 instant espresso powder : 150
 fenugreek seeds : 150
-brussels sprout : 150
 butter-flavored cooking spray : 150
 farfalle pasta : 150
 mixed herbs : 149
@@ -1357,7 +1304,6 @@ jalapeno chile : 148
 lime peel : 148
 candied ginger : 148
 lemon wedges : 148
-chili peppers : 148
 dry crushed red pepper : 148
 queso fresco : 148
 vanilla pudding mix : 147
@@ -1365,17 +1311,16 @@ hellmann's mayonnaise : 147
 dried herbs : 147
 tapioca flour : 147
 harissa : 147
+portabella mushroom : 146
 muenster cheese : 146
 anchovy paste : 146
-blackberries : 146
 cool whip topping : 146
 boneless chicken breast halves : 146
-fresh thyme sprigs : 146
+thyme sprigs : 146
 almond milk : 146
 boneless skinless chicken : 145
 biscuits : 145
 chili seasoning mix : 145
-portabella mushroom : 144
 malt vinegar : 144
 instant potato flakes : 144
 seasoned dry bread crumb : 144
@@ -1384,9 +1329,9 @@ sultanas : 144
 apple butter : 144
 italian cheese blend : 144
 curry : 143
-fresh marjoram : 143
 light butter : 143
 egg roll wraps : 143
+lima beans : 142
 golden raisins : 142
 boneless beef chuck roast : 142
 chutney : 142
@@ -1401,6 +1346,7 @@ silken tofu : 140
 chicken bouillon granules : 140
 condensed golden mushroom soup : 140
 cashew nuts : 140
+small shrimp : 140
 ranch salad dressing : 140
 smoked gouda cheese : 140
 hardboiled egg : 139
@@ -1408,6 +1354,7 @@ apricot nectar : 139
 matzo meal : 139
 salmon steaks : 139
 seasoned rice vinegar : 139
+apricots : 138
 canned chick-peas : 138
 brown gravy mix : 138
 ritz cracker : 138
@@ -1423,7 +1370,6 @@ italian sausages : 137
 cut green beans : 137
 maple extract : 137
 hot coffee : 137
-lima beans : 136
 fish : 136
 pasta shells : 136
 tart apple : 136
@@ -1432,28 +1378,26 @@ mrs. dash seasoning mix : 136
 pickled jalapeno pepper : 136
 lemon slices : 135
 condensed cheddar cheese soup : 135
-small shrimp : 135
 bacon grease : 135
 bamboo shoots : 135
 deli turkey : 135
-soft fresh goat cheese : 135
+soft  goat cheese : 135
 french dressing : 135
 almond paste : 134
 fusilli : 134
 red leaf lettuce : 134
 tarragon vinegar : 134
 fish stock : 134
-cilantro leaves : 134
 whole canned tomatoes : 134
 pickle juice : 134
 frank's red hot sauce : 134
-fresh lemon zest : 134
 frangelico : 134
 reduced-fat mayonnaise : 134
 burgundy wine : 133
 french baguette : 133
 cake mix : 133
 sweetened whipped cream : 133
+savory : 133
 mild green chilies : 133
 brown lentils : 133
 italian style breadcrumbs : 133
@@ -1462,6 +1406,7 @@ baby corn : 132
 lemon-pepper seasoning : 132
 cornbread : 132
 chicken base : 132
+ground white pepper : 132
 msg : 131
 flat-leaf italian parsley : 131
 cheerios toasted oat cereal : 131
@@ -1478,10 +1423,8 @@ whole allspice : 130
 pickling salt : 130
 strawberry gelatin : 130
 cooked long-grain rice : 130
-fresh blackberries : 130
 almond meal : 130
 vital wheat gluten : 130
-shiitake mushroom : 129
 manicotti : 129
 sweet basil : 129
 coconut flakes : 129
@@ -1489,7 +1432,7 @@ thin spaghetti : 129
 hot chili sauce : 129
 fruit cocktail : 129
 oysters : 129
-sage leaves : 129
+sage leaf : 129
 flax seeds : 129
 balsamic vinaigrette : 129
 country-style pork ribs : 129
@@ -1513,7 +1456,6 @@ frosting : 127
 white balsamic vinegar : 127
 caramel sauce : 127
 madeira wine : 126
-parsley sprig : 126
 frozen green peas : 126
 tamari soy sauce : 126
 dry ranch dressing mix : 126
@@ -1526,7 +1468,6 @@ white corn syrup : 125
 natural bran : 125
 chicken bouillon powder : 125
 jumbo pasta shells : 125
-fresh ground white pepper : 125
 juice : 125
 caramel topping : 124
 golden delicious apples : 124
@@ -1550,6 +1491,7 @@ pitted ripe olives : 123
 boneless pork loin roast : 123
 hummus : 123
 split peas : 122
+white breadcrumbs : 122
 buckwheat flour : 121
 whole black peppercorn : 121
 celery leaves : 121
@@ -1569,10 +1511,10 @@ cool whip lite : 120
 cooked chicken breast : 120
 pickle : 120
 boneless chicken : 119
-fresh rosemary leaf : 119
+rosemary leaf : 119
 unbaked pie shell : 119
 irish whiskey : 119
-fresh cilantro stem : 119
+cilantro stem : 119
 green tomatoes : 119
 prune : 119
 cod : 119
@@ -1582,6 +1524,7 @@ spaghetti noodles : 119
 butterscotch schnapps : 119
 midori melon liqueur : 119
 greens : 118
+white mushroom : 118
 dried currant : 118
 lean bacon : 118
 navel oranges : 118
@@ -1594,7 +1537,6 @@ boneless pork loin chops : 118
 condensed cream of celery soup : 117
 havarti cheese : 117
 dried black beans : 116
-fresh herbs : 116
 raw cashews : 116
 frozen baby peas : 116
 fennel bulbs : 116
@@ -1609,7 +1551,6 @@ asafoetida powder : 115
 hidden valley ranch dressing mix : 115
 jello gelatin : 115
 cereal : 115
-apricots : 114
 cauliflower floret : 114
 lemon jell-o gelatin : 114
 chili pepper flakes : 114
@@ -1622,7 +1563,6 @@ center-cut pork chops : 114
 corn muffin mix : 114
 cooking sherry : 113
 short-grain rice : 113
-savory : 113
 pickling spices : 113
 artichoke heart : 113
 andouille sausage : 113
@@ -1634,7 +1574,6 @@ medium egg noodles : 113
 cheese ravioli : 113
 semisweet chocolate morsels : 112
 chicken tenderloins : 112
-fresh jalapeno peppers : 112
 sifted flour : 112
 ladyfingers : 111
 strawberry preserves : 111
@@ -1653,7 +1592,6 @@ hot paprika : 110
 salt pork : 110
 v8 vegetable juice : 110
 instant mashed potatoes : 110
-fresh shrimp : 110
 serrano pepper : 110
 sugar-free instant vanilla pudding mix : 110
 taco shells : 110
@@ -1667,7 +1605,6 @@ corn on the cob : 109
 cola : 108
 coca-cola : 108
 lamb chops : 108
-fresh cracked pepper : 108
 thai red curry paste : 108
 celery & leaves : 108
 green capsicum : 108
@@ -1680,6 +1617,7 @@ mild italian sausage : 107
 white kidney beans : 107
 whole wheat pita bread : 107
 nori : 107
+pork loin roast : 107
 apple jelly : 107
 champagne vinegar : 107
 mixed italian herbs : 107
@@ -1692,7 +1630,6 @@ head cauliflower : 106
 instant chicken bouillon granules : 106
 light molasses : 106
 dry basil : 106
-fresh peas : 106
 anchovies : 106
 french style green beans : 106
 radicchio : 106
@@ -1712,7 +1649,6 @@ mincemeat : 105
 green enchilada sauce : 105
 chocolate curls : 105
 vanilla frosting : 105
-pork loin roast : 105
 rotisserie-cooked chicken : 105
 southern comfort : 104
 frozen bread dough : 104
@@ -1725,7 +1661,6 @@ dry oregano : 104
 dark raisin : 104
 red grapes : 104
 soba noodles : 104
-white mushroom : 103
 tomatillo : 103
 sweet green pepper : 103
 polish sausage : 103
@@ -1736,11 +1671,9 @@ dry active yeast : 103
 steaks : 103
 garam masala powder : 103
 baby bok choy : 103
-fresh lemon : 103
 old cheddar cheese : 103
 crescent roll dough : 103
 whole turkey : 103
-fresh jalapeno pepper : 103
 catalina dressing : 103
 kitchen bouquet : 102
 miso : 102
@@ -1770,7 +1703,6 @@ cooked spaghetti : 100
 flounder fillets : 100
 green apple : 100
 diced onions : 100
-fresh jalapenos : 100
 green curry paste : 100
 hass avocadoes : 100
 nectarines : 99
@@ -1820,7 +1752,6 @@ whole grain bread : 96
 green cardamom pods : 96
 habanero peppers : 95
 reduced-fat sharp cheddar cheese : 95
-fresh jalapeno : 95
 liquid pectin : 95
 pimento stuffed olives : 95
 roasted cashews : 95
@@ -1856,19 +1787,16 @@ mexicorn : 93
 unsweetened baking chocolate : 93
 rutabaga : 93
 corn chex : 93
-fresh white breadcrumbs : 93
 instant pistachio pudding mix : 93
 vanilla frozen yogurt : 93
 dry pasta : 93
 unseasoned breadcrumbs : 93
 dry lentils : 93
-fresh garlic clove : 93
 chicken stock cube : 93
 boneless chicken thighs : 93
 thai sweet chili sauce : 93
 mascarpone : 92
 lean beef : 92
-fresh rhubarb : 92
 rump roast : 92
 glace cherries : 92
 water-packed artichoke hearts : 92
@@ -1898,6 +1826,7 @@ pineapple rings : 90
 rosemary sprig : 90
 stilton cheese : 90
 white corn : 90
+crab : 90
 mushroom pieces : 90
 ground paprika : 90
 new potato : 90
@@ -1910,7 +1839,6 @@ salted cashews : 90
 amarula cream liqueur : 90
 peach preserves : 89
 bamboo skewers : 89
-crab : 89
 peach slices : 89
 pickle relish : 89
 jelly : 89
@@ -1941,16 +1869,13 @@ beef base : 87
 jiffy corn muffin mix : 87
 chicken liver : 87
 pistachio nut : 87
-fresh nutmeg : 87
 unsweetened dried shredded coconut : 87
 croutons : 87
-fresh shiitake mushrooms : 87
 bulb of garlic : 87
 liqueur : 87
 baking apples : 86
 bulgar wheat : 86
 red capsicums : 86
-fresh figs : 86
 boneless chuck roast : 86
 hershey chocolate kisses : 86
 escarole : 86
@@ -1963,7 +1888,6 @@ eagle brand condensed milk : 85
 semisweet baking chocolate : 85
 tiny new potatoes : 85
 non-dairy whipped topping : 85
-figs : 85
 beef chuck : 85
 macaroni noodles : 85
 fritos corn chips : 85
@@ -1971,13 +1895,13 @@ whole green chilies : 85
 soft tofu : 85
 nutritional yeast flakes : 85
 instant minced garlic : 85
-fresh rosemary leaves : 85
+rosemary leaves : 85
 wasabi paste : 85
 canned corn : 85
 yukon gold potato : 85
+tortellini : 85
 tilapia fillet : 85
 toothpicks : 84
-fresh dill weed : 84
 yellow peppers : 84
 toasted wheat germ : 84
 cream of potato soup : 84
@@ -1995,7 +1919,6 @@ brewed espresso : 83
 chicken meat : 83
 gravy : 83
 pizza crust : 83
-fresh mango : 83
 beef round steak : 83
 spiral shaped pasta : 83
 yellow split peas : 83
@@ -2015,18 +1938,16 @@ ranch style beans : 82
 almond flavoring : 81
 pork ribs : 81
 ground meat : 81
+tarragon leaves : 81
 orange blossom water : 81
 vinaigrette dressing : 81
 mint sprigs : 80
-double-acting baking powder : 80
 courgettes : 80
 relish : 80
 dried chilies : 80
-fresh goat cheese : 80
-fresh sage leaf : 80
 green leaf lettuce : 80
 seasoned pepper : 80
-fresh thyme sprig : 80
+thyme sprig : 80
 whipped cream cheese : 80
 smoked turkey : 80
 dried italian herb seasoning : 80
@@ -2044,7 +1965,6 @@ dry pectin : 79
 grits : 79
 emeril's original essence : 79
 limoncello : 79
-fresh lemongrass : 78
 halibut steaks : 78
 sweet unsalted butter : 78
 sole fillets : 78
@@ -2061,7 +1981,6 @@ spiced rum : 78
 vegetable bouillon cubes : 78
 madras curry powder : 78
 skinless chicken pieces : 78
-tortellini : 78
 coleslaw : 78
 refrigerated pie crust : 78
 belgian endive : 77
@@ -2069,6 +1988,7 @@ hot dog : 77
 boneless pork : 77
 turkey sausage : 77
 semisweet chocolate morsel : 77
+parsley sprigs : 77
 jack daniels whiskey : 77
 crushed pineapple with juice : 77
 seasoned flour : 77
@@ -2089,6 +2009,7 @@ fine dry breadcrumbs : 75
 quick-cooking grits : 75
 pastry shells : 75
 vermouth : 75
+chervil : 75
 dried fig : 75
 green apples : 75
 hamburger meat : 75
@@ -2107,6 +2028,7 @@ chicken stock powder : 74
 frying chicken : 74
 kirsch : 74
 low-fat cheese : 74
+whole wheat bread crumbs : 74
 sliced apples : 74
 orange sherbet : 74
 sesame seed oil : 74
@@ -2128,6 +2050,7 @@ mixed salad green : 73
 chocolate sprinkles : 73
 unsalted dry roasted peanuts : 73
 chocolate milk : 73
+dry buttermilk : 73
 reduced-fat mozzarella cheese : 73
 tapioca : 72
 cider : 72
@@ -2155,7 +2078,6 @@ simply potatoes diced potatoes with onion : 72
 unsalted cashews : 71
 poundcake : 71
 stone ground mustard : 71
-fresh crabmeat : 71
 quick-cooking barley : 71
 phyllo pastry sheets : 71
 lean stewing beef : 71
@@ -2169,11 +2091,9 @@ strong black coffee : 70
 lemon yogurt : 70
 corn tortilla chips : 70
 lean hamburger : 70
-whole wheat bread crumbs : 70
 spicy mustard : 70
 hot chili oil : 70
 green chili salsa : 70
-dry buttermilk : 70
 coffee ice cream : 69
 filet of beef : 69
 dried apple : 69
@@ -2182,13 +2102,14 @@ cornbread stuffing mix : 69
 spareribs : 69
 halloumi cheese : 69
 venison : 69
+udon noodles : 69
 hard salami : 69
 seedless watermelon : 69
 baking chocolate : 68
-unsifted all-purpose flour : 68
 squid : 68
 turkey broth : 68
 sirloin : 68
+instant dry milk powder : 68
 bosc pears : 68
 black tea : 68
 instant brown rice : 68
@@ -2215,11 +2136,12 @@ mahi mahi fillets : 67
 reynolds wrap foil : 67
 raw potatoes : 66
 cooked basmati rice : 66
+apricot : 66
 country bread : 66
 marmalade : 66
 macaroni and cheese mix : 66
-fresh chili pepper : 66
 chili with beans : 66
+chinese noodles : 66
 cherry juice : 66
 kiwi fruit : 66
 short rib of beef : 66
@@ -2242,7 +2164,6 @@ angostura bitters : 65
 beef steaks : 65
 streaky bacon : 65
 red cayenne pepper : 65
-fresh cream : 65
 sweet cherries : 65
 jarlsberg cheese : 65
 beetroots : 65
@@ -2265,10 +2186,10 @@ creme de menthe : 64
 tamarind pulp : 64
 fontina : 64
 hash brown potatoes : 64
-udon noodles : 64
 cubed ham : 64
 jalapeno jack cheese : 64
 apricot brandy : 64
+8-inch flour tortillas : 64
 ditalini : 64
 cooked pork : 64
 lavender flowers : 64
@@ -2303,13 +2224,10 @@ galangal : 62
 mexican-style corn : 62
 buffalo wing sauce : 62
 chinese rice wine : 62
-fresh pepper : 61
 coffee beans : 61
 boneless beef top sirloin steak : 61
 black coffee : 61
 parchment paper : 61
-fresh okra : 61
-parsley sprigs : 61
 top sirloin steaks : 61
 boneless center cut pork chops : 61
 tri-color spiral pasta : 61
@@ -2323,14 +2241,13 @@ mung bean sprouts : 61
 instant lemon pudding : 61
 firm bananas : 61
 gelatin powder : 61
-flaked sea salt : 61
 chorizo sausages : 61
 marsala : 60
 pistachio nuts : 60
 dried pinto bean : 60
 liquid smoke flavoring : 60
 potato flakes : 60
-fresh bean sprout : 60
+bean sprout : 60
 french fried onion rings : 60
 bouillon cubes : 60
 unsweetened baking cocoa : 60
@@ -2356,7 +2273,6 @@ parmigiano : 59
 calvados : 59
 instant lemon pudding mix : 59
 quaker oats : 59
-apricot : 59
 fava beans : 59
 semolina flour : 59
 quick oatmeal : 59
@@ -2394,8 +2310,6 @@ garlic-flavored croutons : 58
 vegetable bouillon cube : 58
 ground venison : 58
 chocolate candy bars : 58
-fresh cherries : 58
-fresh tarragon leaves : 58
 cooked boneless skinless chicken breasts : 58
 diced tomatoes with basil oregano and garlic : 58
 crushed tomatoes in puree : 58
@@ -2441,11 +2355,11 @@ cherry jell-o : 56
 lavender : 56
 wild mushrooms : 56
 french onion soup mix : 56
-8-inch flour tortillas : 56
 green sweet pepper : 56
 miracle whip light : 56
 pimento-stuffed green olives : 56
 bologna : 56
+cilantro stems : 56
 cotija cheese : 56
 chicken livers : 55
 stuffed green olive : 55
@@ -2462,6 +2376,7 @@ szechuan peppercorns : 55
 camembert cheese : 55
 ham hock : 55
 pillsbury grands refrigerated buttermilk biscuits : 55
+spearmint : 55
 ears of corn : 55
 powdered coffee creamer : 55
 italian stewed tomatoes : 55
@@ -2500,7 +2415,6 @@ dried red chili : 53
 grape-nuts cereal : 53
 coffee creamer : 53
 ham hocks : 53
-fresh pumpkin : 53
 lamb shoulder : 53
 reduced fat margarine : 53
 canned salmon : 53
@@ -2509,7 +2423,6 @@ dried great northern beans : 53
 boneless beef roast : 53
 raspberry liqueur : 53
 cannellini : 53
-instant  dry milk powder : 53
 stir-fry sauce : 53
 hot salsa : 53
 sun-dried tomato pesto : 53
@@ -2524,7 +2437,6 @@ peppermint candies : 53
 season-all salt : 53
 carnation evaporated milk : 53
 dried red lentils : 53
-fresh bay leaves : 53
 baked corn tortilla chips : 53
 frozen unsweetened strawberries : 53
 guar gum : 53
@@ -2545,7 +2457,6 @@ lobster meat : 52
 dill relish : 52
 pot roast : 52
 panir : 52
-chinese noodles : 52
 mixed berries : 52
 bran flakes : 52
 stuffed green olives : 52
@@ -2562,6 +2473,7 @@ puff pastry sheet : 52
 chipotle peppers : 52
 italian turkey sausage : 52
 white sesame seeds : 52
+swordfish steaks : 51
 grapefruits : 51
 white cornmeal : 51
 pie pastry : 51
@@ -2569,7 +2481,6 @@ low-fat cream of mushroom soup : 51
 raspberry gelatin powder : 51
 wonton skins : 51
 boneless beef top sirloin steaks : 51
-fresh parsley sprig : 51
 baby clams : 51
 cherry preserves : 51
 hersheys chocolate syrup : 51
@@ -2589,8 +2500,8 @@ canned peaches : 51
 tagliatelle pasta noodles : 51
 orange flower water : 51
 caramel syrup : 51
+grape leaves : 50
 unbaked 9-inch pie shell : 50
-fresh bean sprouts : 50
 hot chili powder : 50
 scotch whisky : 50
 almond essence : 50
@@ -2598,6 +2509,7 @@ frying chickens : 50
 snickers candy bars : 50
 lime slices : 50
 reduced fat graham cracker crust : 50
+chestnuts : 50
 veal cutlets : 50
 cabbage leaves : 50
 cardamoms : 50
@@ -2625,7 +2537,6 @@ stout beer : 49
 dried rubbed sage : 49
 35% cream : 49
 ancho chilies : 49
-sage leaf : 49
 colored sprinkles : 49
 lime gelatin : 49
 diced green chilis : 49
@@ -2643,17 +2554,15 @@ frozen peaches : 49
 reduced-fat milk : 49
 small white beans : 49
 frozen broccoli carrots cauliflower mix : 49
-fresh cilantro stems : 49
 frozen pearl onions : 49
 sorghum flour : 49
 agave syrup : 49
-grape leaves : 48
-swordfish steaks : 48
 self-rising cornmeal : 48
 green peppercorn : 48
 boneless pork butt : 48
 sweet peppers : 48
 raw peanuts : 48
+dill sprigs : 48
 vanilla pod : 48
 rabbit : 48
 frozen okra : 48
@@ -2670,7 +2579,6 @@ green onions with tops : 48
 frozen french fries : 48
 filet mignon : 48
 shoyu : 48
-tuna in vegetable oil : 48
 pork baby back ribs : 48
 lebanese cucumber : 48
 french haricots vert : 48
@@ -2687,13 +2595,13 @@ dill seeds : 47
 butternut pumpkin : 47
 green onion tops : 47
 chicken thigh : 47
-fresh carrot : 47
 9 unbaked pie shell : 47
 candied orange peel : 47
 oyster : 47
 pace picante sauce : 47
 white hominy : 47
-assorted fresh vegetables : 47
+whole wheat breadcrumbs : 47
+assorted  vegetables : 47
 double crust pie crust : 47
 dried apricot halves : 47
 pumpkin pie filling : 47
@@ -2738,10 +2646,9 @@ mandarin orange sections : 46
 frozen peas and carrot : 46
 dried tarragon leaves : 46
 boneless leg of lamb : 46
-fresh carrots : 46
 medium noodles : 46
 cherry brandy : 46
-fresh green chile : 46
+green chile : 46
 condensed french onion soup : 46
 chocolate hazelnut spread : 46
 tea bag : 46
@@ -2768,7 +2675,6 @@ black forest ham : 45
 white cabbage : 45
 grey poupon dijon mustard : 45
 soy yogurt : 45
-chestnuts : 45
 ham steaks : 45
 unsweetened pineapple chunks : 45
 creamed horseradish : 45
@@ -2788,15 +2694,12 @@ sweet rice flour : 45
 thai chiles : 45
 full-fat milk : 45
 toasted hazelnuts : 44
-fresh onion : 44
 frozen southern style hash brown potatoes : 44
 chicken piece : 44
 spring greens : 44
 white distilled vinegar : 44
 candied red cherries : 44
-fresh coconut : 44
 roasted sunflower seeds : 44
-chervil : 44
 brioche bread : 44
 yam : 44
 smoked ham hock : 44
@@ -2819,12 +2722,12 @@ fudge cake mix : 44
 pastrami : 44
 buttermilk biscuits : 44
 smoked turkey breast : 44
-gluten free baking powder : 44
 english toffee bits : 44
 microwave popcorn : 44
 hamburger buns with sesame seeds : 44
 cooked pumpkin : 44
 red-hot candies : 43
+red raspberries : 43
 cheese slices : 43
 black sesame seeds : 43
 turkey carcass : 43
@@ -2880,7 +2783,7 @@ prime rib roast : 42
 farmer cheese : 42
 urad dal : 42
 frozen cauliflower : 42
-98%  cream of chicken soup : 42
+98% cream of chicken soup : 42
 10-inch flour tortillas : 42
 cheesecloth : 42
 white chicken meat : 42
@@ -2890,7 +2793,7 @@ lemonade concentrate : 42
 sushi rice : 42
 smoked turkey sausage : 42
 riesling wine : 42
-98%  cream of mushroom soup : 42
+98% cream of mushroom soup : 42
 diced fire-roasted tomatoes : 42
 light cheddar cheese : 42
 canned jalapeno slices : 42
@@ -2918,8 +2821,7 @@ mustard greens : 41
 orange bell peppers : 41
 garlic butter : 41
 vanilla-flavored syrup : 41
-fresh mussels : 41
-mixed fresh herbs : 41
+mixed  herbs : 41
 ground sumac : 41
 oreo cookie crumbs : 41
 raisin bread : 41
@@ -2956,7 +2858,6 @@ citric acid : 40
 top sirloin steak : 40
 roll : 40
 graham cracker pie crusts : 40
-fresh zucchini : 40
 szechwan pepper : 40
 dried pinto beans : 40
 aged cheddar cheese : 40
@@ -2982,14 +2883,12 @@ alum : 39
 fudge sauce : 39
 cream-filled chocolate sandwich cookies : 39
 mostaccioli pasta : 39
-fresh green chilies : 39
 powdered fruit pectin : 39
 crookneck yellow squash : 39
 sweet italian sausage links : 39
 lobster tails : 39
 red hot sauce : 39
 lean ground chuck : 39
-fresh horseradish : 39
 mineral water : 39
 galliano : 39
 dr. pepper cola : 39
@@ -3036,9 +2935,7 @@ pudding : 38
 day-old white bread : 38
 snow pea pods : 38
 soybeans : 38
-fresh pineapple chunks : 38
 garlic oil : 38
-fresh brussels sprouts : 38
 soda crackers : 38
 saltines : 38
 brine : 38
@@ -3048,7 +2945,6 @@ pear halves in natural juice : 38
 wholemeal self-rising flour : 38
 beef hot dogs : 38
 crusty italian bread : 38
-fresh snow peas : 38
 chili without beans : 38
 buttermilk baking mix : 38
 white horseradish : 38
@@ -3061,7 +2957,7 @@ caribbean jerk seasoning : 38
 mozzarella string cheese : 38
 naan bread : 38
 doritos : 38
-fresh snow pea : 37
+snow pea : 37
 oxtails : 37
 tangerine : 37
 bottled chili sauce : 37
@@ -3077,7 +2973,6 @@ boneless round steak : 37
 turkey meat : 37
 buttered bread crumb : 37
 tony chachere's seasoning : 37
-whole wheat breadcrumbs : 37
 white cheese : 37
 cooking wine : 37
 currant jelly : 37
@@ -3105,17 +3000,14 @@ vegetarian baked beans : 37
 family-size tea bags : 37
 lasagna sheets : 37
 spaghettini : 37
-fresh yeast : 37
 extract : 37
 nigella seeds : 37
-roasted garlic cloves : 37
 ready-to-bake refrigerated buttermilk flaky biscuits : 36
 semisweet chocolate chunk : 36
 frozen fruit : 36
 fine egg noodles : 36
 white raisins : 36
 dry bread : 36
-fresh chili peppers : 36
 allspice berry : 36
 small potatoes : 36
 frankfurters : 36
@@ -3143,15 +3035,13 @@ tonic water : 36
 caramel candies : 36
 butter flavor extract : 36
 red delicious apple : 36
-fresh curly-leaf parsley : 36
+curly-leaf parsley : 36
 cellophane noodles : 36
-gold medal all-purpose flour : 36
 diced tomatoes with jalapenos : 36
 pink peppercorns : 36
 diced pimento : 36
 frozen shrimp : 36
 chinese egg noodles : 36
-fresh peach : 36
 center-cut bacon : 36
 extra large egg : 36
 mung beans : 36
@@ -3176,7 +3066,7 @@ hot chili paste : 35
 tomatillo salsa : 35
 dried mushroom : 35
 wesson oil : 35
-assorted fresh vegetable : 35
+assorted  vegetable : 35
 channa dal : 35
 strawberry syrup : 35
 steak fillets : 35
@@ -3195,10 +3085,11 @@ italian rolls : 35
 wooden skewer : 35
 racks of baby-back pork ribs : 35
 canned mushroom slices : 35
+frozen non-dairy topping : 35
 unsalted chicken stock : 35
 canned unsweetened coconut milk : 35
 dried apples : 35
-fresh lime leaves : 35
+lime leaves : 35
 powdered cocoa mix : 35
 green peppercorns : 35
 shortbread cookies : 35
@@ -3214,10 +3105,8 @@ mild paprika : 34
 japanese soy sauce : 34
 fruit pectin : 34
 roasted unsalted peanuts : 34
-dill sprigs : 34
 seedless oranges : 34
 skinless salmon fillet : 34
-fresh fettuccine : 34
 anise extract : 34
 top round steaks : 34
 cracked ice : 34
@@ -3239,7 +3128,6 @@ mild curry paste : 34
 sodium-free seasoning : 34
 garlic & herb spreadable cheese : 34
 medium pasta shell : 34
-frozen non-dairy topping : 34
 passion fruit juice : 34
 frozen blackberries : 34
 multigrain bread : 34
@@ -3255,9 +3143,7 @@ frozen shredded hash browns : 34
 cheese-filled tortellini : 34
 7-up : 34
 fuji apple : 34
-fresh kale : 34
 unsweetened soymilk : 34
-red raspberries : 33
 plum jam : 33
 pastry for a double-crust 9-inch pie : 33
 hot red pepper : 33
@@ -3268,7 +3154,6 @@ orange section : 33
 no-added-salt tomato paste : 33
 light soya sauce : 33
 dried kidney beans : 33
-fresh lump crabmeat : 33
 canned crabmeat : 33
 buckwheat groats : 33
 cooking onion : 33
@@ -3327,10 +3212,10 @@ endive : 32
 gummy worms : 32
 sweet pickle juice : 32
 smooth cashew butter : 32
+french beans : 32
 strawberry jelly : 32
 spicy sausage : 32
 instant vanilla flavor pudding and pie filling : 32
-fresh spearmint : 32
 hot italian sausages : 32
 peach jam : 32
 clamato juice : 32
@@ -3367,22 +3252,22 @@ real vanilla : 31
 raw carrot : 31
 pizza cheese : 31
 canned plum tomatoes : 31
+wax beans : 31
 crawfish : 31
 anise seeds : 31
 cracked wheat : 31
 french vanilla ice cream : 31
 head iceberg lettuce : 31
 instant chocolate drink mix : 31
-fresh chervil : 31
 birds eye chiles : 31
 mixed peel : 31
-fresh dill sprig : 31
+dill sprig : 31
 table cream : 31
 rose wine : 31
 chunky applesauce : 31
 roasted sesame seeds : 31
 tart cherries : 31
-fresh edible flower : 31
+edible flower : 31
 i can't believe it's not butter spread : 31
 sweet gherkins : 31
 evaporated low-fat milk : 31
@@ -3425,8 +3310,7 @@ drippings : 30
 hickory chips : 30
 quick-rising yeast : 30
 red sweet peppers : 30
-fresh salmon : 30
-fresh ricotta : 30
+ricotta : 30
 biscuit : 30
 gluten flour : 30
 sirloin tip steaks : 30
@@ -3473,10 +3357,10 @@ lean ground sirloin : 30
 country-style boneless pork ribs : 30
 dark raisins : 30
 vegetarian ground beef : 30
+onion rings : 30
 fat-free sugar-free instant chocolate pudding mix : 30
 garlic bread : 30
 frozen cubed hash brown potatoes : 30
-fresh bay leaf : 30
 chicken leg quarters : 30
 sweet soy sauce : 30
 brewed tea : 30
@@ -3534,12 +3418,10 @@ lean ground meat : 29
 bread dough : 29
 almond bark : 29
 cookie crumbs : 29
-white breadcrumbs : 29
 instant banana pudding mix : 29
 pepperoni slice : 29
 jelly beans : 29
 whole corn : 29
-french beans : 29
 large scallop : 29
 taco cheese : 29
 tomatoes with onion and garlic : 29
@@ -3568,7 +3450,6 @@ gluten-free soy sauce : 29
 bisquick reduced-fat baking mix : 29
 cream of onion soup : 29
 roasted peppers : 29
-onion rings : 29
 soft cream cheese : 29
 brown button mushrooms : 29
 corn niblets : 29
@@ -3639,7 +3520,6 @@ boston lettuce leaves : 27
 baby onions : 27
 salt cod fish : 27
 low-fat sharp cheddar cheese : 27
-wax beans : 27
 melba toast : 27
 dried lemon peel : 27
 buttery crackers : 27
@@ -3670,6 +3550,7 @@ minute steaks : 27
 quick-cooking brown rice : 27
 peach brandy : 27
 ground ham : 27
+sardines : 27
 drambuie : 27
 lamb fillets : 27
 canned jalapeno peppers : 27
@@ -3684,7 +3565,6 @@ chicken quarters : 27
 mochiko sweet rice flour : 27
 white tequila : 27
 pastry for single-crust pie : 27
-fresh linguine : 27
 kool-aid : 27
 field mushrooms : 27
 roast pork : 27
@@ -3712,7 +3592,6 @@ godiva original chocolate liqueur : 26
 pumpkin spice : 26
 best foods mayonnaise : 26
 boboli pizza crusts : 26
-fresh button mushrooms : 26
 dark sweet cherries : 26
 unbaked pie crusts : 26
 tart green apples : 26
@@ -3777,7 +3656,6 @@ red miso : 25
 sweet whole kernel corn : 25
 adzuki beans : 25
 mixed baby lettuces and spring greens : 25
-fresh pears : 25
 sweet green peppers : 25
 frozen baby lima beans : 25
 olive juice : 25
@@ -3793,7 +3671,6 @@ beef ribs : 25
 cane syrup : 25
 vegetable soup : 25
 graham cracker crumb crust : 25
-sardines : 25
 sugar-free vanilla ice cream : 25
 frozen white corn : 25
 sweet bell pepper : 25
@@ -3803,7 +3680,6 @@ golden grahams cereal : 25
 white almond bark : 25
 italian-style tomato sauce : 25
 buffalo mozzarella : 25
-fresh white mushrooms : 25
 cannelloni tubes : 25
 baby peas : 25
 baby beets : 25
@@ -3827,7 +3703,6 @@ italian pork sausage : 25
 greek olive : 25
 bread and butter pickles : 25
 sloppy joe sandwich sauce : 25
-fresh brussels sprout : 25
 clementines : 25
 refried black beans : 25
 frozen dinner rolls : 25
@@ -3858,12 +3733,14 @@ ground mixed spice : 24
 tiny peas : 24
 turkey breast tenderloins : 24
 natural almonds : 24
+calf liver : 24
 green plantains : 24
 light raisins : 24
 low-fat margarine : 24
 dried mushrooms : 24
 dry parsley flakes : 24
 mild sausage : 24
+curds : 24
 cherry peppers : 24
 black bean garlic sauce : 24
 dry roasted salted peanuts : 24
@@ -3881,7 +3758,6 @@ breadsticks : 24
 instant coconut cream pudding mix : 24
 frozen sliced strawberries : 24
 fines herbes : 24
-fresh apricots : 24
 breadstick : 24
 refrigerated reduced-fat crescent rolls : 24
 sweet marsala wine : 24
@@ -3899,7 +3775,6 @@ french vanilla flavored coffee creamer : 24
 bone-in ham : 24
 dried peaches : 24
 small caper : 24
-fresh pineapple chunk : 24
 red jalapeno chiles : 24
 extra-large egg yolks : 24
 parmesan-romano cheese mix : 24
@@ -3909,7 +3784,7 @@ roasted sweet red peppers : 24
 vegan cream cheese : 24
 dried new mexico chiles : 24
 almond oil : 24
-fresh mozzarella balls : 24
+mozzarella balls : 24
 hickory liquid smoke : 24
 dry bread cubes : 24
 white truffle oil : 24
@@ -3917,6 +3792,7 @@ soy crumbles : 24
 veggie burgers : 24
 lean lamb : 24
 paper : 24
+sorrel : 23
 liquid hot pepper sauce : 23
 kasseri cheese : 23
 vanilla chip : 23
@@ -3940,24 +3816,21 @@ low-fat cream of chicken soup : 23
 cinnamon bark : 23
 hing : 23
 pineapple sherbet : 23
-calf liver : 23
-spearmint : 23
 chinese vegetables : 23
 little smokies sausage : 23
 smoked oysters : 23
 andes mints candies : 23
+fig : 23
 berbere : 23
 cinnamon schnapps : 23
 fuji apples : 23
 dry fettuccine : 23
 raspberry jelly : 23
-tarragon leaves : 23
 buttermilk ranch salad dressing mix : 23
 reduced-sodium vegetable broth : 23
 broad beans : 23
 italian sweet sausage : 23
 hp steak sauce : 23
-light vegetable oil : 23
 poppy seed dressing : 23
 hard alcoholic cider : 23
 powdered chocolate milk mix : 23
@@ -3988,6 +3861,7 @@ lebanese cucumbers : 23
 english mustard powder : 23
 bean flour : 23
 18% table cream : 23
+prepared vanilla pudding : 23
 blood orange : 23
 nacho cheese flavored tortilla chips : 23
 yellow potatoes : 23
@@ -4037,16 +3911,15 @@ chocolate icing : 22
 halibut fillet : 22
 rolo chocolates : 22
 hershey's syrup : 22
-fresh scallops : 22
 miniature m&m's chocolate candies : 22
 bacardi light rum : 22
 spice essence : 22
 red grapefruits : 22
 fig preserves : 22
-fresh shiitake mushroom : 22
 spanish chorizo : 22
 masa corn flour : 22
 beef sausages : 22
+dill leaves : 22
 thai red chili pepper : 22
 annatto seeds : 22
 beef bones : 22
@@ -4079,7 +3952,6 @@ ancho chili : 22
 epazote : 22
 chocolate protein powder : 22
 quick-cooking rice : 22
-prepared vanilla pudding : 22
 carob chips : 22
 whole oats : 22
 top round roast : 22
@@ -4187,7 +4059,6 @@ red ripe tomatoes : 20
 vegetarian worcestershire sauce : 20
 sharp american cheese : 20
 liver : 20
-fresh savory : 20
 scotch : 20
 sirloin beef : 20
 almond flavored liqueur : 20
@@ -4200,7 +4071,6 @@ dried leaf basil : 20
 imitation bacon bits : 20
 good seasons italian dressing : 20
 campbell's cheddar cheese soup : 20
-curds : 20
 canned green beans : 20
 chayotes : 20
 campbell's french onion soup : 20
@@ -4315,7 +4185,6 @@ veal scallopini : 19
 cream of chicken and mushroom soup : 19
 green glazed cherries : 19
 baby red potato : 19
-fresh onions : 19
 cheese-filled egg tortellini : 19
 o'brien potatoes : 19
 goldschlager : 19
@@ -4367,7 +4236,6 @@ feta cheese with dried basil and tomato : 19
 serrano chili pepper : 19
 chocolate fudge frosting : 19
 red plums : 19
-frozen  whipped topping : 19
 nicoise olive : 19
 2% mozzarella cheese : 19
 batter : 19
@@ -4399,7 +4267,7 @@ candied citron peel : 18
 grey poupon mustard : 18
 chipped beef : 18
 mexicorn whole kernel corn : 18
-salt and fresh pepper : 18
+salt and  pepper : 18
 chinese mustard : 18
 pistachio pudding mix : 18
 soft bread cubes : 18
@@ -4417,7 +4285,6 @@ no-bean chili : 18
 jeera powder : 18
 white creme de menthe : 18
 boiling onions : 18
-fresh portabella mushrooms : 18
 tang orange crystals : 18
 dark seedless raisins : 18
 chocolate graham wafer pie crust : 18
@@ -4431,6 +4298,7 @@ quinces : 18
 orange cake mix : 18
 soy cheese : 18
 ginger snaps : 18
+crabs : 18
 head lettuce : 18
 mesquite wood chips : 18
 mild green chili : 18
@@ -4447,7 +4315,6 @@ roasted cashew nuts : 18
 beef stock powder : 18
 butter pound cake : 18
 blackberry jam : 18
-sorrel : 18
 link sausage : 18
 taco chips : 18
 chai tea teabags : 18
@@ -4541,7 +4408,6 @@ sweet red wine : 17
 anjou pears : 17
 stewing lamb : 17
 cheesecake flavor instant pudding and pie filling mix : 17
-crabs : 17
 snickers miniature candy bars : 17
 hershey's semi-sweet chocolate chips : 17
 sliced apple : 17
@@ -4552,7 +4418,7 @@ condiments : 17
 mcintosh apple : 17
 ice cream cones : 17
 candied peel : 17
-fresh large mushrooms : 17
+large mushrooms : 17
 cornish hen : 17
 mushroom cap : 17
 sweet chocolate : 17
@@ -4625,11 +4491,9 @@ medium firm tofu : 16
 round loaf italian bread : 16
 regular grind coffee : 16
 black soy sauce : 16
-fresh jalapeno chilies : 16
+jalapeno chilies : 16
 chicken flavor instant bouillon : 16
 self-rising cornmeal mix : 16
-fresh parsley sprigs : 16
-fresh pumpkin puree : 16
 pan drippings : 16
 candied lemon peel : 16
 vanilla candy coating : 16
@@ -4685,7 +4549,6 @@ low-fat vanilla frozen yogurt : 16
 frozen cooked shrimp : 16
 pita pocket bread : 16
 dry tarragon : 16
-fresh dill leaves : 16
 strawberry ice cream topping : 16
 cooked corned beef : 16
 parboiled rice : 16
@@ -4742,6 +4605,7 @@ whole chicken breast : 15
 chocolate flavored syrup : 15
 unblanched whole almonds : 15
 fine noodles : 15
+rose petals : 15
 frozen english peas : 15
 swiss chard leaves : 15
 beef bones with marrow : 15
@@ -4771,7 +4635,6 @@ peppermint patties : 15
 coconut milk powder : 15
 chocolate cake : 15
 italian plums : 15
-fig : 15
 sazon goya with coriander and annatto : 15
 spinach linguine : 15
 ground dried chile : 15
@@ -4825,7 +4688,6 @@ lemon sherbet : 15
 pomegranates : 15
 buttermilk ranch dressing : 15
 baked beans in tomato sauce : 15
-fresh white mushroom : 15
 au gratin potato mix : 15
 dungeness crabs : 15
 lemon-lime flavored soda : 15
@@ -4846,7 +4708,6 @@ kabocha squash : 15
 ahi tuna steaks : 15
 orange-infused vodka : 15
 sparkling white wine : 15
-instant dry milk powder : 15
 whole grain wheat flour : 15
 cabbage kimchi : 15
 chicken breast halve : 15
@@ -4903,7 +4764,6 @@ brown and serve sausages : 14
 seafood stock : 14
 frozen rhubarb : 14
 dried black mushrooms : 14
-fresh chinese noodles : 14
 cubanelle peppers : 14
 orgeat syrup : 14
 mexican cornbread mix : 14
@@ -4940,11 +4800,10 @@ red table wine : 14
 chunk chicken : 14
 fillets : 14
 brown ale : 14
-fresh dill sprigs : 14
 cocktail smoked sausage links : 14
 prune baby food : 14
 lemon balm : 14
-fresh ahi tuna : 14
+ahi tuna : 14
 blackberry preserves : 14
 brown paper bag : 14
 red burgundy wine : 14
@@ -4992,7 +4851,7 @@ whey : 14
 grilled chicken breast : 14
 sugar-free vanilla syrup : 14
 english seedless cucumbers : 14
-fresh mozzarella ball : 14
+mozzarella ball : 14
 campanelle pasta : 14
 aioli : 14
 frozen dark sweet cherries : 14
@@ -5012,7 +4871,6 @@ ricotta salata : 14
 hot smoked paprika : 14
 pomegranate liqueur : 14
 prosecco : 14
-fresh water : 13
 barbecued chicken : 13
 cake yeast : 13
 powdered instant coffee : 13
@@ -5074,7 +4932,7 @@ crabapples : 13
 ham stock : 13
 salt-free lemon pepper : 13
 swordfish : 13
-fresh edible flowers : 13
+edible flowers : 13
 berry blue gelatin mix : 13
 raw cauliflower : 13
 reduced-fat coconut milk : 13
@@ -5180,12 +5038,11 @@ skor english toffee bit : 12
 bean curd : 12
 mulberries : 12
 prepared pizza sauce : 12
-fresh sweet basil leaves : 12
+sweet basil leaves : 12
 lowfat parmesan cheese : 12
 kraft 100% parmesan cheese : 12
 frozen crabmeat : 12
 frozen small whole onions : 12
-fresh scallions : 12
 dried hot red chilies : 12
 garlic & herb salad dressing mix : 12
 fine cracker crumb : 12
@@ -5229,6 +5086,7 @@ chicken rice pilaf mix : 12
 fleischmann's active dry yeast : 12
 sloe gin : 12
 low-fat soymilk : 12
+pork hocks : 12
 refrigerated crescent dinner roll : 12
 chicken in a biscuit crackers : 12
 plum preserves : 12
@@ -5348,7 +5206,6 @@ bittersweet chocolate squares : 12
 salted sunflower seeds : 12
 rapeseed oil : 12
 jagermeister : 12
-fresh pasta : 12
 smoked provolone cheese : 12
 goji berry : 12
 matzo cake meal : 12
@@ -5382,6 +5239,7 @@ boneless beef top loin steaks : 11
 cracked farro : 11
 chocolate bars : 11
 nuoc nam : 11
+wishbone italian dressing : 11
 frozen concentrated lemonade : 11
 squid rings : 11
 dried ancho peppers : 11
@@ -5408,7 +5266,6 @@ dream whip topping mix : 11
 cavatelli : 11
 italian-style tomato paste : 11
 chicken leg : 11
-fruit fresh : 11
 pillsbury ready made pie dough : 11
 green bananas : 11
 liquid gravy browner : 11
@@ -5520,7 +5377,7 @@ dried greek oregano : 11
 soy mozzarella cheese : 11
 ginger syrup : 11
 dried plums : 11
-fresh large mushroom : 11
+large mushroom : 11
 sour pitted cherries : 11
 barbecue potato chips : 11
 lime cordial : 11
@@ -5569,7 +5426,6 @@ meyer lemons : 11
 potato gnocchi : 11
 tostitos scoops : 11
 chicken seasoning : 11
-fresh sweet potatoes : 10
 cornbread-muffin mix : 10
 hellmanns mayonnaise : 10
 unsmoked bacon : 10
@@ -5618,7 +5474,6 @@ green shrimp : 10
 ground horseradish : 10
 chicken portions : 10
 medium-grain white rice : 10
-fresh whole wheat breadcrumbs : 10
 9-inch oreo cookie pie crust : 10
 fructose : 10
 orange lentils : 10
@@ -5633,7 +5488,6 @@ soda cracker crumbs : 10
 sugar-free orange marmalade : 10
 mushroom broth : 10
 red hot pepper sauce : 10
-pork hocks : 10
 soy cheddar cheese : 10
 taco bell home originals thick 'n chunky salsa : 10
 strawberry all-fruit spread : 10
@@ -5652,11 +5506,9 @@ salad supreme dry seasoning : 10
 yellow cling peaches : 10
 low-sodium cream of mushroom soup : 10
 yellow miso : 10
-wishbone italian dressing : 10
 italian vinaigrette dressing : 10
-fresh rosemary needles : 10
+rosemary needles : 10
 smoked pork chops : 10
-extra-light vegetable oil spread : 10
 hamburger helper mix for beef pasta : 10
 pumpkin flesh : 10
 locatelli cheese : 10
@@ -5714,7 +5566,6 @@ dried pear halves : 10
 orange sweet bell pepper : 10
 sesame sticks : 10
 black cumin seeds : 10
-fresh pear : 10
 tex-mex cheese : 10
 white cake mix with pudding : 10
 miniature bagels : 10
@@ -5738,8 +5589,6 @@ amaretti : 10
 liquid lecithin : 10
 yeast extract : 10
 spicy pork sausage : 10
-fresh turmeric : 10
-fresh red raspberries : 10
 purple potatoes : 10
 shell noodles : 10
 dashi stock : 10
@@ -5841,7 +5690,7 @@ dried shallots : 9
 unsalted dry-roasted cashews : 9
 pork sausage link : 9
 crystal hot sauce : 9
-fresh galangal root : 9
+galangal root : 9
 hot green peppers : 9
 chocolate pieces : 9
 black cardamom pod : 9
@@ -5871,7 +5720,6 @@ condensed bean with bacon soup : 9
 coriander sprigs : 9
 stolichnaya vodka : 9
 salad seasoning : 9
-light vegetable oil cooking spray : 9
 unsweetened raspberries : 9
 peppermint oil : 9
 butter-flavored cracker crumbs : 9
@@ -5944,7 +5792,7 @@ wheat crackers : 9
 breaded chicken nuggets : 9
 blackberry brandy : 9
 smoked chicken breasts : 9
-fresh seaweed : 9
+seaweed : 9
 15 bean soup mix : 9
 lean boneless lamb : 9
 pears in heavy syrup : 9
@@ -5982,7 +5830,7 @@ licor 43 : 9
 calrose rice : 9
 round rice paper sheets : 9
 lemon verbena : 9
-fresh sea scallop : 9
+sea scallop : 9
 low-fat feta : 9
 molly mcbutter : 9
 italian turkey sausage links : 9
@@ -6005,7 +5853,6 @@ diet orange soda : 9
 flavor enhancer : 9
 canned peas : 9
 tandoori spice mix : 9
-fresh lasagna noodles : 9
 plain cornmeal : 9
 pea shoots : 9
 cooked chicken breast strips : 9
@@ -6197,8 +6044,6 @@ orange wedges : 8
 sorbet : 8
 sugar-free instant pistachio pudding : 8
 creamed honey : 8
-fresh fig : 8
-8-inch  flour tortillas : 8
 turkey meatballs : 8
 cranberry liqueur : 8
 beef jerky : 8
@@ -6225,7 +6070,6 @@ red zinfandel wine : 8
 white baking bar : 8
 nuoc cham sauce : 8
 cortland apples : 8
-rose petals : 8
 butter-flavored sprinkles : 8
 feta cheese with garlic and herbs : 8
 burrito-size flour tortilla : 8
@@ -6277,13 +6121,11 @@ garlic scapes : 8
 shrimp shells : 8
 violets : 8
 dale's steak seasoning : 8
-fresh tuna : 8
 passion fruit nectar : 8
 pheasant breast : 8
 caviar : 8
 lemon basil : 8
 queso anejo : 8
-minced fresh garlic cloves : 8
 pork stew meat : 8
 pandan leaves : 8
 rainbow trout : 8
@@ -6370,7 +6212,7 @@ crushed plum tomatoes : 8
 whole meal bread : 8
 instant plain oatmeal : 8
 boca meatless ground burger : 8
-bite-size fresh mozzarella cheese balls : 8
+bite-size  mozzarella cheese balls : 8
 kirschwasser : 8
 shin beef : 8
 olive oil mayonnaise : 8
@@ -6386,7 +6228,6 @@ bock beer : 7
 parmesan : 7
 salad potatoes : 7
 pickled jalapeno pepper juice : 7
-fresh apricot : 7
 kirby cucumber : 7
 hard apple cider : 7
 garlic-flavored red wine vinegar : 7
@@ -6396,14 +6237,12 @@ chicken breast half : 7
 armagnac : 7
 vegetable suet : 7
 chili hot beans : 7
-sea salt & fresh black pepper : 7
 pudding rice : 7
 veal cutlet : 7
 hard roll : 7
 whole unblanched almond : 7
 beef heart : 7
 marlin steaks : 7
-fresh rose petals : 7
 prepared brown mustard : 7
 non-iodized salt : 7
 dried fennel seed : 7
@@ -6490,7 +6329,7 @@ spicy smoked sausage : 7
 hershey chocolate candy bars : 7
 salt-free tomato sauce : 7
 brown beans : 7
-fresh tarragon sprig : 7
+tarragon sprig : 7
 bread machine quick-acting active dry yeast : 7
 raw beets : 7
 meat-filled tortellini : 7
@@ -6540,7 +6379,6 @@ pinto beans in chili sauce : 7
 barbecue spice : 7
 unsalted creamy peanut butter : 7
 dark chocolate frosting : 7
-ground white pepper : 7
 tofu crumbles : 7
 boneless country-style ribs : 7
 pork-flavored ramen noodles : 7
@@ -6575,8 +6413,6 @@ pineapple syrup : 7
 thousand island salad dressing : 7
 veal stew meat : 7
 sambhar powder : 7
-hawaiian sea salt : 7
-fresh sea scallops : 7
 chocolate flavoring : 7
 kluski noodles : 7
 canned fruit : 7
@@ -6608,7 +6444,6 @@ pawpaw : 7
 frozen peas and corn : 7
 framboise liqueur : 7
 frozen pina colada mix : 7
-cilantro stems : 7
 pork loin chop : 7
 boneless skinned chicken breasts : 7
 agar-agar flakes : 7
@@ -6622,7 +6457,6 @@ celery powder : 7
 baby sweet corn cobs : 7
 pickled pepper : 7
 low-fat sausage : 7
-fresh egg noodles : 7
 chunky marinara sauce : 7
 cooked rigatoni pasta : 7
 olives in brine : 7
@@ -6643,15 +6477,14 @@ banana rum : 7
 dark jamaican rum : 7
 doughnuts : 7
 butterfinger candy bar : 7
-fresh tortellini : 7
 fish oil : 7
 italian sausage spaghetti sauce : 7
-sodium-free baking powder : 7
 frozen 9-inch deep dish pie shell : 7
 dried ancho chile : 7
 milk chocolate candy bars with almonds : 7
 hazelnut-flavored liquid coffee creamer : 7
 green jalapeno peppers : 7
+prepared chocolate pudding : 7
 raw wild rice : 7
 fudge-striped shortbread cookies : 7
 pork schnitzels : 7
@@ -6696,7 +6529,6 @@ seven-grain bread : 7
 choy sum : 7
 nopales : 7
 brown button mushroom : 7
-elephant garlic clove : 7
 brown rice pasta : 7
 vegan worcestershire sauce : 7
 borlotti beans : 7
@@ -6771,19 +6603,21 @@ bottled vinaigrette dressing : 6
 liquid certo : 6
 montrachet : 6
 raw spinach leaves : 6
+compressed yeast : 6
 japanese sake : 6
 other seasoning : 6
 instant onion : 6
 hot banana pepper : 6
 beef round tip steak : 6
 mandarin juice : 6
-fresh herbs of choice : 6
+herbs of choice : 6
 boneless beef chuck shoulder pot roast : 6
 dark amber maple syrup : 6
 large unpeeled shrimp : 6
 flat egg noodles : 6
 dry red pepper : 6
 sunflower margarine : 6
+chinese pea pods : 6
 ginger wine : 6
 green onion stems : 6
 prepared hot mustard : 6
@@ -6795,6 +6629,7 @@ plastic spoons : 6
 lancashire cheese : 6
 carnation instant milk : 6
 coarse unseasoned bread crumbs : 6
+boneless fish fillets : 6
 dried baby lima beans : 6
 lowfat margarine : 6
 canned whole cranberry sauce : 6
@@ -6846,7 +6681,6 @@ salt-free garlic and herb seasoning : 6
 pasta sauce with meat : 6
 premium chunk chicken : 6
 japanese pumpkin : 6
-fresh sauerkraut : 6
 cracked bulgur wheat : 6
 pork liver : 6
 onion gravy mix : 6
@@ -6946,7 +6780,6 @@ filo pastry : 6
 plum wine : 6
 herbal tea : 6
 canned corn kernel : 6
-dill leaves : 6
 fish bouillon cube : 6
 ducklings : 6
 celery tops : 6
@@ -6957,7 +6790,7 @@ fruit cocktail in light syrup : 6
 5% fat ricotta cheese : 6
 aged white cheddar cheese : 6
 boneless pork loin steaks : 6
-fresh yeast cake : 6
+yeast cake : 6
 roasting bag : 6
 sweetened cocoa powder : 6
 mushroom soup mix : 6
@@ -7059,7 +6892,6 @@ tomato sauce & mushrooms : 6
 dried calimyrna figs : 6
 boneless strip steaks : 6
 granular fructose : 6
-fresh lima beans : 6
 chocolate eggs : 6
 tiger sauce : 6
 vegetarian vegetable soup : 6
@@ -7086,11 +6918,9 @@ butter-flavored oil : 6
 low calorie sweetener : 6
 striped bass : 6
 turkey breast halves : 6
-prepared chocolate pudding : 6
 chokecherry juice : 6
 le seuer peas : 6
 powdered chipotle pepper : 6
-seasoned sea salt : 6
 quick-cooking long grain and wild rice mix : 6
 sodium-free chicken stock : 6
 creamy chicken verde soup : 6
@@ -7244,7 +7074,6 @@ tahini sesame butter : 5
 dinner roll : 5
 cake tofu : 5
 dried black fungus : 5
-fresh sorrel : 5
 tamarillos : 5
 caramel coloring : 5
 raw green cabbage : 5
@@ -7273,15 +7102,12 @@ prepared pumpkin : 5
 pork sausage casing : 5
 dried vegetable flakes : 5
 oyster liquor : 5
-chinese pea pods : 5
 dried yellow peas : 5
 quaker oatmeal squares cereal : 5
 baker's german's chocolate : 5
-fresh chestnuts : 5
 whole mixed pickling spice : 5
 low sodium spaghetti sauce : 5
 mandarin orange pieces : 5
-fresh swiss chard : 5
 dried chili pods : 5
 whole wheat bread cubes : 5
 broiler chicken : 5
@@ -7297,7 +7123,6 @@ chinese eggplant : 5
 9-inch double-crust pie shells : 5
 dhaniya powder : 5
 whole grain cornmeal : 5
-robin hood all-purpose flour : 5
 roasted walnut : 5
 wheat flour tortilla : 5
 masterpiece original barbecue sauce : 5
@@ -7389,7 +7214,6 @@ condensed chicken gumbo soup : 5
 reduced-fat yellow cake mix : 5
 spring rolls : 5
 dry instant coffee : 5
-compressed yeast : 5
 cling peach halves : 5
 mahi mahi fillet : 5
 diet root beer : 5
@@ -7466,8 +7290,8 @@ apricot filling : 5
 beef tongues : 5
 green plantain : 5
 dry-roasted cashews : 5
-fresh small shrimp : 5
 homemade beef stock : 5
+cholesterol-free egg : 5
 wok oil : 5
 butter mints : 5
 infant formula : 5
@@ -7514,7 +7338,6 @@ apricot baby food : 5
 havarti with dill : 5
 wheat noodles : 5
 cinnamon graham cracker crumbs : 5
-fresh udon noodles : 5
 strawberry drink mix : 5
 white peaches : 5
 pork butterfly steaks : 5
@@ -7612,7 +7435,6 @@ diced tomatoes with basil and oregano : 5
 porter : 5
 mrs. dash tomato basil garlic seasoning : 5
 cherry soda : 5
-fresh cayenne pepper : 5
 pork gravy : 5
 cheddar cheese powder : 5
 baby onion : 5
@@ -7649,7 +7471,7 @@ crushed unsweetened pineapple : 5
 sun-dried tomato dressing : 5
 brewed black tea : 5
 agar : 5
-powdered french vanilla  non-dairy coffee creamer : 5
+powdered french vanilla non-dairy coffee creamer : 5
 dried white pea beans : 5
 mint chips : 5
 whole wheat pasta shells : 5
@@ -7693,7 +7515,7 @@ sweet red pepper relish : 5
 boboli whole wheat pizza crust : 5
 vegetarian beef strips : 5
 canned navy beans : 5
-fresh cayenne peppers : 5
+cayenne peppers : 5
 blue crab meat : 5
 whole wheat sandwich wraps : 5
 dukkah : 5
@@ -7783,12 +7605,12 @@ butter croissants : 4
 black greek olive : 4
 extra-dry vermouth : 4
 skim milk yogurt : 4
-kraft healthy favorites  cheddar : 4
+kraft healthy favorites cheddar : 4
 small whole potatoes : 4
 frozen chinese pea pods : 4
 veal kidneys : 4
 ortega chiles : 4
-fresh sorrel leaves : 4
+sorrel leaves : 4
 beef silverside : 4
 clove oil : 4
 crisp red apples : 4
@@ -7836,7 +7658,6 @@ red gram : 4
 stew beef chunk : 4
 kraft sun-dried tomato salad dressing : 4
 black walnut flavoring : 4
-fresh curds : 4
 mild chili peppers : 4
 apricot puree : 4
 glace fruit : 4
@@ -7846,14 +7667,13 @@ rioja wine : 4
 unsweetened cherries : 4
 amaretti cookie crumbs : 4
 vegan egg : 4
-morton's coarse kosher salt : 4
 skor chips : 4
 campbell's cream of shrimp soup : 4
 honey-dijon salad dressing : 4
 small whole wheat pasta shells : 4
 mccormick's season all : 4
 chunky picante sauce : 4
-fresh green herbs : 4
+green herbs : 4
 crab delights imitation crab : 4
 whole cardamom pod : 4
 wafer cookies : 4
@@ -7882,7 +7702,6 @@ orange strips : 4
 red chilli padi : 4
 sambal chili paste : 4
 creme de almond : 4
-fresh whole wheat bread crumbs : 4
 pineapple in syrup : 4
 kraft processed cheese slices : 4
 reduced-sodium bacon : 4
@@ -8011,7 +7830,6 @@ frito corn chip : 4
 garlic bagel chips : 4
 cambozola cheese : 4
 dal : 4
-cholesterol-free egg : 4
 pot cheese : 4
 pretzel crumbs : 4
 chocolate cake mix with pudding : 4
@@ -8053,7 +7871,7 @@ kewra essence : 4
 chinese chives : 4
 vindaloo curry paste : 4
 black cherry gelatin : 4
-fresh sardine : 4
+sardine : 4
 loin lamb : 4
 boneless center cut pork chop : 4
 self-rising yellow cornmeal : 4
@@ -8098,7 +7916,6 @@ plums in heavy syrup : 4
 condensed chicken noodle soup : 4
 sweet bread : 4
 steelhead fillet : 4
-fresh pork shoulder : 4
 low-fat tortilla : 4
 frozen shoestring french fries : 4
 bermuda onions : 4
@@ -8108,7 +7925,7 @@ home fries : 4
 key lime pie yogurt : 4
 dried tamarind : 4
 lemon jelly : 4
-fresh lavender blossoms : 4
+lavender blossoms : 4
 vegetarian breakfast sausage patties : 4
 german sausages : 4
 sun-dried tomato puree : 4
@@ -8138,7 +7955,7 @@ amchur : 4
 white radishes : 4
 oxo beef cube : 4
 meat seasoning : 4
-97%  cooked ham : 4
+97% cooked ham : 4
 tomato sauce with basil garlic and oregano : 4
 new mexico green chilies : 4
 spicy refried beans : 4
@@ -8230,7 +8047,6 @@ low-carb barbecue sauce : 4
 marinated roasted red peppers : 4
 lingonberry jam : 4
 salt-free onion powder : 4
-fresh wax beans : 4
 dragees : 4
 broccoflower : 4
 frozen potato and onion pierogies : 4
@@ -8246,7 +8062,7 @@ lime oil : 4
 california walnut : 4
 roasted chestnuts : 4
 pillsbury funfetti cake mix : 4
-powdered  non-dairy coffee creamer : 4
+powdered non-dairy coffee creamer : 4
 dried corn kernels : 4
 lime juice concentrate : 4
 turkey pastrami : 4
@@ -8268,7 +8084,6 @@ whole grain pita : 4
 cranberry chutney : 4
 garlic and herb spaghetti sauce : 4
 semisweet baking chocolate square : 4
-boneless fish fillets : 4
 sugar-free applesauce : 4
 miniature hot dogs : 4
 supermoist yellow cake mix : 4
@@ -8314,7 +8129,6 @@ unsweetened frozen sliced peaches : 4
 piloncillo : 4
 low-fat marinara sauce : 4
 pignoli nut : 4
-garlic sea salt : 4
 fruitcake : 4
 low-fat turkey kielbasa : 4
 red river hot cereal : 4
@@ -8360,7 +8174,7 @@ beef tip roast : 4
 durum flour : 4
 fritos chili cheese corn chips : 4
 nori sushi sheet : 4
-freshly rendered lard : 4
+ly rendered lard : 4
 honey-flavored barbecue sauce : 4
 sea bream : 4
 diced tomatoes with sweet onions and roasted garlic : 4
@@ -8371,7 +8185,7 @@ stolichnaya raspberry vodka : 4
 lemon-infused olive oil : 4
 smelt : 4
 sugar-free gelatin mix : 4
-98%  condensed cream of celery soup : 4
+98% condensed cream of celery soup : 4
 whole boneless chicken breast : 4
 korean red pepper powder : 4
 low-fat monterey jack pepper cheese : 4
@@ -8386,7 +8200,6 @@ teddy grahams chocolate graham snacks : 4
 piquillo pepper : 4
 sour raspberry liqueur : 4
 orange-mango juice : 4
-roasted garlic clove : 4
 watermelon schnapps : 4
 whole grain cereal : 4
 dried mild red chili peppers : 4
@@ -8496,7 +8309,7 @@ dried craisin : 3
 yellow apples : 3
 mrs richardson's caramel topping : 3
 mixed cheese : 3
-fresh asian basil : 3
+asian basil : 3
 roasted sichuan peppercorn : 3
 sharp cheese : 3
 swiss steak : 3
@@ -8530,7 +8343,6 @@ creole spices : 3
 tortilla flour : 3
 menudo spice mix : 3
 umeboshi : 3
-fresh french beans : 3
 boneless lean lamb : 3
 del monte crushed tomatoes with mild green chilies : 3
 robin hood oats : 3
@@ -8568,7 +8380,7 @@ red star active dry yeast : 3
 origanum : 3
 purple bell pepper : 3
 betty crocker yellow cake mix : 3
-98%  condensed mushroom soup : 3
+98% condensed mushroom soup : 3
 diamond walnuts : 3
 vanilla cookies : 3
 mandarin pancake : 3
@@ -8653,7 +8465,7 @@ saunf : 3
 unsalted matzo crackers : 3
 ground moose : 3
 lemon jelly crystals : 3
-98%  honey ham : 3
+98% honey ham : 3
 redfish fillets : 3
 miniature oreo cookie : 3
 cut yams in syrup : 3
@@ -8770,7 +8582,6 @@ caperberries : 3
 pecan pie : 3
 raspberries in juice : 3
 dried scallops : 3
-dry  buttermilk : 3
 semisweet baking chocolate squares : 3
 beef round rump roast : 3
 duck hindquarters : 3
@@ -8875,7 +8686,7 @@ rolled anchovies over capers : 3
 rice and sauce mix : 3
 reduced-fat sausage : 3
 coconut yogurt : 3
-fresh lotus root : 3
+lotus root : 3
 reduced fat reduced sodium condensed tomato soup : 3
 labneh : 3
 low-fat cultured buttermilk : 3
@@ -8892,7 +8703,7 @@ long-grain minute rice : 3
 potato hamburger buns : 3
 pork riblets : 3
 diet dr. pepper soda : 3
-fresh tuna filets : 3
+tuna filets : 3
 bread pizza crust : 3
 cream of spinach soup mix : 3
 garlic and herb marinade : 3
@@ -8908,7 +8719,6 @@ butterscotch candy : 3
 citrus punch : 3
 fennel head : 3
 apple rings : 3
-fresh coffee : 3
 honey mustard sauce : 3
 soy powder : 3
 diced tomatoes with balsamic vinegar basil and oil : 3
@@ -9031,7 +8841,6 @@ bean sauce : 3
 sugar-free instant lemon pudding : 3
 dried mediterranean oregano : 3
 aceto balsamico : 3
-elephant garlic cloves : 3
 unsweetened coconut cream : 3
 doughnut : 3
 anchovy packed in oil : 3
@@ -9072,7 +8881,7 @@ white fudge covered oreos : 3
 orange-flavored craisins : 3
 rich turkey stock : 3
 cottage cheese with chives : 3
-fresh jalapeno chilie : 3
+jalapeno chilie : 3
 frozen margarita mix : 3
 granola bar : 3
 coco pops cereal : 3
@@ -9137,7 +8946,7 @@ low-fat ritz crackers : 3
 unbaked double pie crusts : 3
 turkey breast half : 3
 popsicle molds : 3
-98%  broccoli cheese soup : 3
+98% broccoli cheese soup : 3
 low-fat vanilla soymilk : 3
 comte cheese : 3
 low-carb pasta : 3
@@ -9229,7 +9038,7 @@ velveeta pepper jack cheese : 3
 mini whole wheat pita bread : 3
 cloudberries : 3
 spinach and cheese tortellini : 3
-marinated fresh mozzarella balls in oil : 3
+marinated  mozzarella balls in oil : 3
 sourdough breadcrumbs : 3
 weight watchers white bread : 3
 posole : 3
@@ -9298,7 +9107,6 @@ whole wheat sandwich wrap : 3
 morton nature seasons seasoning blend : 3
 roasted garlic and sweet onion jam : 3
 beef blade steak : 3
-fresh swordfish steaks : 3
 purple cauliflower : 3
 teddy grahams cinnamon graham snacks : 3
 ginseng roots : 3
@@ -9385,7 +9193,7 @@ teriyaki seasoning mix : 3
 ground oats : 3
 three-cheese tortellini : 3
 low-fat mascarpone cheese : 3
-young fresh baby carrots : 3
+young  baby carrots : 3
 whole wheat roll : 3
 nu-salt : 3
 perdue short cuts original roasted carved chicken breasts : 3
@@ -9429,7 +9237,6 @@ kraft shredded low-moisture part-skim mozzarella cheese : 3
 greek dressing : 3
 crisco baking sticks butter flavor all-vegetable shortening : 3
 hidden valley original ranch light dressing : 3
-fresh lime zest : 3
 persian cucumbers : 3
 provel cheese : 3
 simply macaroni & cheese : 3
@@ -9446,7 +9253,7 @@ ortega chile : 2
 knackwurst of frankfurter : 2
 frozen pizza crust : 2
 cheese-flavored granule : 2
-35 % fresh cream : 2
+35 %  cream : 2
 lady savoiardi : 2
 acid blend : 2
 pectic enzyme powder : 2
@@ -9456,7 +9263,6 @@ blade pot roast : 2
 boneless pork filets : 2
 hershey's semi-sweet baking chocolate : 2
 dry ancho chilies : 2
-fresh cumin seed : 2
 regular hamburger : 2
 lemon-lime sherbet : 2
 japanese-style vegetables : 2
@@ -9491,7 +9297,6 @@ long crusty bread : 2
 pista : 2
 light devils food cake mix : 2
 butterfinger bar : 2
-fresh boneless fish fillets : 2
 butterball boneless breast of turkey : 2
 turkey scallopini : 2
 barley pearls : 2
@@ -9515,7 +9320,6 @@ court bouillon : 2
 mangoes in syrup : 2
 bitter cocoa powder : 2
 dry chili peppers : 2
-fresh pork loin roast : 2
 dry pasta shell macaroni : 2
 light fruit pectin : 2
 basic meatloaf : 2
@@ -9622,7 +9426,6 @@ barilla lasagna : 2
 individual size prepared prebaked pizza crusts : 2
 veal brisket : 2
 ragu hearty robusto pasta sauce : 2
-fresh pork hocks : 2
 rhine wine : 2
 ranch style black-eyed peas with jalapenos : 2
 contadina diced tomatoes : 2
@@ -9641,7 +9444,6 @@ mushroom and green pepper flavor spaghetti sauce : 2
 ground conch : 2
 yuzu juice : 2
 keen's dry mustard : 2
-baking powder biscuits : 2
 stone ground corn grits : 2
 low-fat cherry yogurt : 2
 mori-nu silken soft tofu : 2
@@ -9777,7 +9579,7 @@ mint chip : 2
 meringue : 2
 pork pate : 2
 mackerel in tomato sauce : 2
-6 inch  whole wheat pita bread : 2
+6 inch whole wheat pita bread : 2
 pork cutlet : 2
 milk solids : 2
 kabuli channa : 2
@@ -9839,7 +9641,6 @@ kraft creamy cucumber ranch salad dressing : 2
 chicken frankfurters : 2
 chocolate-covered nuts : 2
 sugar-free raspberry fruit spread : 2
-featherweight baking powder : 2
 newburg sauce mix : 2
 chocolate mint kisses : 2
 herb and lemon soup mix : 2
@@ -9935,7 +9736,6 @@ nut bread : 2
 reduced-fat hot dogs : 2
 date bread mix : 2
 whole grain honey mustard : 2
-minced fresh garlic clove : 2
 black gram : 2
 daylily flower buds : 2
 malt liquor : 2
@@ -10130,7 +9930,6 @@ coconut macaroons : 2
 lamb loin chop : 2
 roast turkey meat : 2
 70% lean ground beef : 2
-fresh portabella mushroom : 2
 nacho cheese dip : 2
 orange pekoe tea bag : 2
 dry methi leaves : 2
@@ -10218,7 +10017,7 @@ green beans with new potatoes : 2
 kim chee juice : 2
 wax peppers : 2
 low sodium ketchup : 2
-fruit-fresh produce protector : 2
+fruit- produce protector : 2
 millet seeds : 2
 mint syrup : 2
 crispbread : 2
@@ -10236,7 +10035,7 @@ white grapefruits : 2
 dried black turtle beans : 2
 tomato sauce with garlic : 2
 cream cheese with tomato and basil : 2
-fresh sorrel leaf : 2
+sorrel leaf : 2
 cereal bars : 2
 potato pierogies : 2
 gluten-free margarine : 2
@@ -10251,7 +10050,7 @@ light hawaiian punch : 2
 broken pretzels : 2
 malanga : 2
 canned sour cherries : 2
-fresh pumpkin ravioli : 2
+pumpkin ravioli : 2
 low-sodium ham : 2
 deer roast : 2
 seedless blackberry preserves : 2
@@ -10286,7 +10085,7 @@ bitter almond oil : 2
 knorr parma rosa sauce mix : 2
 patty shell : 2
 milk chocolate confectionary coating : 2
-grated fresh coconut : 2
+grated  coconut : 2
 coconut cookies : 2
 sugar-free chocolate : 2
 pork jowl : 2
@@ -10430,10 +10229,9 @@ hot italian ham : 2
 baby ruth candy bars : 2
 tuaca liqueur : 2
 sugar-free apricot preserves : 2
-fresh ripe pineapple : 2
+ripe pineapple : 2
 sugar-free vanilla yogurt : 2
 lean baked ham : 2
-garlic-infused vegetable oil : 2
 sweet asian chicken chili sauce : 2
 tabasco peppers : 2
 ginger preserves : 2
@@ -10533,7 +10331,6 @@ reduced-fat catalina dressing : 2
 pastis : 2
 dole classic coleslaw : 2
 pumpernickel flour : 2
-fresh grape leaves : 2
 dijon-horseradish mustard : 2
 opah fillets : 2
 amaretto-flavored nondairy liquid creamer : 2
@@ -10543,7 +10340,6 @@ four-grain cereal : 2
 spiced apple cider : 2
 betty crocker cinnamon streusel muffin mix : 2
 cooked whole grain brown rice : 2
-fresh sardines : 2
 stella doro anginetti cookies : 2
 gluten-free bread mix : 2
 monterey jack cheese cubes : 2
@@ -10829,11 +10625,11 @@ light strawberry yogurt : 2
 rainbow chocolate chips : 2
 breaded fish fillet : 2
 organic peanut butter : 2
-hood calorie countdown  dairy beverage : 2
+hood calorie countdown dairy beverage : 2
 aji panca chilies : 2
 sugar-free black cherry gelatin : 2
 sugar-free lime jell-o gelatin : 2
-fresh spinach-cheese ravioli : 2
+spinach-cheese ravioli : 2
 hard sourdough pretzels : 2
 pork roll : 2
 firm ripe peach : 2
@@ -11083,7 +10879,6 @@ vinaigrette-style dressing : 1
 elderflower heads : 1
 dry wasabi : 1
 4 grain bread flour : 1
-fresh compressed yeast : 1
 lowfat neufchatel cheese : 1
 cheese pizza mix : 1
 sweet plums : 1
@@ -11107,11 +10902,11 @@ all purpose wine yeast : 1
 campden tablets : 1
 grape tannin : 1
 yeast energizer : 1
-assorted fresh herb leaves : 1
+assorted  herb leaves : 1
 chicken a 'la king : 1
 dried whole coriander seed : 1
 white beef stock : 1
-fresh onion ring : 1
+onion ring : 1
 low sodium tomato : 1
 gourmet wine vinegar : 1
 tri-colored corkscrew macaroni : 1
@@ -11122,7 +10917,6 @@ brandewijn : 1
 fine dutch rusk crumb : 1
 oval- shaped thin veal cutlets : 1
 gevalia dark roast : 1
-fresh chinese pea pods : 1
 creamed shortening : 1
 flexible plastic straws : 1
 tall slender 4 cup container : 1
@@ -11150,10 +10944,9 @@ sargento. chefstyle cheddar cheese : 1
 small beans : 1
 brownberry herb stuffing mix : 1
 soy dairy firm tofu : 1
-fresh orange-fleshed yams : 1
+orange-fleshed yams : 1
 sharp longhorn cheese : 1
 light meatless pasta sauce : 1
-wishbone  italian dressing : 1
 dry rye breadcrumb : 1
 dark vegetable stock powder : 1
 unsweetened alkalized cocoa powder : 1
@@ -11200,7 +10993,7 @@ oyster stew : 1
 betty crocker lemon ready to spread frosting : 1
 green pea soup : 1
 pig apron : 1
-powdered  dry creamer : 1
+powdered dry creamer : 1
 raspberry-flavored wine cooler : 1
 raspberry-flavored wine coolers : 1
 9 inch cake layers : 1
@@ -11235,7 +11028,6 @@ wellfleet oysters : 1
 whitefish trimmings : 1
 burgundy snails : 1
 white macon wine : 1
-fresh calf liver : 1
 royal ann cherries : 1
 best end of neck welsh lamb : 1
 mutton stock : 1
@@ -11254,7 +11046,7 @@ blended red chili sauce : 1
 whole leaf oregano : 1
 jalapeno chiles with juice : 1
 thin pork scallop : 1
-fresh homemade breadcrumbs : 1
+homemade breadcrumbs : 1
 crumb-nut cheesecake crust : 1
 precooked shanghai noodles : 1
 square bean curd : 1
@@ -11266,7 +11058,6 @@ las palmas green chili sauce : 1
 moro orange : 1
 cannonball cabbage : 1
 morton sausage seasoning : 1
-fresh crab : 1
 bird's custard mix : 1
 jam roll : 1
 chili hot mix : 1
@@ -11514,7 +11305,7 @@ dry milk solids : 1
 red pearl onions : 1
 sun-maid golden seedless raisins : 1
 chocolate pastry cream : 1
-snackwell's  wheat crackers : 1
+snackwell's wheat crackers : 1
 capacola ham : 1
 blush wine vinaigrette dressing : 1
 snackwell's cinnamon snacks : 1
@@ -11573,7 +11364,7 @@ red pepper rotini pasta : 1
 pearl sago : 1
 gluten-free chocolate chip cookies : 1
 chung choi : 1
-butterball  turkey : 1
+butterball turkey : 1
 white-meat chicken quarters : 1
 whole wheat sandwich loaf : 1
 baby banana puree : 1
@@ -11607,7 +11398,7 @@ african bird pepper : 1
 knorr four cheese pasta sauce mix : 1
 cheese blintzes : 1
 california black figs : 1
-fresh chinese spinach egg noodles : 1
+chinese spinach egg noodles : 1
 deep fried dried onions : 1
 hush puppy mix with onion : 1
 black cod steaks : 1
@@ -11706,7 +11497,6 @@ pine needles : 1
 jalapeno potato chips : 1
 layer cake : 1
 butter brickle ice cream : 1
-fresh onion rings : 1
 low fat unsweetened soy cream : 1
 bermuda falernum : 1
 blue cheese dressing mix : 1
@@ -11715,7 +11505,7 @@ diet fudge topping : 1
 wild cherry vanilla frosting : 1
 nassau royale : 1
 wasa bread : 1
-fresh white garlic : 1
+white garlic : 1
 low-sodium refried beans : 1
 bergamot oil : 1
 palm vinegar : 1
@@ -11834,7 +11624,6 @@ cheese-stuffed shells : 1
 dehydrated spinach flakes : 1
 limburger cheese : 1
 anchovy-stuffed olives : 1
-double-action baking powder : 1
 unsweetened blue raspberry lemonade mix : 1
 roasted pecans : 1
 duck confit : 1
@@ -11940,7 +11729,7 @@ blackfish fillet : 1
 artichoke dip : 1
 tortiglioni : 1
 havarti with caraway : 1
-fresh yeast cakes : 1
+yeast cakes : 1
 beans and carrots vegetable mix : 1
 chicken and wild rice soup : 1
 vegetarian hamburger patties : 1
@@ -11985,7 +11774,7 @@ caribe chile pepper : 1
 cookies 'n' creme nuggets : 1
 pineapple flavoring : 1
 dried rhizome : 1
-fresh pimiento peppers : 1
+pimiento peppers : 1
 turkey london broil : 1
 10 inch low-fat flour tortillas : 1
 sugar-free lemon yogurt : 1
@@ -12038,7 +11827,7 @@ cannoli cones : 1
 dried carrots : 1
 munchee cheese : 1
 monkfish fillet : 1
-8-inch 97%  flour tortillas : 1
+8-inch 97% flour tortillas : 1
 cherry fruit spread : 1
 honey nut cream cheese : 1
 sambal tjampoer : 1
@@ -12253,7 +12042,6 @@ nutty wheat flour : 1
 soft stale bread crumbs : 1
 falooda seeds : 1
 arepa flour : 1
-prepared  vanilla pudding : 1
 passion fruit and strawberry salad dressing : 1
 muscat de beaumes de venise : 1
 bit-o-honey candy bars : 1
@@ -12277,7 +12065,7 @@ yellow snapper fillets : 1
 large shelled prawn : 1
 tangelos : 1
 lightlife turkey slices : 1
-fresh tarragon sprigs : 1
+tarragon sprigs : 1
 mini jelly rolls : 1
 prune filling : 1
 low-fat low-sodium cream of broccoli soup : 1
@@ -12314,7 +12102,7 @@ dark chocolate-covered cherries : 1
 vegetarian canadian bacon : 1
 male squash blossoms : 1
 instant roux mix : 1
-fresh baked bread : 1
+baked bread : 1
 wing beans : 1
 orange preserves : 1
 honey-wheat bagel : 1
@@ -12359,7 +12147,7 @@ crevettes : 1
 lamb baby food : 1
 strawberry berry burst cheerios : 1
 nestle milk chocolate and peanut butter swirled morsels : 1
-fresh pork picnic : 1
+pork picnic : 1
 deer heart : 1
 deer liver : 1
 turkey breast tenderloin steaks : 1
@@ -12499,7 +12287,6 @@ coffee-infused vodka : 1
 watermelon liqueur : 1
 green giant roasted potatoes with garlic and herbs : 1
 chocolate-covered caramel candie : 1
-pickled garlic cloves : 1
 pickled green chilies : 1
 potato and leek soup : 1
 buffalo stew meat : 1
@@ -12650,7 +12437,6 @@ frozen hash browns with cheddar cheese : 1
 sour cream and cheddar potato chips : 1
 low-cholesterol margarine : 1
 sugar-free orange juice : 1
-fresh unsweetened applesauce : 1
 fruit pectin crystals : 1
 high-protein flour : 1
 chocolate fudge ice cream : 1
@@ -12847,7 +12633,6 @@ chili with chicken and beans : 1
 cream of corn soup : 1
 whole grain pie crust : 1
 cake doughnuts : 1
-frozen  non-dairy topping : 1
 wasabi-horseradish mayonnaise : 1
 tortilla soup : 1
 veat bites : 1
@@ -12880,7 +12665,6 @@ garlic and cayenne pepper mayonnaise : 1
 mull of kintyre cheese : 1
 crayfish : 1
 apple sweetened fortified soya milk : 1
-cholesterol-free  egg : 1
 short-tailed shearwater : 1
 roasted salted pistachio nuts : 1
 canned strawberries in syrup : 1
@@ -12983,7 +12767,6 @@ mild red chile peppers : 1
 jamon iberico : 1
 unsweetened tomato juice : 1
 cream of mushroom soup mix : 1
-prepared  chocolate pudding : 1
 boil-in-the-bag brown rice : 1
 nature valley pecan crunch granola bars : 1
 reese's baking pieces : 1
@@ -13059,7 +12842,7 @@ cheetos cheese curls : 1
 mutton neck : 1
 marshmallow peep : 1
 nasturtium blossoms : 1
-smart beat  cheese : 1
+smart beat cheese : 1
 gorgonzola walnut ravioli : 1
 lowfat curds : 1
 blueberry vinegar : 1
@@ -13315,7 +13098,7 @@ loganberries : 1
 sweet pepper flakes : 1
 garlic butter crescent dinner rolls : 1
 rice starch : 1
-99%  orange flavored yogurt : 1
+99% orange flavored yogurt : 1
 refrigerated taco sauce with seasoned shredded chicken : 1
 basil mayonnaise : 1
 soy eggnog : 1
@@ -13342,11 +13125,11 @@ salt-free fajita seasoning mix : 1
 reduced-sodium chicken noodle soup mix : 1
 blue curacao syrup : 1
 low-fat condensed cheddar cheese soup : 1
-pringles  barbecue potato crisps : 1
+pringles barbecue potato crisps : 1
 duncan hines cinnamon swirl muffin mix : 1
 haggis : 1
 reduced-sodium asparagus spears : 1
-fresh white fish : 1
+white fish : 1
 equal spoonful : 1
 bacardi peach red rum : 1
 diet ginger beer : 1
@@ -13441,7 +13224,7 @@ chipotle pepper tortilla : 1
 vegan sausage links : 1
 citrus ponzu soy sauce : 1
 candied tangerine zest : 1
-gluten-free  sour cream : 1
+gluten-free sour cream : 1
 chunky turkey pot pie soup : 1
 yellow pike : 1
 sun-dried tomato olive basil rub : 1
@@ -13475,7 +13258,7 @@ blue hawaiian maui schnapps : 1
 matzo cake flour : 1
 weisswurst sausages : 1
 fry bread : 1
-fresh ginger root juice : 1
+ginger root juice : 1
 ghirardelli double chocolate brownie mix : 1
 saucy susan peach apricot sauce : 1
 calamari steak : 1
@@ -13519,7 +13302,7 @@ fruit salt : 1
 dried ginger sesame blend : 1
 coarse wheat flour : 1
 graviera : 1
-filet of fresh sea bass : 1
+filet of  sea bass : 1
 smoked gruyere cheese : 1
 low fat bacon bits : 1
 9 pastry pie shells : 1
@@ -13530,7 +13313,7 @@ sodium-free vegetable bouillon : 1
 sugar-free molasses : 1
 herbal liqueur : 1
 roasted eggplant packed in oil : 1
-97%  shaved leg ham : 1
+97% shaved leg ham : 1
 apple jacks cereal : 1
 vidalia onion spreadable cheese : 1
 pickerel : 1
@@ -13546,7 +13329,7 @@ ice cream wafers : 1
 herb & butter rice-a-roni : 1
 ice cream wafer : 1
 sardine fillets : 1
-smart beat  mayonnaise : 1
+smart beat mayonnaise : 1
 whole wheat ciabatta : 1
 lemon cordial : 1
 yigandes beans : 1
@@ -13607,7 +13390,6 @@ whole wheat capellini : 1
 barley rusks : 1
 sheep milk : 1
 chocolate cake doughnuts : 1
-trans  extra-light vegetable oil spread : 1
 blood pudding sausage : 1
 white pudding sausage : 1
 roasted red pepper cream cheese : 1
@@ -13679,7 +13461,6 @@ shark steak : 1
 blue gatorade : 1
 red gatorade : 1
 green giant mushroom pieces and stems : 1
-fresh crabs : 1
 hot chocolate ice cubes : 1
 worthington wham vegetable protein slices : 1
 instant decaffeinated coffee crystals : 1
@@ -13707,12 +13488,12 @@ green pumpkin : 1
 black beans with cumin and chili powder : 1
 another sweetener : 1
 coffee-mate italian sweet creme : 1
-fresh broccoli and cauliflower mix : 1
+broccoli and cauliflower mix : 1
 bubblegum : 1
 marinated artichoke oil : 1
 reduced-sodium brown gravy mix : 1
 cooked lean beef : 1
-white chocolate cheesecake  yogurt : 1
+white chocolate cheesecake yogurt : 1
 chocolate chex : 1
 honey mustard pretzels : 1
 asiago caesar salad dressing : 1
@@ -13735,13 +13516,13 @@ pinto beans and chipotle peppers in zesty santa fe sauce : 1
 green onion dip : 1
 pike : 1
 heads of lettuce : 1
-trans  crisco : 1
+trans crisco : 1
 gluten-free biscuits : 1
 low-fat pineapple yogurt : 1
 side pork : 1
 paper drink umbrellas : 1
 dehydrated mushroom pieces : 1
-fresh smoked mozzarella cheese ball : 1
+smoked mozzarella cheese ball : 1
 cheerwine soft drink : 1
 whole wheat italian breadcrumbs : 1
 betty crocker rich & creamy chocolate ready to spread frosting : 1
@@ -13781,7 +13562,7 @@ sierra mist free : 1
 tangerine liqueur : 1
 skinless halibut fillet : 1
 sobe elixir cranberry grapefruit : 1
-fresh red currant : 1
+red currant : 1
 toasted coconut marshmallows : 1
 soy flakes : 1
 candied peanuts : 1
@@ -13877,7 +13658,7 @@ no-salt-added green beans : 1
 herbal tea bag : 1
 fajita-size flour tortilla : 1
 chamomile flowers : 1
-98%  cream of broccoli soup : 1
+98% cream of broccoli soup : 1
 reduced-fat granola with raisins : 1
 reduced-fat smoked turkey kielbasa : 1
 hot dog sauce : 1
@@ -14208,7 +13989,7 @@ original bisquick mix : 1
 dog food : 1
 vegan creamer : 1
 cool whip whipped topping : 1
-coffee-mate  powder : 1
+coffee-mate powder : 1
 achiote oil : 1
 2% large-curd cottage cheese : 1
 cocktail frankfurters : 1
@@ -14256,7 +14037,6 @@ chef boyardee spaghetti & meatballs : 1
 italian flat beans : 1
 hebrew national beef franks : 1
 pam? grilling cooking spray : 1
-wesson pure vegetable oil : 1
 top n fill caramel : 1
 chocolate glaze : 1
 morningstar farms meal starters chicken strips : 1
@@ -14367,7 +14147,7 @@ blue candy melts : 1
 kraft shredded monterey jack cheese : 1
 organic celery : 1
 chocolate ice cream topping : 1
-98%  cheddar cheese soup : 1
+98% cheddar cheese soup : 1
 kraft shredded triple cheddar cheese with a touch of philadelphia : 1
 low-fat dry milk : 1
 whole wheat hot dog buns : 1

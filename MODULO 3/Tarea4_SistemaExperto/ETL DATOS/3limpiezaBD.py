@@ -1,4 +1,5 @@
 #python -m pip install pyodbc
+import re
 import pyodbc
 
 def limpiarIngredientes(lista):
@@ -10,6 +11,7 @@ def limpiarIngredientes(lista):
     listaOriginal = lista.copy()
     
     for i in range(len(lista)):
+        lista[i]=re.sub(r'\s+', ' ', lista[i])
         ingrediente = lista[i]
         if "sugar" in ingrediente:
             if "free" in ingrediente:
@@ -79,6 +81,34 @@ def limpiarIngredientes(lista):
                 continue
             lista[i] = "apple juice"
             continue
+        elif "all-purpose flour" in ingrediente:
+            lista[i] = "flour"
+            continue
+        elif "kosher salt" in ingrediente:
+            lista[i] = "salt"
+            continue
+        elif "sea salt" in ingrediente:
+            lista[i] = "salt"
+            continue
+        elif "garlic clove" in ingrediente:
+            lista[i] = "garlic"
+            continue
+        elif "fresh garlic" in ingrediente:
+            lista[i] = "garlic"
+            continue
+        elif "fresh" in ingrediente:
+            lista[i] = lista[i].replace("fresh", "").strip()
+            continue
+        elif "baking powder" in ingrediente:
+            lista[i] = "baking powder"
+            continue
+        elif "vegetable oil" in ingrediente:
+            lista[i] = "vegetable oil"
+            continue
+
+
+
+
 
 
 
