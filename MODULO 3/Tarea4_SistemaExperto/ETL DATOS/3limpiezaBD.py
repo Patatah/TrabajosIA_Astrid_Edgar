@@ -5,21 +5,66 @@ def limpiarIngredientes(lista):
     """
     Función para limpiar los ingredientes de una receta.
     Convierte ingredientes especificos a generales, usando muchas reglas.
-    Retorna un string con los ingredientes separados por comas.
+    Retorna un string con la query a ejecutar para actualizar la base de datos.
     """
+    listaOriginal = lista.copy()
+    
     for i in range(len(lista)):
         ingrediente = lista[i]
-        ingrediente = ingrediente.replace("'", "''")
-        if "sugar" in ingrediente:
-            lista[i] = 'sugar'
+        if "sugar" in ingrediente or "":
+            if "free" in ingrediente:
+                continue
+            if "brown" not in ingrediente:
+                lista[i] = 'sugar'
+            else:
+                lista[i] = 'brown sugar'
             continue
-        elif "chicken" in ingrediente:
-            lista[i] = 'chicken'
+        elif "sugar-free" in ingrediente:
+            lista[i] = lista[i].replace("sugar-free", "").strip()
+            continue
+        elif "fat-free" in ingrediente:
+            lista[i] = lista[i].replace("fat-free", "").strip()
+            continue
+        elif "sugar free" in ingrediente:
+            lista[i] = lista[i].replace("sugar free", "").strip()
+            continue
+        elif "fat free" in ingrediente:
+            lista[i] = lista[i].replace("fat free", "").strip()
+            continue
+        elif "nonfat" in ingrediente:
+            lista[i] = lista[i].replace("nonfat", "").strip()
+            continue
+        elif "non fat" in ingrediente:
+            lista[i] = lista[i].replace("non fat", "").strip()
+            continue
+        elif "non-fat" in ingrediente:
+            lista[i] = lista[i].replace("non-fat", "").strip()
+            continue
+        elif "substitute" in ingrediente:
+            lista[i] = lista[i].replace("substitute", "").strip()
+            continue
+        elif "margerine" in ingrediente:
+            lista[i] = "margarine"
+            continue
+        elif "beef broth" in ingrediente:
+            lista[i] = "beef broth"
+            continue
+        elif "chicken broth" in ingrediente:
+            lista[i] = "beef broth"
             continue
 
     lista.sort()
-    listaLimpia = ",".join(lista)
-    return listaLimpia
+
+    if listaOriginal == lista:
+        return None
+
+    for i in range(len(lista)):
+        lista[i] = lista[i].replace("'", "''") # Evitar problemas con comillas simples
+
+    
+    stringLista = ",".join(lista)
+    query = "UPDATE Recetas SET ingredientes = '"+stringLista+"' "+"WHERE id = "+str(fila[0])
+    return query
 
 # Configuración de la conexión
 server = 'localhost'  # dirección de el servidor
@@ -41,8 +86,10 @@ try:
     resultado = cursor.fetchall()
     for fila in resultado:
         listaIngredientes = fila[1].split(',')
-        ingredientesLimpios = limpiarIngredientes(listaIngredientes)
-        query = "UPDATE Recetas SET ingredientes = '"+ingredientesLimpios+"' "+"WHERE id = "+str(fila[0])
+
+        query = limpiarIngredientes(listaIngredientes)
+        if query is None:
+            continue
         print(query)
         cursorUpdate.execute(query)
         conn.commit()
