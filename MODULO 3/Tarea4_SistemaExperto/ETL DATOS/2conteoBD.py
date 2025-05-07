@@ -28,8 +28,9 @@ try:
         listaIngredientes = fila[0].split(',')
         diccionario_conteo.update(listaIngredientes)
     
+    ordenado = diccionario_conteo.most_common()
     with open(rutaArchivo, "w", encoding="utf-8") as archivo:
-            for nombre, conteo in diccionario_conteo.items():
+            for nombre, conteo in ordenado:
                 archivo.write(f"{nombre} : {conteo}\n") 
     
    

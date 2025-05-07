@@ -11,7 +11,7 @@ def limpiarIngredientes(lista):
     
     for i in range(len(lista)):
         ingrediente = lista[i]
-        if "sugar" in ingrediente or "":
+        if "sugar" in ingrediente:
             if "free" in ingrediente:
                 continue
             if "brown" not in ingrediente:
@@ -52,6 +52,35 @@ def limpiarIngredientes(lista):
         elif "chicken broth" in ingrediente:
             lista[i] = "beef broth"
             continue
+        elif "eggs" in ingrediente:
+            if("chocolate" in ingrediente or "quail" in ingrediente or "powdered" in ingrediente or "pickled" in ingrediente):
+                continue
+            lista[i] = "eggs"
+            continue
+        elif "chocolate" in ingrediente and "egg" in ingrediente:
+            lista[i] = "chocolate eggs"
+            continue
+        elif ingrediente == "egg":
+            lista[i] = "eggs"
+            continue
+        elif "lemon juice" in ingrediente:
+            lista[i] = "lemon juice"
+            continue
+        elif "orange juice" in ingrediente:
+            lista[i] = "orange juice"
+            continue
+        elif "pineapple juice" in ingrediente:
+            if "teriyaki" in ingrediente:
+                continue
+            lista[i] = "pineapple juice"
+            continue
+        elif "apple juice" in ingrediente:
+            if "pineapple" in ingrediente:
+                continue
+            lista[i] = "apple juice"
+            continue
+
+
 
     lista.sort()
 
