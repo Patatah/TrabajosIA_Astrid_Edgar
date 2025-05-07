@@ -1,0 +1,1 @@
+Sistema experto que recomienda recetas. Usando base de datos SQL con recetas
