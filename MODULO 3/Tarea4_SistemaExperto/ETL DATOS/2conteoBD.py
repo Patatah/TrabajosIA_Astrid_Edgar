@@ -10,7 +10,7 @@ username = 'edgar'
 password = '123' 
 
 #Archivo para guardar ingredientes unicos:
-rutaArchivo = 'MODULO 3\\Tarea4_SistemaExperto\\ETL DATOS\\conteo.txt'
+rutaArchivo = 'MODULO 3\\Tarea4_SistemaExperto\\ETL DATOS\\3postLimpieza.txt'
 
 #Connection String para SQL Server
 conn_str = f'DRIVER={{SQL Server}};SERVER={server};DATABASE={database};UID={username};PWD={password}'
