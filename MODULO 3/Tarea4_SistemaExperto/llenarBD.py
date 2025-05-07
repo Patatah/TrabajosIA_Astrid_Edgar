@@ -73,7 +73,7 @@ try:
         descripcion = descripcion.replace("'", "''")
 
         #Ejectutar el query
-        queryFinal = query+"("+str(id)+", '"+nombre+"', "+str(minutos)+", '"+fecha+"', "+str(n_pasos)+", '"+pasos+"', "+str(n_ingredientes)+", '"+pasos+"', '"+descripcion+"')"
+        queryFinal = query+"("+str(id)+", '"+nombre+"', "+str(minutos)+", '"+fecha+"', "+str(n_pasos)+", '"+pasos+"', "+str(n_ingredientes)+", '"+ingredientes+"', '"+descripcion+"')"
         ##print (queryFinal)
         cursor.execute(queryFinal)
         conn.commit()
