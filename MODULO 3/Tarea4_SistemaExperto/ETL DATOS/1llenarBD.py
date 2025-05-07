@@ -57,12 +57,14 @@ try:
         #Obtener los ingredientes de la receta y limpiar
         ingredientes = fila['ingredients']
         ingredientes = ingredientes.replace('[','').replace(']','')
-        ingredientes = re.sub(r"'[^']*'", lambda m: m.group(0).replace(',', ''), ingredientes)
+        ##ingredientes = re.sub(r"'[^']*'", lambda m: m.group(0).replace(',', ''), ingredientes)
         listaIngredientes = ingredientes.split(',')
         for i in range(len(listaIngredientes)):
             listaIngredientes[i] = listaIngredientes[i].strip()
             listaIngredientes[i] = listaIngredientes[i].strip("'")
+            listaIngredientes[i] = listaIngredientes[i].strip('"')
             listaIngredientes[i] = listaIngredientes[i].replace("'", "''")
+            listaIngredientes[i] = re.sub(r'"+', ' ', listaIngredientes[i])
             listaIngredientes[i] = re.sub(r'\s+', ' ', listaIngredientes[i])
         listaIngredientes.sort()
         ingredientes = ','.join(listaIngredientes)
