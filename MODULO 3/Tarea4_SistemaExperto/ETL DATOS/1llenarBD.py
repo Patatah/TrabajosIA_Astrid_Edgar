@@ -77,7 +77,7 @@ try:
         ##print (queryFinal)
         cursor.execute(queryFinal)
         conn.commit()
-        print(f'Insertado: {id} - {nombre}')
+        ##print(f'Insertado: {id} - {nombre}')
         
    
 
