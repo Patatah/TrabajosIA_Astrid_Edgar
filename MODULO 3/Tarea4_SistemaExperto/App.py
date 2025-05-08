@@ -157,23 +157,24 @@ try:
         global texto_derecha
         global recetas_posibles
         
-        separador="------------------------------------------------------------------------"
+        separador="------------------------------------------------------------------------------------------------------"
         texto=separador+"\n"
         for tuplas in recetas_posibles:
             texto+="Receta "+str(tuplas[0])+". Subida el " + str(tuplas[3])+".\n"
             texto+=separador+"\n"
             texto+="★ Nombre: "+tuplas[1]+".\n"
-            texto+="☆ "+str(tuplas[2])+" minutos de preparación.\n"
+            texto+="★ Tiempo de preparación: "+str(tuplas[2])+" minutos.\n"
+            texto+="\n"
             
-            texto+="* Pasos:\n"
+            texto+="☆ PASOS:\n"
             #Separar los pasos
             pasos=tuplas[5].split(",")
             i=1
             for paso in pasos:
-                texto+=str(i)+".- "+paso+"\n"
+                texto+="     "+str(i)+".- "+paso+"     \n"
                 i+=1
 
-            texto+="\n* Descripción:\n"
+            texto+="\n☆ DESCRIPCIÓN:\n"
             texto+=tuplas[7]+"\n"
 
             #Obtener ingredientes de las recetas
@@ -184,10 +185,10 @@ try:
             ingredientes_de_esta_receta = []
             for tupla in tuplas:
                 ingredientes_de_esta_receta.append(tupla[0])
-            
+            texto+="\n☆ INGREDIENTES:\n"
             i=1
             for ingrediente in ingredientes_de_esta_receta:
-                texto+=str(i)+".- "+ingrediente+"\n"
+                texto+="     "+str(i)+".- "+ingrediente+"\n"
                 i+=1
             
             texto+="\n"+separador+"\n"
