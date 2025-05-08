@@ -176,6 +176,7 @@ def limpiarIngredientes(lista):
 
     for i in range(len(lista)):
         lista[i] = lista[i].replace("'", "''") # Evitar problemas con comillas simples
+        lista[i] = re.sub(r'\s+', ' ', lista[i])
 
     
     stringLista = ",".join(lista)
