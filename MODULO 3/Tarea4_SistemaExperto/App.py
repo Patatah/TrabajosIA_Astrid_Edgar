@@ -87,8 +87,7 @@ try:
         else:
             ingredientes_seleccionados.remove(val)
 
-        filtrar_posibles()
-        buscar_ingredientes(buscando) #Actualizar con pasos extra
+        filtrar_posibles() #Actualizar cuando quitas algo de los ingredientes_seleccionados
 
     ## Llenar checkboxes
     def crearCheckbox(texto):
@@ -204,6 +203,8 @@ try:
         global ingredientes_posibles
         global recetas_posibles
         global ingredientes_seleccionados
+       
+        print(ingredientes_seleccionados)
 
         #Obtener que recetas se pueden hacer
         query="SELECT top 5 * FROM Recetas r WHERE ( SELECT COUNT(DISTINCT i.nombre) " \
