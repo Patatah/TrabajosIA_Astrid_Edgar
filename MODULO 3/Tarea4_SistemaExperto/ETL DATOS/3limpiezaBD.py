@@ -85,9 +85,8 @@ def limpiarIngredientes(lista):
         elif "black pepper" in ingrediente:
             lista[i] = "black pepper"
         elif "sour cream" in ingrediente:
-            if "potato chips" in ingrediente:
-                continue
-            lista[i] = "sour cream"
+            if "potato chips" not in ingrediente:
+                lista[i] = "sour cream"
         elif "simply" in ingrediente:
             lista[i] = lista[i].replace("simply", "").strip()
         elif "extra virgin olive oil" in ingrediente:
@@ -135,13 +134,10 @@ def limpiarIngredientes(lista):
             removidos +=1
         elif "chicken breast" in ingrediente:
             lista[i] = "chicken breast"
-            continue
         elif "chicken thigh" in ingrediente:
             lista[i] = "chicken thighs"
-            continue
         elif "chicken leg" in ingrediente:
             lista[i] = "chicken legs"
-            continue
         elif "chicken wing" in ingrediente:
             lista[i] = "chicken wings"
         elif "ketchup" in ingrediente:
@@ -152,30 +148,22 @@ def limpiarIngredientes(lista):
             lista[i] = "ginger"
         elif "diced tomatoes" in ingrediente:
             lista[i] = "diced tomatoes"
-            continue
         elif "tomato sauce" in ingrediente:
             lista[i] = "tomato sauce"
         elif "tomato paste" in ingrediente:
             lista[i] = "tomato paste"
-            continue
         elif "chili sauce" in ingrediente:
             lista[i] = "chili sauce"
-            continue
         elif "soy sauce" in ingrediente:
             lista[i] = "soy sauce"
-            continue
         elif "rice vinegar" in ingrediente:
             lista[i] = "rice vinegar"
-            continue
         elif "white vinegar" in ingrediente:
             lista[i] = "white vinegar"
-            continue
         elif "red wine vinegar" in ingrediente:
             lista[i] = "red wine vinegar"
-            continue
         elif "apple cider vinegar" in ingrediente:
             lista[i] = "apple cider vinegar"
-            continue
         elif "low-fat" in ingrediente:
             lista[i] = lista[i].replace("low-fat", "").strip()
             
@@ -214,13 +202,13 @@ try:
     resultado = cursor.fetchall()
     for fila in resultado:
         listaIngredientes = fila[1].split(',')
-        print(fila[0], listaIngredientes)
+        #print(fila[0], listaIngredientes)
         
         ingredientesActualizados = limpiarIngredientes(listaIngredientes)
-        print(ingredientesActualizados)
+        #print(ingredientesActualizados)
         if ingredientesActualizados is None:
             continue
-        print(query)
+        #print(query)
         cursorUpdate.execute(query)
         conn.commit()
    
