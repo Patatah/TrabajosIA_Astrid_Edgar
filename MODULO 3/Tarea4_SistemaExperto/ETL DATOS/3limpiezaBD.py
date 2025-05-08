@@ -88,73 +88,51 @@ def limpiarIngredientes(lista):
             if "potato chips" in ingrediente:
                 continue
             lista[i] = "sour cream"
-            continue
         elif "simply" in ingrediente:
             lista[i] = lista[i].replace("simply", "").strip()
-            continue
         elif "extra virgin olive oil" in ingrediente:
             lista[i] = "olive oil"
-            continue
         elif "dijon mustard" in ingrediente:
             lista[i] = "dijon mustard"
-            continue
         elif "cheddar cheese" in ingrediente:
             lista[i] = "cheddar cheese"
-            continue
         elif "campbell's" in ingrediente:
             lista[i] = lista[i].replace("campbell's", "").strip()
-            continue
         elif "cream cheese" in ingrediente:
             lista[i] = "cream cheese"
-            continue
         elif "cayenne pepper" in ingrediente:
             lista[i] = "cayenne pepper"
-            continue
         elif "ground cumin" in ingrediente:
             lista[i] = "cumin"
-            continue
         elif "ground beef" in ingrediente:
             lista[i] = "ground beef"
-            continue
         elif "ground turkey" in ingrediente:
             lista[i] = "ground turkey"
-            continue
         elif "ground chicken" in ingrediente:
             lista[i] = "ground chicken"
         elif "mozzarella cheese" in ingrediente:
             lista[i] = "mozzarella cheese"
-            continue
         elif "parmesan cheese" in ingrediente:
             lista[i] = "parmesan cheese"
-            continue
         elif "heavy cream" in ingrediente:
             lista[i] = "heavy cream"
-            continue
         elif "chili powder" in ingrediente:
             lista[i] = "chili powder"
-            continue
         elif "dried oregano" in ingrediente:
             lista[i] = "oregano"
-            continue
         elif "dried basil" in ingrediente:
             lista[i] = "basil"
-            continue
         elif "dried thyme" in ingrediente:
             lista[i] = "thyme"
-            continue
         elif "dried parsley" in ingrediente:
             lista[i] = "parsley"
-            continue
         elif "dried rosemary" in ingrediente:
             lista[i] = "rosemary"
-            continue
         elif "dried dill" in ingrediente:
             lista[i] = "dill"
-            continue
         elif "juice of" == ingrediente:
             lista.remove(ingrediente)
             removidos +=1
-            continue
         elif "chicken breast" in ingrediente:
             lista[i] = "chicken breast"
             continue
@@ -166,22 +144,17 @@ def limpiarIngredientes(lista):
             continue
         elif "chicken wing" in ingrediente:
             lista[i] = "chicken wings"
-            continue
         elif "ketchup" in ingrediente:
             lista[i] = "ketchup"
-            continue
         elif "balsamic vinegar" in ingrediente:
             lista[i] = "balsamic vinegar"
-            continue
         elif "ground ginger" in ingrediente:
             lista[i] = "ginger"
-            continue
         elif "diced tomatoes" in ingrediente:
             lista[i] = "diced tomatoes"
             continue
         elif "tomato sauce" in ingrediente:
             lista[i] = "tomato sauce"
-            continue
         elif "tomato paste" in ingrediente:
             lista[i] = "tomato paste"
             continue
@@ -205,7 +178,7 @@ def limpiarIngredientes(lista):
             continue
         elif "low-fat" in ingrediente:
             lista[i] = lista[i].replace("low-fat", "").strip()
-            continue
+            
 
 
     lista.sort()
@@ -214,12 +187,11 @@ def limpiarIngredientes(lista):
         return None
 
     for i in range(len(lista)):
-        lista[i] = re.sub(r'\s+', ' ', lista[i])
         lista[i] = lista[i].replace("'", "''") # Evitar problemas con comillas simples
 
     
     stringLista = ",".join(lista)
-   
+    
     return stringLista
 
 # Configuración de la conexión
@@ -248,8 +220,6 @@ try:
         print(ingredientesActualizados)
         if ingredientesActualizados is None:
             continue
-
-        query = "UPDATE Recetas SET ingredientes = '"+ingredientesActualizados+"' "+"WHERE id = "+str(fila[0])
         print(query)
         cursorUpdate.execute(query)
         conn.commit()
