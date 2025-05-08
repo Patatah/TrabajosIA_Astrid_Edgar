@@ -193,13 +193,13 @@ def limpiarIngredientes(lista):
         elif "chicken breast" in ingrediente:
             lista[i] = "chicken breast"
             continue
-        elif "chicken thighs" in ingrediente:
+        elif "chicken thigh" in ingrediente:
             lista[i] = "chicken thighs"
             continue
-        elif "chicken legs" in ingrediente:
+        elif "chicken leg" in ingrediente:
             lista[i] = "chicken legs"
             continue
-        elif "chicken wings" in ingrediente:
+        elif "chicken wing" in ingrediente:
             lista[i] = "chicken wings"
             continue
         elif "ketchup" in ingrediente:
@@ -272,15 +272,15 @@ try:
     cursorUpdate = conn.cursor()
 
     query = "SELECT id, ingredientes FROM Recetas"
-    cursor.execute(query)
-    resultado = cursor.fetchall()
+    resultado=cursor.execute(query)
+    #resultado = cursor.fetchall()
     for fila in resultado:
         listaIngredientes = fila[1].split(',')
-
+        print(fila[0], listaIngredientes)
         query = limpiarIngredientes(listaIngredientes)
         if query is None:
             continue
-        print(query)
+        #print(query)
         cursorUpdate.execute(query)
         conn.commit()
    
