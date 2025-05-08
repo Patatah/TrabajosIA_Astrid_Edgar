@@ -207,6 +207,7 @@ conn_str = f'DRIVER={{SQL Server}};SERVER={server};DATABASE={database};UID={user
 try:
     # Establecer conexión
     conn = pyodbc.connect(conn_str)
+    conn.autocommit = False
     cursor = conn.cursor()
     cursor2 = conn.cursor()
 
@@ -214,9 +215,26 @@ try:
     datos = pd.read_csv(rutaCSV, sep=',', encoding='utf-8', usecols=['ingredients', 'id', 'name'])
 
     batch_size = 500  # Tamaño del lote para commit
-    count = 0
+    contadorFilas = 0
+
+    data_to_insert = []  # Lista para almacenar las tuplas a insertar
+
+    ##CAMBIAR ESTOS VALORES PARA INSERTAR EN PARTES
+    ##EL TOTAL ES DE 231637
+
+    filaInicio = 0
+    filaFin = 231638
 
     for columna, fila in datos.iterrows():
+        contadorFilas+=1
+
+        if contadorFilas < filaInicio:
+            continue
+        if contadorFilas >= filaFin:
+            break
+
+        if (contadorFilas % 100 == 0):
+            print("Procesando fila "+str(contadorFilas))
         
         nombre=fila['name']
         if isinstance(nombre, float):  ##Algunas recetas no tienen nombre y las saltamos completamente
@@ -238,39 +256,35 @@ try:
         contador = Counter(listaIngredientes)
         duplicados = [item for item, count in contador.items() if count > 1]
         if duplicados:
-            hayDuplicados = True
-        else:
-            hayDuplicados = False
-
-        # Iniciar la transacción de inserts
-        conn.autocommit = False
+            for nombre, count in contador.items():
+                if count > 1:
+                    for i in range(count-1):
+                        listaIngredientes.remove(nombre)
         
-        # obtener todos los IDs de ingredientes en una sola consulta
+        # obtener todos los IDs de ingredientes
         placeholders = ','.join(['?'] * len(listaIngredientes))
         query = f"SELECT idIngrediente, nombre FROM Ingredientes WHERE nombre IN ({placeholders})"
         cursor2.execute(query, listaIngredientes)
         
         # Crear un diccionario {nombre: id} para búsquedas rápidas
         ingredientes_map = {nombre: id_ing for id_ing, nombre in cursor2.fetchall()}
-        
-        # Preparar la consulta de inserción
-        insert_query = "INSERT INTO RecetaIngrediente (idReceta, idIngrediente) VALUES (?, ?)"
-        
-        # Insertar todos los ingredientes válidos
-        for ingrediente in listaIngredientes:
-            if(hayDuplicados and ingrediente in duplicados):
-                continue
-            if ingrediente and ingrediente in ingredientes_map:
-                cursor.execute(insert_query, (id, ingredientes_map[ingrediente]))
-                count += 1
-        
-        if count >= batch_size:
-            # Confirmar los cambios en lotes
-            conn.commit()
-            print(f'Insertados {count}')
-            count = 0
 
-    conn.commit()  # Confirmar cualquier cambio restante
+
+        for ingrediente in listaIngredientes:
+            if ingrediente and ingrediente in ingredientes_map:
+                data_to_insert.append((id, ingredientes_map[ingrediente]))
+    
+    print(f'Cantidad de ingredientes a insertar: {len(data_to_insert)}')
+
+    for i in range(0, len(data_to_insert), batch_size):
+        cursor.executemany("""
+            INSERT INTO RecetaIngrediente (idReceta, idIngrediente) 
+            VALUES (?, ?)
+        """, data_to_insert[i:i+batch_size])
+        conn.commit()
+
+    #conn.commit()  # Confirmar cualquier cambio restante
+    conn.autocommit = True
 
     
    
