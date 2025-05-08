@@ -7,7 +7,7 @@ from collections import Counter
 
 # Configuración de la conexión
 server = 'localhost'  # dirección de el servidor
-database = 'IA'
+database = 'CooklyDB'
 username = 'edgar' 
 password = '123' 
 
@@ -19,19 +19,16 @@ try:
     conn = pyodbc.connect(conn_str)
     cursor = conn.cursor()
 
-    # Obtener todos los ingredientes UNICOS de la base de datos
-    def obtenerIngredientesUnicos(query):
-        contadorIngredientes = Counter()
-        resultado = cursor.execute(query).fetchall()
-        for fila in resultado:
-            listaIngredientes = fila[0].split(',')
-            contadorIngredientes.update(listaIngredientes)
-        ingredientesUnicos = sorted(contadorIngredientes, key=contadorIngredientes.get, reverse=True)
-        return ingredientesUnicos
+    cursor.execute("SELECT nombre From INGREDIENTES")
+    consulta_ingredientes = cursor.fetchall()
 
-    with open('MODULO 3\\Tarea4_SistemaExperto\\ingredientesUnicos.txt', 'r', encoding='utf-8') as archivo:
-        contenido = archivo.read()
-        totalIngredientes = contenido.split(",")
+    total_ingredientes = [] #Aqui recolectamos strings con todos los ingredientes
+    for tupla in consulta_ingredientes:
+        nombre = tupla[0]
+        total_ingredientes.append(nombre)
+
+    ##Ingredientes a mostrar a la vez:
+    max_ingredientes = 100
 
     #### VENTANA
     ctk.set_appearance_mode("dark")  # Modo oscuro
@@ -50,7 +47,6 @@ try:
 
     entrada_busqueda = ctk.CTkEntry(frame_busqueda,placeholder_text="Buscar...",width=ancho/2, height=alto/25,corner_radius=10)
     entrada_busqueda.pack(side="left", padx=10)
-
 
     #Dos columnas
     dos_columnas = ctk.CTkFrame(app)
@@ -71,16 +67,52 @@ try:
     scrollable_izq.pack(side="left",pady=10, padx=20, fill="both", expand=True)
     checkboxes = []
 
-    def actualizarCheckboxes(ingredientesBuscados):
-        for widget in scrollable_izq.winfo_children():
-            widget.destroy()
-        checkboxes.clear()
-        for item in ingredientesBuscados[:100]:
-            checkbox = ctk.CTkCheckBox(scrollable_izq, text=item)
-            checkbox.pack(pady=5, anchor="w")
-            checkboxes.append(checkbox)
+    # Evento checkbox presionado
+    def checkbox_presionado(val, estado):
+        print (val)
+        if estado==0:
+            print ("desmarcado")
+        else:
+            print ("marcado")
 
-    actualizarCheckboxes(totalIngredientes)
+    ## Llenar checkboxes
+    def crearCheckbox(texto):
+        checkbox = ctk.CTkCheckBox(scrollable_izq, text=texto,  command=lambda val=texto: checkbox_presionado(val, checkbox.get()))
+        checkbox.pack(pady=5, anchor="w")
+        checkboxes.append(checkbox)
+
+
+    def actualizarCheckboxes(ingredientesBuscados):
+        if not checkboxes: #Caso: no hay ni una checkbox
+            for item in ingredientesBuscados[:max_ingredientes]:
+                crearCheckbox(item)
+            return
+        
+        checkboxesPuestos = scrollable_izq.winfo_children()
+        if(len(ingredientesBuscados)<max_ingredientes):
+            for checkbox in scrollable_izq.winfo_children(): #Caso: Necesito borrar algunos checkbox que me sobran (encontré menos de 50)
+                if(len(scrollable_izq.winfo_children()) <= len(ingredientesBuscados)):
+                    break
+                checkbox.destroy()
+                checkboxes.remove(checkbox)
+                
+
+        if(len(ingredientesBuscados)>max_ingredientes):
+            for i in range(max_ingredientes): #Caso: Necesito crear algunos checkbox que me faltan (encontré mas de 50)
+                crearCheckbox("Cargando...")
+                if(len(scrollable_izq.winfo_children()) >= max_ingredientes):
+                    break
+
+        i=0
+        for checkbox in scrollable_izq.winfo_children(): #Hacer siempre: Actualizar los checkboxes que ya están puestos 
+            checkbox.configure(text=ingredientesBuscados[i])
+            i+=1
+
+        #scrollable_izq.update_idletasks() #Fin del metodo actualizar
+        
+            
+
+    actualizarCheckboxes(total_ingredientes)
 
     #DERECHA
     columna_derecha = ctk.CTkScrollableFrame(dos_columnas)
@@ -93,9 +125,9 @@ try:
     def filtrar_ingredientes():
         texto_busqueda = entrada_busqueda.get().lower()
         if texto_busqueda == "" or not texto_busqueda:
-            actualizarCheckboxes(totalIngredientes)
+            actualizarCheckboxes(total_ingredientes)
             return
-        ingredientesBuscados = [ingrediente for ingrediente in totalIngredientes if texto_busqueda in ingrediente.lower()]
+        ingredientesBuscados = [ingrediente for ingrediente in total_ingredientes if texto_busqueda in ingrediente.lower()]
         actualizarCheckboxes(ingredientesBuscados)
 
     ##Boton de busqueda porque me dio flojera reorganizar el código
