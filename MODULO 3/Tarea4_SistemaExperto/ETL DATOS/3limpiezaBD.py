@@ -208,7 +208,8 @@ try:
         #print(ingredientesActualizados)
         if ingredientesActualizados is None:
             continue
-        #print(query)
+        query="UPDATE RECETAS SET ingredientes = '" + ingredientesActualizados + "' WHERE id = " + str(fila[0])
+        print(query)
         cursorUpdate.execute(query)
         conn.commit()
    
