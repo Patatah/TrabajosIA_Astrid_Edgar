@@ -21,6 +21,7 @@ try:
 
 
     checkboxes = []
+    buscando = "" #Esta variable guarda lo ultimo que buscamos
     total_ingredientes = [] #Aqui recolectamos strings con todos los ingredientes
     ingredientes_posibles = []
     recetas_posibles = []
@@ -83,12 +84,11 @@ try:
         global ingredientes_seleccionados
         if estado==1:
             ingredientes_seleccionados.append(val)
-            filtrar_posibles()
-            actualizarCheckboxes(ingredientes_posibles)
         else:
             ingredientes_seleccionados.remove(val)
-            filtrar_posibles()
-            actualizarCheckboxes(ingredientes_posibles)
+
+        filtrar_posibles()
+        buscar_ingredientes(buscando) #Actualizar con pasos extra
 
     ## Llenar checkboxes
     def crearCheckbox(texto):
@@ -100,8 +100,24 @@ try:
         checkboxes.append(checkbox)
         return checkbox
 
+    def buscar_ingredientes(busquedaPrevia):  #Si le pasas una cadena vacía, buscará lo que tienes escrito en la barra
+        global buscando #Lo ultimo que buscamos
+        global entrada_busqueda
 
-    def actualizarCheckboxes(ingredientesBuscados):
+        if len(busquedaPrevia)>=1:
+            texto_busqueda = busquedaPrevia
+        else:
+            texto_busqueda = entrada_busqueda.get().lower() #Obtener el texto de la barra
+    
+        if texto_busqueda == "" or not texto_busqueda:
+            actualizar_checkboxes(ingredientes_posibles)
+            buscando=""
+            return
+        ingredientesBuscados = [ingrediente for ingrediente in ingredientes_posibles if texto_busqueda in ingrediente.lower()]
+        buscando=texto_busqueda
+        actualizar_checkboxes(ingredientesBuscados)
+
+    def actualizar_checkboxes(ingredientesBuscados):
         #Esta función decide si agregar o quitar checkboxes
         global checkboxes
 
@@ -143,31 +159,48 @@ try:
         
         separador="------------------------------------------------------------------------"
         texto=separador+"\n"
-        for tupla in recetas_posibles:
-            texto+="Receta "+str(tupla[0])+". Subida el " + str(tupla[3])+".\n"
+        for tuplas in recetas_posibles:
+            texto+="Receta "+str(tuplas[0])+". Subida el " + str(tuplas[3])+".\n"
             texto+=separador+"\n"
-            texto+="★ Nombre: "+tupla[1]+".\n"
-            texto+="☆ "+str(tupla[2])+" minutos de preparación.\n"
+            texto+="★ Nombre: "+tuplas[1]+".\n"
+            texto+="☆ "+str(tuplas[2])+" minutos de preparación.\n"
             
             texto+="* Pasos:\n"
             #Separar los pasos
-            pasos=tupla[5].split(",")
+            pasos=tuplas[5].split(",")
             i=1
             for paso in pasos:
                 texto+=str(i)+".- "+paso+"\n"
                 i+=1
 
             texto+="\n* Descripción:\n"
-            texto+=tupla[7]+"\n"
+            texto+=tuplas[7]+"\n"
+
+            #Obtener ingredientes de las recetas
+            query="SELECT I.nombre AS Ingrediente, I.idIngrediente as ID FROM Recetas R JOIN RecetaIngrediente " \
+            "RI ON R.idReceta = RI.idReceta JOIN Ingredientes I ON RI.idIngrediente = I.idIngrediente WHERE R.idReceta = "+str(tuplas[0])+";"
+            cursor.execute(query)
+            tuplas = cursor.fetchall()
+            ingredientes_de_esta_receta = []
+            for tupla in tuplas:
+                ingredientes_de_esta_receta.append(tupla[0])
+            
+            i=1
+            for ingrediente in ingredientes_de_esta_receta:
+                texto+=str(i)+".- "+ingrediente+"\n"
+                i+=1
             
             texto+="\n"+separador+"\n"
 
+            
+
+        
 
         texto_derecha.configure(text=texto)
 
     def filtrar_posibles():
-        print("filtrando!!")
         global total_ingredientes
+        global entrada_busqueda
         global ingredientes_posibles
         global recetas_posibles
         global ingredientes_seleccionados
@@ -178,11 +211,12 @@ try:
         "WHERE ri.idReceta = r.idReceta AND i.nombre IN ('"
         query+="','".join(ingredientes_seleccionados)
         query+="') ) = "+str(len(ingredientes_seleccionados))+";"
-        print(query)
+
         cursor.execute(query)
         recetas_posibles=cursor.fetchall()
         actualizarTextoDerecha()
 
+        #Ahora si para filtrar los ingredientes posibles
         if(len(ingredientes_seleccionados)>=1):
             query="SELECT DISTINCT I.nombre, I.Ocurrencias FROM Ingredientes I JOIN RecetaIngrediente "\
             "RI ON I.idIngrediente = RI.idIngrediente WHERE RI.idReceta IN (SELECT R.idReceta FROM Recetas R WHERE "
@@ -209,23 +243,18 @@ try:
                 ingredientes_posibles.append(tupla[0])
         else: #En el caso de que no tengamos ni un ingrediente
             ingredientes_posibles = total_ingredientes
+
+        buscar_ingredientes(buscando) #Actualizar con pasos extra
         ##Fin del metodo
     
     filtrar_posibles()
-    actualizarCheckboxes(ingredientes_posibles)
 
-    def filtrar_ingredientes():  
-        texto_busqueda = entrada_busqueda.get().lower()
-        if texto_busqueda == "" or not texto_busqueda:
-            actualizarCheckboxes(ingredientes_posibles)
-            return
-        ingredientesBuscados = [ingrediente for ingrediente in ingredientes_posibles if texto_busqueda in ingrediente.lower()]
-        actualizarCheckboxes(ingredientesBuscados)
+    
 
     ##Boton de busqueda porque me dio flojera reorganizar el código
-    boton_busqueda = ctk.CTkButton(frame_busqueda,text="Buscar",width=ancho/10,height=alto/25,corner_radius=10, command=filtrar_ingredientes)
+    boton_busqueda = ctk.CTkButton(frame_busqueda,text="Buscar",width=ancho/10,height=alto/25,corner_radius=10, command=buscar_ingredientes)
     boton_busqueda.pack(side="left")
-    app.bind("<Return>", lambda event: filtrar_ingredientes())
+    app.bind("<Return>", lambda event: buscar_ingredientes(""))
 
     app.mainloop()
     ### VENTANA
