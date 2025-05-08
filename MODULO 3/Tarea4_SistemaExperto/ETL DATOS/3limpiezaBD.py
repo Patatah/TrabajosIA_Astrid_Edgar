@@ -23,20 +23,16 @@ def limpiarIngredientes(lista):
         ingrediente = lista[i]
         if "sugar" in ingrediente:
             if "free" in ingrediente:
+                string = ingrediente.replace("sugar free", "").strip()
+                string = ingrediente.replace("sugar-free", "").strip()
                 continue
             if "brown" not in ingrediente:
                 lista[i] = 'sugar'
             else:
                 lista[i] = 'brown sugar'
             continue
-        elif "sugar-free" in ingrediente:
-            lista[i] = lista[i].replace("sugar-free", "").strip()
-            continue
         elif "fat-free" in ingrediente:
             lista[i] = lista[i].replace("fat-free", "").strip()
-            continue
-        elif "sugar free" in ingrediente:
-            lista[i] = lista[i].replace("sugar free", "").strip()
             continue
         elif "fat free" in ingrediente:
             lista[i] = lista[i].replace("fat free", "").strip()
@@ -239,7 +235,7 @@ def limpiarIngredientes(lista):
             lista[i] = "apple cider vinegar"
             continue
         elif "low-fat" in ingrediente:
-            lista[i] = lista[i].replace("¨low-fat", "").strip()
+            lista[i] = lista[i].replace("low-fat", "").strip()
             continue
 
 
@@ -249,12 +245,13 @@ def limpiarIngredientes(lista):
         return None
 
     for i in range(len(lista)):
+        lista[i] = re.sub(r'\s+', ' ', lista[i])
         lista[i] = lista[i].replace("'", "''") # Evitar problemas con comillas simples
 
     
     stringLista = ",".join(lista)
-    query = "UPDATE Recetas SET ingredientes = '"+stringLista+"' "+"WHERE id = "+str(fila[0])
-    return query
+   
+    return stringLista
 
 # Configuración de la conexión
 server = 'localhost'  # dirección de el servidor
@@ -273,14 +270,18 @@ try:
 
     query = "SELECT id, ingredientes FROM Recetas"
     resultado=cursor.execute(query)
-    #resultado = cursor.fetchall()
+    resultado = cursor.fetchall()
     for fila in resultado:
         listaIngredientes = fila[1].split(',')
         print(fila[0], listaIngredientes)
-        query = limpiarIngredientes(listaIngredientes)
-        if query is None:
+        
+        ingredientesActualizados = limpiarIngredientes(listaIngredientes)
+        print(ingredientesActualizados)
+        if ingredientesActualizados is None:
             continue
-        #print(query)
+
+        query = "UPDATE Recetas SET ingredientes = '"+ingredientesActualizados+"' "+"WHERE id = "+str(fila[0])
+        print(query)
         cursorUpdate.execute(query)
         conn.commit()
    
