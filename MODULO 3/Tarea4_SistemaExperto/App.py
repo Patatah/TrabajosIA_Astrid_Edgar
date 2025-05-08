@@ -116,6 +116,16 @@ try:
         buscando=texto_busqueda
         actualizar_checkboxes(ingredientesBuscados)
 
+    def limpiar_seleccionados(): ##Limpiar checkboxes seleccionados
+        global ingredientes_seleccionados
+        ingredientes_seleccionados.clear()
+
+        for checkbox in checkboxes:
+            checkbox.deselect()
+        
+        filtrar_posibles()
+        buscar_ingredientes(buscando) #Actualizar con pasos extra
+
     def actualizar_checkboxes(ingredientesBuscados):
         #Esta función decide si agregar o quitar checkboxes
         global checkboxes
@@ -256,6 +266,10 @@ try:
     ##Boton de busqueda porque me dio flojera reorganizar el código
     boton_busqueda = ctk.CTkButton(frame_busqueda,text="Buscar",width=ancho/10,height=alto/25,corner_radius=10, command=buscar_ingredientes)
     boton_busqueda.pack(side="left")
+
+    ##Boton de limpiar seleccionados
+    boton_limpiar = ctk.CTkButton(frame_busqueda,text="Limpiar",width=ancho/10,height=alto/25,corner_radius=10, command=limpiar_seleccionados)
+    boton_limpiar.pack(side="right", padx=10)
     app.bind("<Return>", lambda event: buscar_ingredientes(""))
 
     app.mainloop()
