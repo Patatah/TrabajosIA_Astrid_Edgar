@@ -31,14 +31,68 @@ CREATE TABLE RecetaIngrediente(
 )
 GO
 
---consultas
-select nombre FROM recetas
-select nombre from ingredientes
-select count(*) as ingredientesUsados from RecetaIngrediente
+--INDICES
+CREATE INDEX IX_Ingredientes_nombre ON Ingredientes(nombre);
+CREATE INDEX IX_RecetaIngrediente_Ingrediente_Receta ON RecetaIngrediente(idIngrediente, idReceta);
+CREATE INDEX IX_RecetaIngrediente_Receta_Ingrediente ON RecetaIngrediente(idReceta, idIngrediente);
+CREATE INDEX IX_Ingredientes_ocurrencias ON Ingredientes(ocurrencias DESC) INCLUDE (nombre);
+GO
 
---Recolectar ingredientes de una receta
-SELECT I.nombre AS Ingrediente
+--consultas
+select * FROM recetas
+select * from ingredientes
+select count(*) as ingredientesUsados from RecetaIngrediente
+select * from RecetaIngrediente
+
+
+--Recolectar ingredientes de receta
+SELECT I.nombre AS Ingrediente, I.idIngrediente as ID
 FROM Recetas R
 JOIN RecetaIngrediente RI ON R.idReceta = RI.idReceta
 JOIN Ingredientes I ON RI.idIngrediente = I.idIngrediente
-WHERE R.idReceta = 137739;
+--WHERE R.idReceta = 67664;
+
+--Recolectar recetas de un ingrediente
+SELECT R.idReceta, R.nombre AS NReceta, STRING_AGG(I.nombre, ', ') AS Ingredientes
+FROM Recetas R
+JOIN RecetaIngrediente RI ON R.idReceta = RI.idReceta
+JOIN Ingredientes I ON RI.idIngrediente = I.idIngrediente
+WHERE EXISTS (
+    SELECT 1
+    FROM RecetaIngrediente RI
+    JOIN Ingredientes I ON RI.idIngrediente = I.idIngrediente
+    WHERE RI.idReceta = R.idReceta AND I.nombre = 'milk'
+)
+AND EXISTS (
+    SELECT 1
+    FROM RecetaIngrediente RI
+    JOIN Ingredientes I ON RI.idIngrediente = I.idIngrediente
+    WHERE RI.idReceta = R.idReceta AND I.nombre = 'flour'
+)
+GROUP BY R.idReceta, R.nombre;
+
+--Recolectar que ingredientes te faltan para hacer algo
+SELECT DISTINCT I.nombre, I.ocurrencias AS Ocurrencias
+FROM Ingredientes I
+JOIN RecetaIngrediente RI ON I.idIngrediente = RI.idIngrediente
+WHERE RI.idReceta IN (
+    -- Recetas que contienen ambos: leche Y harina
+    SELECT R.idReceta
+    FROM Recetas R
+    WHERE EXISTS (
+        SELECT 1
+        FROM RecetaIngrediente RI
+        JOIN Ingredientes I ON RI.idIngrediente = I.idIngrediente
+        WHERE RI.idReceta = R.idReceta AND I.nombre = 'milk'
+    )
+    AND EXISTS (
+        SELECT 1
+        FROM RecetaIngrediente RI
+        JOIN Ingredientes I ON RI.idIngrediente = I.idIngrediente
+        WHERE RI.idReceta = R.idReceta AND I.nombre = 'flour'
+    )
+)
+ORDER BY 
+    I.ocurrencias DESC, 
+    I.nombre ASC;       
+
