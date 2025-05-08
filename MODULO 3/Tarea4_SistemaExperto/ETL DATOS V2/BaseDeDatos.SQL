@@ -96,3 +96,13 @@ ORDER BY
     I.ocurrencias DESC, 
     I.nombre ASC;       
 
+-- Todas las recetas que puedes hacer con esos ingredientes que tienes
+SELECT *
+FROM Recetas r
+WHERE (
+    SELECT COUNT(DISTINCT i.nombre)
+    FROM RecetaIngrediente ri
+    JOIN Ingredientes i ON ri.idIngrediente = i.idIngrediente
+    WHERE ri.idReceta = r.idReceta
+    AND i.nombre IN ('cornstarch', 'bacon', 'ground beef')
+) = 3;  

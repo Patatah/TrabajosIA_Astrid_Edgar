@@ -23,6 +23,7 @@ try:
     checkboxes = []
     total_ingredientes = [] #Aqui recolectamos strings con todos los ingredientes
     ingredientes_posibles = []
+    recetas_posibles = []
     ingredientes_seleccionados =["salt", "water"]
 
     cursor.execute("SELECT nombre From INGREDIENTES ORDER BY Ocurrencias DESC")
@@ -69,17 +70,24 @@ try:
     #Checkboxes scroll
     scrollable_izq = ctk.CTkScrollableFrame(columna_izquierda, width=100, height=alto-250)
     scrollable_izq.pack(side="left",pady=10, padx=20, fill="both", expand=True)
+    
+    #DERECHA
+    columna_derecha = ctk.CTkScrollableFrame(dos_columnas)
+    columna_derecha.grid(row=0, column=1, padx=10, pady=10, sticky="nsew")
+    
+    texto_derecha = ctk.CTkLabel(columna_derecha, text="Las recetas disponibles apareceran aquí", font=("Arial", 15), wraplength=ancho/2.5, justify="left")
+    texto_derecha.pack(side="left", pady=10, padx=20)
 
     # Evento checkbox presionado
     def checkbox_presionado(val, estado):
         global ingredientes_seleccionados
         if estado==1:
             ingredientes_seleccionados.append(val)
-            filtrar_ingredientes_posibles()
+            filtrar_posibles()
             actualizarCheckboxes(ingredientes_posibles)
         else:
             ingredientes_seleccionados.remove(val)
-            filtrar_ingredientes_posibles()
+            filtrar_posibles()
             actualizarCheckboxes(ingredientes_posibles)
 
     ## Llenar checkboxes
@@ -128,20 +136,52 @@ try:
             i+=1
 
         #scrollable_izq.update_idletasks() #Fin del metodo actualizar
+
+    def actualizarTextoDerecha():
+        global texto_derecha
+        global recetas_posibles
         
+        separador="------------------------------------------------------------------------"
+        texto=separador+"\n"
+        for tupla in recetas_posibles:
+            texto+="Receta "+str(tupla[0])+". Subida el " + str(tupla[3])+".\n"
+            texto+=separador+"\n"
+            texto+="★ Nombre: "+tupla[1]+".\n"
+            texto+="☆ "+str(tupla[2])+" minutos de preparación.\n"
             
+            texto+="* Pasos:\n"
+            #Separar los pasos
+            pasos=tupla[5].split(",")
+            i=1
+            for paso in pasos:
+                texto+=str(i)+".- "+paso+"\n"
+                i+=1
 
-    #DERECHA
-    columna_derecha = ctk.CTkScrollableFrame(dos_columnas)
-    columna_derecha.grid(row=0, column=1, padx=10, pady=10, sticky="nsew")
-    
-    texto_derecha = ctk.CTkLabel(columna_derecha, text="Esta es una receta muy larga\nblablabla", font=("Arial", 15), justify="left")
-    texto_derecha.pack(side="left", pady=10, padx=20)
+            texto+="\n* Descripción:\n"
+            texto+=tupla[7]+"\n"
+            
+            texto+="\n"+separador+"\n"
 
-    def filtrar_ingredientes_posibles():
+
+        texto_derecha.configure(text=texto)
+
+    def filtrar_posibles():
+        print("filtrando!!")
         global total_ingredientes
         global ingredientes_posibles
+        global recetas_posibles
         global ingredientes_seleccionados
+
+        #Obtener que recetas se pueden hacer
+        query="SELECT top 5 * FROM Recetas r WHERE ( SELECT COUNT(DISTINCT i.nombre) " \
+        "FROM RecetaIngrediente ri JOIN Ingredientes i ON ri.idIngrediente = i.idIngrediente " \
+        "WHERE ri.idReceta = r.idReceta AND i.nombre IN ('"
+        query+="','".join(ingredientes_seleccionados)
+        query+="') ) = "+str(len(ingredientes_seleccionados))+";"
+        print(query)
+        cursor.execute(query)
+        recetas_posibles=cursor.fetchall()
+        actualizarTextoDerecha()
 
         if(len(ingredientes_seleccionados)>=1):
             query="SELECT DISTINCT I.nombre, I.Ocurrencias FROM Ingredientes I JOIN RecetaIngrediente "\
@@ -161,7 +201,7 @@ try:
 
             ingredientes_posibles.clear() ##limpiamos para empezar de cero
 
-            print(query)
+            #print(query)
 
             cursor.execute(query)
             consulta_ingredientes = cursor.fetchall()
@@ -171,7 +211,7 @@ try:
             ingredientes_posibles = total_ingredientes
         ##Fin del metodo
     
-    filtrar_ingredientes_posibles()
+    filtrar_posibles()
     actualizarCheckboxes(ingredientes_posibles)
 
     def filtrar_ingredientes():  
@@ -186,10 +226,6 @@ try:
     boton_busqueda = ctk.CTkButton(frame_busqueda,text="Buscar",width=ancho/10,height=alto/25,corner_radius=10, command=filtrar_ingredientes)
     boton_busqueda.pack(side="left")
     app.bind("<Return>", lambda event: filtrar_ingredientes())
-
-    def cambiarTextoDerecha(texto):
-        global texto_derecha
-        texto_derecha.configure(text="texto")
 
     app.mainloop()
     ### VENTANA
