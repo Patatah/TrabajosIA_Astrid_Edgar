@@ -1,13 +1,13 @@
-salt : 95150
+salt : 95148
 sugar : 69137
 garlic : 55994
 butter : 54994
-eggs : 53284
+eggs : 53217
 flour : 44749
 olive oil : 40529
 onion : 39109
 water : 34927
-black pepper : 31159
+black pepper : 31136
 milk : 26641
 brown sugar : 24045
 pepper : 22380
@@ -20,14 +20,14 @@ cheddar cheese : 14600
 vegetable oil : 14450
 baking soda : 14099
 sour cream : 13813
-chicken breast : 13720
+chicken breast : 13725
 beef broth : 13380
 vanilla : 13315
 cinnamon : 12560
 tomatoes : 12355
-cream cheese : 11856
+cream cheese : 11857
 ginger : 11510
-soy sauce : 11416
+soy sauce : 11429
 garlic powder : 10887
 cumin : 10403
 oregano : 10391
@@ -39,7 +39,7 @@ onions : 9891
 celery : 9541
 thyme : 9078
 mayonnaise : 9026
-ground beef : 8974
+ground beef : 8980
 unsalted butter : 8936
 cilantro : 8102
 paprika : 7982
@@ -54,8 +54,8 @@ lemon : 6795
 carrot : 6754
 potatoes : 6508
 nutmeg : 6386
-orange juice : 6279
-mozzarella cheese : 6144
+orange juice : 6278
+mozzarella cheese : 6146
 lime juice : 6102
 green onions : 5814
 dijon mustard : 5782
@@ -77,8 +77,8 @@ chicken stock : 4352
 canola oil : 4315
 green pepper : 4301
 ground pepper : 4298
-ketchup : 4178
-balsamic vinegar : 3986
+ketchup : 4179
+balsamic vinegar : 3987
 buttermilk : 3928
 onion powder : 3598
 vinegar : 3395
@@ -109,7 +109,7 @@ egg yolks : 2623
 semi-sweet chocolate chips : 2606
 red pepper flakes : 2602
 bay leaves : 2590
-plain yogurt : 2585
+plain yogurt : 2584
 cider vinegar : 2540
 spinach : 2535
 feta cheese : 2532
@@ -177,7 +177,7 @@ lettuce : 1733
 flour tortillas : 1728
 corn : 1725
 coriander : 1721
-chili sauce : 1713
+chili sauce : 1719
 almonds : 1709
 pineapple juice : 1704
 egg white : 1679
@@ -220,7 +220,7 @@ pure vanilla extract : 1405
 vegetable broth : 1403
 red potatoes : 1400
 cooking oil : 1382
-ground turkey : 1381
+ground turkey : 1382
 apple cider vinegar : 1379
 beer : 1373
 whipped cream : 1365
@@ -236,8 +236,8 @@ vodka : 1291
 yeast : 1286
 sweet onion : 1286
 ground allspice : 1277
-of mint : 1267
 fish sauce : 1267
+of mint : 1265
 slivered almonds : 1259
 vegetable stock : 1256
 bread flour : 1253
@@ -556,9 +556,9 @@ instant vanilla pudding : 453
 chocolate : 453
 cilantro leaf : 453
 diced onion : 453
-salt & ground pepper : 452
 ground chicken : 452
 quinoa : 450
+salt & ground pepper : 449
 orange peel : 449
 chicken pieces : 447
 bisquick : 444
@@ -1168,7 +1168,6 @@ rum extract : 163
 orange slice : 163
 bacon drippings : 162
 eggnog : 162
-juice of : 162
 seedless grapes : 161
 dried lentils : 161
 red lentil : 161
@@ -2034,6 +2033,7 @@ white creme de cacao : 68
 coconut flour : 68
 veal : 67
 reduced-calorie margarine : 67
+egg : 67
 pink salmon : 67
 beef sirloin : 67
 jiffy cornbread mix : 67
@@ -3791,6 +3791,7 @@ frozen chopped onions : 22
 butter pecan cake mix : 22
 porterhouse steaks : 22
 sweet apple : 22
+salt & ly ground black pepper : 22
 smoked almonds : 22
 ancho chili : 22
 epazote : 22
@@ -5842,7 +5843,6 @@ candy orange slices : 8
 mostaccioli noodles : 8
 coffee syrup : 8
 shortcrust pastry dough : 8
-light soy sauce : 8
 basa fillets : 8
 sandwich bun : 8
 red zinfandel wine : 8
@@ -6476,7 +6476,6 @@ starkist tuna : 6
 orzo : 6
 chocolate cookie crumb : 6
 heather honey : 6
-lean ground beef : 6
 taco blend cheese : 6
 vanilla butternut flavoring : 6
 apple chips : 6
@@ -7204,7 +7203,6 @@ nestle milk chocolate and caramel swirled morsels : 5
 garlic alfredo sauce : 5
 canola oil mayonnaise : 5
 maple-flavor syrup : 5
-sweet chili sauce : 5
 multi-grain rolls : 5
 lime-flavored seltzer water : 5
 tempeh bacon : 5
@@ -7668,7 +7666,6 @@ wasabi mayonnaise : 4
 dry ice : 4
 canned blueberries : 4
 sour dill pickle : 4
-low sodium soy sauce : 4
 barbecue baked beans : 4
 mint-flavored creme-filled chocolate sandwich cookies : 4
 montreal roasted garlic chicken seasoning : 4
@@ -8326,6 +8323,7 @@ loquats : 3
 shanghai noodles : 3
 mounds candy bars : 3
 brick cheese : 3
+salt &  ground pepper : 3
 walnut extract : 3
 lamb stock cube : 3
 beef rib : 3
@@ -8641,7 +8639,6 @@ sesame seed paste : 3
 wooden stick : 3
 other dried fruit : 3
 fat free sugar-free instant chocolate fudge pudding mix : 3
-whole chicken breasts : 3
 low-fat ritz crackers : 3
 unbaked double pie crusts : 3
 turkey breast half : 3
@@ -9442,7 +9439,6 @@ veal broth : 2
 kosher pickle : 2
 potassium chloride : 2
 ground cranberries : 2
-tamari soy sauce : 2
 tom kha paste : 2
 rye crisps : 2
 squirrel : 2
@@ -9483,7 +9479,6 @@ honeycomb cereal : 2
 sweet potato flour : 2
 german potato salad : 2
 orange brandy : 2
-skinless chicken breasts : 2
 dried cascabel chiles : 2
 swans down cake flour : 2
 white lentils : 2
@@ -9640,6 +9635,7 @@ dessert pears : 2
 sambal bajak : 2
 spinach penne : 2
 miniature chocolate candy bars : 2
+of  mint : 2
 stewed tomatoes with basil and garlic : 2
 apricot yoghurt : 2
 shichimi-togarashi : 2
@@ -9891,7 +9887,6 @@ hot italian ham : 2
 baby ruth candy bars : 2
 tuaca liqueur : 2
 sugar-free apricot preserves : 2
-smoked mozzarella cheese : 2
 ripe pineapple : 2
 sugar-free vanilla yogurt : 2
 lean baked ham : 2
@@ -11251,7 +11246,6 @@ u- 12 shrimp : 1
 artichoke bottom : 1
 unsweetened orange kool-aid : 1
 dill vinegar : 1
-white balsamic vinegar : 1
 dried negro chile : 1
 cheese pastry : 1
 mixed fish : 1
@@ -11285,6 +11279,7 @@ strawberry wine : 1
 pork blade steak : 1
 green pattypan squash : 1
 green cherry tomatoes : 1
+kosher salt : 1
 watermelon gelatin : 1
 sugar-free grape drink mix : 1
 diet mountain dew soda : 1
@@ -11295,6 +11290,7 @@ ground cannella : 1
 gherkin pickle : 1
 escoffier sauce : 1
 tomato fettuccine : 1
+plain nonfat yogurt : 1
 wild berry sugar-free gelatin mix : 1
 meatless deli slices : 1
 powdered jaggery : 1
@@ -11330,6 +11326,7 @@ reduced-sodium turkey broth : 1
 bronze scuppernongs : 1
 robiola cheese : 1
 gum tragacanth : 1
+tamari soy sauce : 1
 canary beans : 1
 paad thai sauce : 1
 skinless turkey legs : 1
@@ -11383,12 +11380,10 @@ strawberry whipped topping : 1
 rice balls : 1
 9-inch layers of chocolate cake : 1
 boneless veal rump roast : 1
-tomato ketchup : 1
 caribe chile pepper : 1
 cookies 'n' creme nuggets : 1
 pineapple flavoring : 1
 dried rhizome : 1
-philadelphia cream cheese : 1
 pimiento peppers : 1
 turkey london broil : 1
 10 inch low-fat flour tortillas : 1
@@ -12453,6 +12448,7 @@ soy ginger broth : 1
 candied jalapeno peppers : 1
 turkey bratwursts : 1
 yak meat : 1
+sea salt : 1
 mild mexican cheese : 1
 blackberry juice : 1
 cooked spanish rice : 1
@@ -12885,6 +12881,7 @@ curry rice mix : 1
 tapioca starch wraps : 1
 sodium-free vegetable bouillon : 1
 sugar-free molasses : 1
+unsweetened orange juice : 1
 herbal liqueur : 1
 roasted eggplant packed in oil : 1
 97% shaved leg ham : 1
@@ -13020,6 +13017,7 @@ crystal light ready-to-drink raspberry ice : 1
 chocolate-flavored liquid stevia : 1
 brewed orange spice tea : 1
 achiote paste cubes : 1
+whole black peppercorns : 1
 marlin fillets : 1
 pork hock : 1
 fiber supplement : 1
@@ -13363,7 +13361,6 @@ purple hull peas : 1
 cheemo perogies : 1
 large chocolate chips : 1
 topside mince : 1
-lean ground turkey : 1
 cilantro lime salad dressing : 1
 bergamot leaves : 1
 angelica leaves : 1
@@ -13710,7 +13707,6 @@ marigold petals : 1
 cinnamon streusel topping : 1
 baby gourmet potato blend : 1
 crystal light raspberry lemonade mix : 1
-thai sweet chili sauce : 1
 dole pineapple chunks : 1
 callaloo : 1
 calcium powder : 1

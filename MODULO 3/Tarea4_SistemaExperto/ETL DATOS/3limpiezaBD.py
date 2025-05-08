@@ -238,7 +238,9 @@ def limpiarIngredientes(lista):
         elif "apple cider vinegar" in ingrediente:
             lista[i] = "apple cider vinegar"
             continue
-
+        elif "low-fat" in ingrediente:
+            lista[i] = lista[i].replace("¨low-fat", "").strip()
+            continue
 
 
     lista.sort()

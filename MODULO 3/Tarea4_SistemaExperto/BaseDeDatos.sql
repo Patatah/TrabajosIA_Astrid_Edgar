@@ -11,5 +11,5 @@ CREATE TABLE Recetas (
     pasos TEXT,
     n_ingredientes INT,
     ingredientes TEXT,
-    descripcion TEXT,
+    descripcion TEXT
 );
