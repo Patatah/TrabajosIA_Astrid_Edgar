@@ -119,10 +119,11 @@ try:
     def limpiar_seleccionados(): ##Limpiar checkboxes seleccionados
         global ingredientes_seleccionados
         ingredientes_seleccionados.clear()
-
+        
         for checkbox in checkboxes:
             checkbox.deselect()
         
+
         filtrar_posibles()
         buscar_ingredientes(buscando) #Actualizar con pasos extra
 
@@ -168,6 +169,8 @@ try:
         
         separador="------------------------------------------------------------------------------------------------------"
         texto=separador+"\n"
+        
+
         for tuplas in recetas_posibles:
             texto+="Receta "+str(tuplas[0])+". Subida el " + str(tuplas[3])+".\n"
             texto+=separador+"\n"
@@ -180,7 +183,7 @@ try:
             pasos=tuplas[5].split(",")
             i=1
             for paso in pasos:
-                texto+="     "+str(i)+".- "+paso+"     \n"
+                texto+="     "+str(i)+".- "+paso+"\n"
                 i+=1
 
             texto+="\n☆ DESCRIPCIÓN:\n"
@@ -268,8 +271,9 @@ try:
     boton_busqueda.pack(side="left")
 
     ##Boton de limpiar seleccionados
-    boton_limpiar = ctk.CTkButton(frame_busqueda,text="Limpiar",width=ancho/10,height=alto/25,corner_radius=10, command=limpiar_seleccionados)
+    boton_limpiar = ctk.CTkButton(frame_busqueda,text="Limpiar",fg_color="#ff6961",  hover_color="#ff5c5c", width=ancho/10,height=alto/25,corner_radius=10, command=limpiar_seleccionados)
     boton_limpiar.pack(side="right", padx=10)
+
     app.bind("<Return>", lambda event: buscar_ingredientes(""))
 
     app.mainloop()
