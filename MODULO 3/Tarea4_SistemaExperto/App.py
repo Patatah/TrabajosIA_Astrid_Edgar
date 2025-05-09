@@ -125,7 +125,6 @@ try:
         
 
         filtrar_posibles()
-        buscar_ingredientes(buscando) #Actualizar con pasos extra
 
     def actualizar_checkboxes(ingredientesBuscados):
         #Esta función decide si agregar o quitar checkboxes
@@ -225,7 +224,7 @@ try:
         "FROM RecetaIngrediente ri JOIN Ingredientes i ON ri.idIngrediente = i.idIngrediente " \
         "WHERE ri.idReceta = r.idReceta AND i.nombre IN ('"
         query+="','".join(ingredientes_seleccionados)
-        query+="') ) = "+str(len(ingredientes_seleccionados))+";"
+        query+="') ) = "+str(len(ingredientes_seleccionados))+"ORDER BY NEWID();" ##Aleatorio
 
         cursor.execute(query)
         recetas_posibles=cursor.fetchall()
