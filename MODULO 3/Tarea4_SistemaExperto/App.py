@@ -233,13 +233,11 @@ try:
         #Ahora si para filtrar los ingredientes posibles
         if(len(ingredientes_seleccionados)>=1):
             query="SELECT DISTINCT I.nombre, I.Ocurrencias FROM Ingredientes I JOIN RecetaIngrediente "\
-            "RI ON I.idIngrediente = RI.idIngrediente WHERE RI.idReceta IN (SELECT R.idReceta FROM Recetas R WHERE "
+            "RI ON I.idIngrediente = RI.idIngrediente WHERE RI.idReceta IN (SELECT R.idReceta FROM Recetas R WHERE " \
+            "R.n_ingredientes >="+ str(len(ingredientes_seleccionados))
             
-            flag=False
             for ingrediente in ingredientes_seleccionados: #Añadimos las condiciones a la consulta
-                if flag: #Tenemos que agregar un and si es la segunda subquery
-                    query+="AND "
-                subQuery= "EXISTS (SELECT 1 FROM RecetaIngrediente RI JOIN Ingredientes I ON RI.idIngrediente = I.idIngrediente "\
+                subQuery= "AND EXISTS (SELECT 1 FROM RecetaIngrediente RI JOIN Ingredientes I ON RI.idIngrediente = I.idIngrediente "\
                 "WHERE RI.idReceta = R.idReceta AND I.nombre = '"+ingrediente+"') "
                 query+=subQuery
                 flag=True
