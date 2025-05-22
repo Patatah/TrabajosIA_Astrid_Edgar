@@ -14,7 +14,7 @@ target_size = (50, 80) #Numero aureo? 16:10 aprox
 # Recorrer todas las subcarpetas
 for root, dirs, files in os.walk(input_dir):
     for file in files:
-        if file.lower().endswith(('.jpg')):  # Solo imágenes
+        if file.lower().endswith(('.jpg')):
             input_path = os.path.join(root, file)
             
             # Crear estructura equivalente en la carpeta de salida
