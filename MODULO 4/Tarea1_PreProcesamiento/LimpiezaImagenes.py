@@ -10,7 +10,7 @@ dir_destino = "C:/Users/Propietario/Documents/Edgar/IA/FANE/fane_redimensionado"
 os.makedirs(dir_destino, exist_ok=True)
 
 # Tamaño objetivo (ancho, alto)
-tamanio_objetivo = (60, 80) #Numero aureo? 16:10 aprox
+tamanio_objetivo = (224, 224) #Numero aureo? 16:10 aprox
 
 ##func normalizar brillo
 def normalize_brightness(img, target_mean=128):
@@ -41,15 +41,25 @@ for root, dirs, files in os.walk(dir_origen):
             os.makedirs(output_subdir, exist_ok=True)
             
             # Procesar imagen
-            img = cv2.imread(dir_archivo)
-            if img is not None:
-
+            imgOriginal = cv2.imread(dir_archivo)
+            height, width, channels = imgOriginal.shape
+            if imgOriginal is not None:
                 #normalizar brillo
-                img = normalize_brightness(img)
+                img = normalize_brightness(imgOriginal)
 
                 #Redimensionar
-                resized_img = cv2.resize(img, tamanio_objetivo, interpolation=cv2.INTER_AREA)
+                img = cv2.resize(img, tamanio_objetivo, interpolation=cv2.INTER_CUBIC)
+
+                #Borrosear
+                if(height<75 and width<75):
+                    img = cv2.GaussianBlur(img, (21, 21), sigmaX=0)
+                elif(height<150 and width<150):
+                    img = cv2.GaussianBlur(img, (11, 11), sigmaX=0)
+                elif(height<224 and width<224):
+                    img = cv2.GaussianBlur(img, (5, 5), sigmaX=0)
+
+                #Escribir
                 output_path = os.path.join(output_subdir, file)
-                cv2.imwrite(output_path, resized_img)
+                cv2.imwrite(output_path, img)
             else:
                 print(f"Error al cargar {dir_archivo}")
