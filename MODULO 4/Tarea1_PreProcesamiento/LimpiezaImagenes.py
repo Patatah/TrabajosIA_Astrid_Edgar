@@ -80,7 +80,7 @@ for root, dirs, files in os.walk(dir_origen):
                     img_ycrcb[:, :, 0] = clahe.apply(img_ycrcb[:, :, 0])
                     img = cv2.cvtColor(img_ycrcb, cv2.COLOR_YCrCb2BGR)
                 except Exception as e:
-                    print(f"⚠️ Error aplicando CLAHE en {file}: {e}")
+                    print(f"Error aplicando CLAHE en {file}: {e}")
 
 
             #Escribir
