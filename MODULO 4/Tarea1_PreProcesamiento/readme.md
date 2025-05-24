@@ -1,5 +1,5 @@
-Dataset FER-2013 para emociones faciales
-https://www.kaggle.com/datasets/msambare/fer2013
-
 Dataset FANE con web scraping
 https://www.kaggle.com/datasets/furcifer/fane-facial-expressions-and-emotion-dataset
+
+Este dataset contiene muchas imagenes clasificadas por emociones recogidas desde internet.
+En este script se aplica pre procesamiento antes de entrenar un modelo de visión artificial.
