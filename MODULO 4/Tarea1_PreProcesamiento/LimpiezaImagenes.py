@@ -18,7 +18,7 @@ os.makedirs(dir_fallidas, exist_ok=True)
 tamanio_objetivo = (224, 224) #Numero aureo? 16:10 aprox
 
 ##func normalizar brillo
-def normalize_brightness(img, target_mean=128):
+def normaliza_brillo(img, target_mean=128):
     """Normaliza la luminosidad de la imagen a un valor medio objetivo"""
     # Convertir a YCrCb (Y es el canal de luminancia)
     ycrcb = cv2.cvtColor(img, cv2.COLOR_BGR2YCrCb)
@@ -57,7 +57,7 @@ for root, dirs, files in os.walk(dir_origen):
             height, width, channels = imgOriginal.shape
             
             #normalizar brillo
-            img = normalize_brightness(imgOriginal)
+            img = normaliza_brillo(imgOriginal)
 
             #Redimensionar
             img = cv2.resize(img, tamanio_objetivo, interpolation=cv2.INTER_CUBIC)
