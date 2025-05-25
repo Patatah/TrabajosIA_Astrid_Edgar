@@ -6,6 +6,7 @@ import numpy as np
 
 # Directorios
 #La de menor resolución es disgust286 con 13x17
+#"C:/Users/Propietario/Documents/Edgar/IA/FANE/fane_data"
 dir_origen = "C:/Users/usuario1/OneDrive/Escritorio/IA/fane_data"  # Carpeta raíz con subcarpetas
 dir_destino = "C:/Users/usuario1/OneDrive/Escritorio/IA/fane_redimensionado"
 dir_fallidas = "C:/Users/usuario1/OneDrive/Escritorio/IA/imagenes_fallidas"
@@ -47,9 +48,7 @@ for root, dirs, files in os.walk(dir_origen):
             # Procesar imagen
             imgOriginal = cv2.imread(dir_archivo)
 
-            # Verificar si la imagen se ha cargado correctamente
             if imgOriginal is None:
-                # Mover la imagen a la carpeta de fallidas
                 shutil.move(dir_archivo, os.path.join(dir_fallidas, file))
                 print(f"Imagen fallida: {dir_archivo}")
                 continue
@@ -64,10 +63,16 @@ for root, dirs, files in os.walk(dir_origen):
             img = cv2.resize(img, tamanio_objetivo, interpolation=cv2.INTER_CUBIC)
 
             #Borrosear
-            if(height<75 and width<75):
-                img = cv2.GaussianBlur(img, (21, 21), sigmaX=0)
+            if(height<50 and width<50):
+                img = cv2.GaussianBlur(img, (19, 19), sigmaX=0)
+            elif(height<75 and width<75):
+                img = cv2.GaussianBlur(img, (17, 17), sigmaX=0)
+            elif(height<100 and width<100):
+                img = cv2.GaussianBlur(img, (15, 15), sigmaX=0)
+            elif(height<125 and width<125):
+                img = cv2.GaussianBlur(img, (13, 13), sigmaX=0)
             elif(height<150 and width<150):
-                img = cv2.GaussianBlur(img, (11, 11), sigmaX=0)
+                img = cv2.GaussianBlur(img, (9, 9 ), sigmaX=0)
             elif(height<224 and width<224):
                 img = cv2.GaussianBlur(img, (5, 5), sigmaX=0)
 
