@@ -34,6 +34,20 @@ def normaliza_brillo(img, target_mean=128):
     ycrcb = cv2.merge([y, cr, cb])
     return cv2.cvtColor(ycrcb, cv2.COLOR_YCrCb2BGR)
 
+
+def aumentar_contraste(img, alpha):
+
+    # Convertir a flotante y normalizar a [0, 1] si es necesario
+    img_float = img.astype(np.float32) / 255.0
+    
+    # Aplicar transformación lineal en cada canal (B, G, R)
+    img_contrastada = np.clip(alpha * (img_float - 0.5) + 0.5, 0, 1)
+    
+    # Volver a rango [0, 255] y tipo uint8
+    img_contrastada = (img_contrastada * 255).astype(np.uint8)
+    
+    return img_contrastada
+
 # Recorrer todas las subcarpetas
 for root, dirs, files in os.walk(dir_origen):
     for file in files:
@@ -76,7 +90,7 @@ for root, dirs, files in os.walk(dir_origen):
             elif(height<224 and width<224):
                 img = cv2.GaussianBlur(img, (5, 5), sigmaX=0)
 
-            #Aumentar contraste
+            #Normalizar contraste
             gray = cv2.cvtColor(img, cv2.COLOR_BGR2GRAY)
             if gray.std() < 30:
                 try:
@@ -86,6 +100,10 @@ for root, dirs, files in os.walk(dir_origen):
                     img = cv2.cvtColor(img_ycrcb, cv2.COLOR_YCrCb2BGR)
                 except Exception as e:
                     print(f"Error aplicando CLAHE en {file}: {e}")
+
+            #Aumentar contraste
+
+            img = aumentar_contraste(img, 1.2)
 
 
             #Escribir
