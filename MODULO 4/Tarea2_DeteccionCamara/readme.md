@@ -1,0 +1,1 @@
+Detección de emociones usando el feed de la camara
