@@ -1,181 +1,144 @@
-#pip install numpy pillow keras
-#pip install tensorflow
-#pip install opencv-python
-
 import cv2
-from keras.models import load_model
-import cv2  # OpenCV para la cámara
 import numpy as np
-from PIL import Image, ImageOps
-import h5py
+import torch
+from torchvision import transforms
 
-ruta_modelo= 'MODULO 4/Tarea2_DeteccionCamara/modelo_emociones.h5'
-ruta_labels= 'MODULO 4/Tarea2_DeteccionCamara/labels.txt'
+# Configuración del dispositivo
+device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
 
-img_ultimo_rostro = None
-x,y,w,h = 0,0,0,0 ##posiciones del rectangulo verde
-contador_frames = 0
-intervalo_deteccion = 3
+# Cargar el modelo entrenado
+model = torch.load('emotion_resnet18.pth', map_location=device)
+model.eval()
 
+# Transformaciones para la imagen
+transform = transforms.Compose([
+    transforms.ToPILImage(),
+    transforms.Resize((128, 128)),  # Mismo tamaño que durante el entrenamiento
+    transforms.ToTensor(),
+    transforms.Normalize([0.485, 0.456, 0.406], [0.229, 0.224, 0.225])
+])
 
-##Limpieza del modelo para versiones nuevas
-f = h5py.File(ruta_modelo, mode="r+")
-model_config_string = f.attrs.get("model_config")
+# Diccionario de emociones (debe coincidir con tu entrenamiento)
+emotion_dict = {
+    0: "Enojo",
+    1: "Miedo",
+    2: "Felicidad",
+    3: "Tristeza",
+    4: "Sorpresa"
+}
 
-if model_config_string.find('"groups": 1,') != -1:
-    model_config_string = model_config_string.replace('"groups": 1,', '')
-f.attrs.modify('model_config', model_config_string)
-f.flush()
+def preprocess_face(face_img):
+    """Preprocesa el rostro para el modelo"""
+    # Convertir BGR (OpenCV) a RGB
+    rgb_img = cv2.cvtColor(face_img, cv2.COLOR_BGR2RGB)
+    # Aplicar transformaciones
+    tensor_img = transform(rgb_img)
+    # Añadir dimensión de batch
+    return tensor_img.unsqueeze(0).to(device)
 
-model_config_string = f.attrs.get("model_config")
-
-assert model_config_string.find('"groups": 1,') == -1
-##Limpieza
-model = load_model(ruta_modelo, compile=False)
-ultima_emocion = "Emocion"
-class_names = open(ruta_labels, "r").readlines()
+def predict_emotion(face_img):
+    """Predice la emoción del rostro detectado"""
+    with torch.no_grad():
+        inputs = preprocess_face(face_img)
+        outputs = model(inputs)
+        _, preds = torch.max(outputs, 1)
+        return emotion_dict[preds.item()]
 
 def detectar_rostros():
-    global img_ultimo_rostro
-    global x,y,w,h
-    global contador_frames
-    global intervalo_deteccion
-    global model
-    global ultima_emocion
-    global labels
-
-    # Cargar el clasificador preentrenado para detección de rostros
+    global img_ultimo_rostro, x, y, w, h, contador_frames
+    
+    # Inicializar variables
+    ultima_emocion = "Neutral"
+    
+    # Cargar clasificadores
     face_cascade = cv2.CascadeClassifier(cv2.data.haarcascades + 'haarcascade_frontalface_default.xml')
     perfil_cascade = cv2.CascadeClassifier(cv2.data.haarcascades + 'haarcascade_profileface.xml')
     
-    # Inicializar la cámara (0 es la cámara por defecto)
+    # Inicializar cámara
     cap = cv2.VideoCapture(0)
-    
     if not cap.isOpened():
         print("No se pudo abrir la cámara")
         return
     
     while True:
-        # Capturar frame por frame
         ret, frame = cap.read()
-        
         if not ret:
-            print("No se pudo recibir el frame. Saliendo...")
             break
         
-        # Invertir la imagen como espejo
+        # Espejo para efecto espejo
         frame = cv2.flip(frame, 1)
         frame_clean = frame.copy()
-
-        # Dibujar el rectangulo
+        
+        # Dibujar rectángulo y texto de la última emoción
         cv2.rectangle(frame, (x, y), (x+w, y+h), (0, 255, 0), 2)
-
-        # Imprimir la emoción
         cv2.putText(frame, ultima_emocion, (x, y-10), 
-                        cv2.FONT_HERSHEY_SIMPLEX, 0.5, (0, 255, 0), 2)
-
+                   cv2.FONT_HERSHEY_SIMPLEX, 0.9, (0, 255, 0), 2)
+        
+        # Detección cada N frames
         contador_frames += 1
-        if(contador_frames % intervalo_deteccion == 0): #Es hora de detectar
-
-            frontal_faces=[]
-            perfil_faces=[]
-            perfil_inv_faces=[]
-
-            # Convertir a escala de grises (la detección funciona mejor en grises) 
+        if contador_frames % intervalo_deteccion == 0:
             gray = cv2.cvtColor(frame, cv2.COLOR_BGR2GRAY)
             
-            # Detectar rostros en la imagen
+            # Detectar rostros frontales
             frontal_faces = face_cascade.detectMultiScale(
-                gray,
-                scaleFactor=1.1,
-                minNeighbors=5,
-                minSize=(75, 75))
+                gray, scaleFactor=1.1, minNeighbors=5, minSize=(75, 75))
             
-            if(len(frontal_faces) == 0):
-
+            # Si no hay rostros frontales, buscar perfiles
+            perfil_faces = []
+            perfil_inv_faces = []
+            if len(frontal_faces) == 0:
                 perfil_faces = perfil_cascade.detectMultiScale(
-                    gray,
-                    scaleFactor=1.1,
-                    minNeighbors=5,
-                    minSize=(75, 75))
+                    gray, scaleFactor=1.1, minNeighbors=5, minSize=(75, 75))
                 
                 perfil_inv_faces = perfil_cascade.detectMultiScale(
-                    cv2.flip(gray, 1),  # Invertir para detectar perfil opuesto
-                    scaleFactor=1.1,
-                    minNeighbors=5,
-                    minSize=(75, 75))
+                    cv2.flip(gray, 1), scaleFactor=1.1, minNeighbors=5, minSize=(75, 75))
             
             # Combinar todas las detecciones
-            total_caras = []
-            if len(frontal_faces) > 0:
-                total_caras.extend(frontal_faces)
-            if len(perfil_faces) > 0:
-                total_caras.extend(perfil_faces)
-            if len(perfil_inv_faces) > 0:
-                # Ajustar coordenadas para caras invertidas
-                for (x, y, w, h) in perfil_inv_faces:
-                    total_caras.append((frame.shape[1]-x-w, y, w, h))
-
-            if len(total_caras) > 0:
-                # Ordenar los rostros por área (w*h) de mayor a menor
-                total_caras = sorted(total_caras, key=lambda x: x[2]*x[3], reverse=True)
-                (x, y, w, h) = total_caras[0]
-
-                rostro_recortado = frame_clean[y:y+h, x:x+w]
-
-                img_ultimo_rostro = rostro_recortado.copy()
-
-                #Aplicar limpieza de imagen
-                frame_deteccion = rostro_recortado.copy()
-                frame_deteccion = cv2.resize(rostro_recortado, (224, 224))
-                
-
-
-                # Preprocesar la imagen
-                frame_deteccion = np.asarray(frame_deteccion, dtype=np.float32).reshape(1, 224, 224, 3)
-
-                # Normalizar imagen
-                frame_deteccion = (frame_deteccion / 127.5) - 1
-
-                # Predicts the model
-                prediction = model.predict(frame_deteccion)
-                index = np.argmax(prediction)
-                class_name = class_names[index]
-                confidence_score = prediction[0][index]
-
-                # Imprimir preddicción
-                print("Class:", class_name[2:], end="")
-                print("Confidence Score:", str(np.round(confidence_score * 100))[:-2], "%")
-
-                ultima_emocion = class_name
-        
-
-                cv2.imshow('Rostro Detectado', rostro_recortado)
-            else:
-                if(img_ultimo_rostro is not None):
-                    ultimo_rostro_txt = cv2.putText(img_ultimo_rostro, "No detectado", (5, 15), 
-                            cv2.FONT_HERSHEY_SIMPLEX, 0.5, (255, 0, 0), 2)
-                    cv2.imshow('Rostro Detectado', ultimo_rostro_txt)
-                    img_ultimo_rostro=None
+            total_caras = list(frontal_faces)
+            for (px, py, pw, ph) in perfil_faces:
+                total_caras.append((px, py, pw, ph))
+            for (px, py, pw, ph) in perfil_inv_faces:
+                total_caras.append((frame.shape[1]-px-pw, py, pw, ph))
             
+            if len(total_caras) > 0:
+                # Tomar el rostro más grande
+                x, y, w, h = sorted(total_caras, key=lambda f: f[2]*f[3], reverse=True)[0]
+                rostro_recortado = frame_clean[y:y+h, x:x+w]
+                img_ultimo_rostro = rostro_recortado.copy()
+                
+                try:
+                    # Predecir emoción
+                    ultima_emocion = predict_emotion(rostro_recortado)
+                    
+                    # Mostrar rostro detectado
+                    cv2.imshow('Rostro Detectado', rostro_recortado)
+                except Exception as e:
+                    print(f"Error en predicción: {e}")
+                    ultima_emocion = "Error"
+            
+            elif img_ultimo_rostro is not None:
+                # Mostrar último rostro detectado con mensaje
+                cv2.putText(img_ultimo_rostro, "No detectado", (5, 15), 
+                           cv2.FONT_HERSHEY_SIMPLEX, 0.5, (255, 0, 0), 2)
+                cv2.imshow('Rostro Detectado', img_ultimo_rostro)
+                img_ultimo_rostro = None
         
-        
-        # Mostrar el frame resultante
+        # Mostrar frame principal
         cv2.imshow('Deteccion de emociones', frame)
-        cv2.moveWindow('Deteccion de emociones', 0,0)
-
+        cv2.moveWindow('Deteccion de emociones', 0, 0)
         
-        
-        # Salir con la tecla 'q'
+        # Salir con 'q'
         if cv2.waitKey(1) == ord('q'):
             break
     
-    # Liberar la cámara y cerrar ventanas
     cap.release()
     cv2.destroyAllWindows()
 
 if __name__ == "__main__":
+    # Variables globales
+    img_ultimo_rostro = None
+    x, y, w, h = 0, 0, 0, 0
+    contador_frames = 0
+    intervalo_deteccion = 3
+    
     detectar_rostros()
-
-def main():
-    print("iniciando")

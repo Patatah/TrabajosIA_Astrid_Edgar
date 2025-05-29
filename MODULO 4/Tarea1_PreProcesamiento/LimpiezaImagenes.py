@@ -7,15 +7,15 @@ import numpy as np
 # Directorios
 #La de menor resolución es disgust286 con 13x17
 #"C:/Users/Propietario/Documents/Edgar/IA/FANE/fane_data"
-dir_origen = "C:/Users/usuario1/OneDrive/Escritorio/IA/fane_data"  # Carpeta raíz con subcarpetas
-dir_destino = "C:/Users/usuario1/OneDrive/Escritorio/IA/fane_redimensionado"
-dir_fallidas = "C:/Users/usuario1/OneDrive/Escritorio/IA/imagenes_fallidas"
+dir_origen = "C:/Users/Propietario/Documents/Edgar/IA/FANE/fane_data"  # Carpeta raíz con subcarpetas
+dir_destino = "C:/Users/Propietario/Documents/Edgar/IA/FANE/fane_redimensionado"
+dir_fallidas = "C:/Users/Propietario/Documents/Edgar/IA/FANE/imagenes_fallidas"
 
 os.makedirs(dir_destino, exist_ok=True)
 os.makedirs(dir_fallidas, exist_ok=True)
 
 # Tamaño objetivo (ancho, alto)
-tamanio_objetivo = (224, 224) #Numero aureo? 16:10 aprox
+tamanio_objetivo = (64, 64) #Numero aureo? 16:10 aprox
 
 ##func normalizar brillo
 def normaliza_brillo(img, target_mean=128):
@@ -78,17 +78,7 @@ for root, dirs, files in os.walk(dir_origen):
 
             #Borrosear
             if(height<50 and width<50):
-                img = cv2.GaussianBlur(img, (19, 19), sigmaX=0)
-            elif(height<75 and width<75):
-                img = cv2.GaussianBlur(img, (17, 17), sigmaX=0)
-            elif(height<100 and width<100):
-                img = cv2.GaussianBlur(img, (15, 15), sigmaX=0)
-            elif(height<125 and width<125):
-                img = cv2.GaussianBlur(img, (13, 13), sigmaX=0)
-            elif(height<150 and width<150):
-                img = cv2.GaussianBlur(img, (9, 9 ), sigmaX=0)
-            elif(height<224 and width<224):
-                img = cv2.GaussianBlur(img, (5, 5), sigmaX=0)
+                img = cv2.GaussianBlur(img, (7, 7), sigmaX=0)
 
             #Normalizar contraste
             gray = cv2.cvtColor(img, cv2.COLOR_BGR2GRAY)

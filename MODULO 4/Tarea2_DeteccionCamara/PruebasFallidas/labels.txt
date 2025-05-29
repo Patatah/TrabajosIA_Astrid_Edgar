@@ -1,0 +1,5 @@
+0 Enojado
+1 Miedo
+2 Feliz
+3 Triste
+4 Sorprendido
