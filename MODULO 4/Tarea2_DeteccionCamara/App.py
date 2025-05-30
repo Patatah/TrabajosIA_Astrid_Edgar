@@ -1,19 +1,34 @@
 import cv2
 import numpy as np
 import torch
-from torchvision import transforms
+import torch.nn as nn
+from torchvision import transforms, models
 
 # Configuración del dispositivo
 device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
 
-# Cargar el modelo entrenado
-model = torch.load('emotion_resnet18.pth', map_location=device)
+# Cargando el modelo con la misma arquitectura (resnet 18 capas)
+model = models.resnet18(pretrained=True)
+num_ftrs = model.fc.in_features
+
+model.fc = nn.Sequential(
+    nn.Dropout(0.5),
+    nn.Linear(num_ftrs, 256),
+    nn.ReLU(),
+    nn.Linear(256, 5)  # 5 clases
+)
+
+# Cargar los pesos del modelo ya entrenado
+model.load_state_dict(torch.load('emotion_resnet50.pth', map_location=device))
 model.eval()
 
 # Transformaciones para la imagen
 transform = transforms.Compose([
     transforms.ToPILImage(),
-    transforms.Resize((128, 128)),  # Mismo tamaño que durante el entrenamiento
+    transforms.RandomResizedCrop(64, scale=(0.8, 1.0)),
+    transforms.RandomHorizontalFlip(),
+    transforms.ColorJitter(brightness=0.2, contrast=0.2, saturation=0.2),  # Nuevo
+    transforms.RandomRotation(10),  # Pequeñas rotaciones
     transforms.ToTensor(),
     transforms.Normalize([0.485, 0.456, 0.406], [0.229, 0.224, 0.225])
 ])
@@ -27,22 +42,32 @@ emotion_dict = {
     4: "Sorpresa"
 }
 
-def preprocess_face(face_img):
-    """Preprocesa el rostro para el modelo"""
+def preprocesar_cara(img_cara):
+    #Preprocesa el rostro para el modelo
     # Convertir BGR (OpenCV) a RGB
-    rgb_img = cv2.cvtColor(face_img, cv2.COLOR_BGR2RGB)
+    rgb_img = cv2.cvtColor(img_cara, cv2.COLOR_BGR2RGB)
     # Aplicar transformaciones
     tensor_img = transform(rgb_img)
     # Añadir dimensión de batch
     return tensor_img.unsqueeze(0).to(device)
 
-def predict_emotion(face_img):
-    """Predice la emoción del rostro detectado"""
+def predecir_emocion(img_cara):
     with torch.no_grad():
-        inputs = preprocess_face(face_img)
+        inputs = preprocesar_cara(img_cara)
         outputs = model(inputs)
         _, preds = torch.max(outputs, 1)
         return emotion_dict[preds.item()]
+    
+def predecir_emocion_suavizada(rostro):
+    emocion = predecir_emocion(rostro)
+    emocion_historial.append(emocion)
+    if len(emocion_historial) > N_HISTORIAL:
+        emocion_historial.pop(0)
+    # Devolver la emoción más frecuente
+    return max(set(emocion_historial), key=emocion_historial.count)
+    
+emocion_historial = []
+N_HISTORIAL = 5
 
 def detectar_rostros():
     global img_ultimo_rostro, x, y, w, h, contador_frames
@@ -108,7 +133,7 @@ def detectar_rostros():
                 
                 try:
                     # Predecir emoción
-                    ultima_emocion = predict_emotion(rostro_recortado)
+                    ultima_emocion = predecir_emocion_suavizada(rostro_recortado)
                     
                     # Mostrar rostro detectado
                     cv2.imshow('Rostro Detectado', rostro_recortado)
@@ -125,7 +150,6 @@ def detectar_rostros():
         
         # Mostrar frame principal
         cv2.imshow('Deteccion de emociones', frame)
-        cv2.moveWindow('Deteccion de emociones', 0, 0)
         
         # Salir con 'q'
         if cv2.waitKey(1) == ord('q'):
